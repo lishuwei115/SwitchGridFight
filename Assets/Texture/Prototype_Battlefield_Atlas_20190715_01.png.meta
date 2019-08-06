@@ -1,0 +1,1168 @@
+fileFormatVersion: 2
+guid: f4f0e40917ef78e48b712cffa3de6d77
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6438877458524065732
+    second: Chinese_Head
+  - first:
+      213: -7974810788798315533
+    second: Chinese_Hair1
+  - first:
+      213: 7211255130025146881
+    second: Chinese_Hair2
+  - first:
+      213: 9221580641475309440
+    second: Chinese_Torso
+  - first:
+      213: 5337309540985264714
+    second: Chinese_Pelvis
+  - first:
+      213: 5362148245744439103
+    second: Chinese_Belt
+  - first:
+      213: -2516501612978998367
+    second: Chinese_Back_UpArm
+  - first:
+      213: -7757476159325557508
+    second: Chinese_Back_Arm
+  - first:
+      213: 9172979448707527979
+    second: Chinese_Front_UpArm
+  - first:
+      213: 4392535138219477060
+    second: Chinese_Front_Arm
+  - first:
+      213: -7767297121009330812
+    second: Chinese_Right_UpLeg
+  - first:
+      213: -8642647398575569465
+    second: Chinese_Right_Leg
+  - first:
+      213: -7226517600794983657
+    second: Chinese_Left_UpLeg
+  - first:
+      213: -3932477625002709605
+    second: Chinese_Left_Leg
+  - first:
+      213: -3719203095461268142
+    second: Afro_Hair
+  - first:
+      213: -9216923858946373255
+    second: Afro_Head
+  - first:
+      213: -7076206588946163884
+    second: Afro_Front_Leg
+  - first:
+      213: 1342310813580162666
+    second: Afro_Front_UpLeg
+  - first:
+      213: 788664025457982374
+    second: Afro_Back_UpLeg
+  - first:
+      213: 2717308155933265212
+    second: Afro_Back_Leg
+  - first:
+      213: 8436326211116799374
+    second: Afro_Pelvis
+  - first:
+      213: -6999923085618349601
+    second: Afro_Gun
+  - first:
+      213: -5096834746686516844
+    second: Afro_Bullets
+  - first:
+      213: -3646663862554911997
+    second: Afro_BackPack
+  - first:
+      213: -8290205979707342661
+    second: Afro_Torso
+  - first:
+      213: -6548558563991205172
+    second: Afro_Back_UpArm
+  - first:
+      213: 7676620209033527823
+    second: Afro_Back_Arm
+  - first:
+      213: -8673383126773717413
+    second: Afro_Front_UpArm
+  - first:
+      213: -1463200740453707320
+    second: Afro_Front_Arm
+  - first:
+      213: -5565390173848067538
+    second: Redhood_head
+  - first:
+      213: -2574154939300856521
+    second: Redhood_Body
+  - first:
+      213: 4671258417404962117
+    second: Redhood_Front_Arm
+  - first:
+      213: -7333952998175062305
+    second: Redhood_Back_Arm
+  - first:
+      213: -1679882114584535601
+    second: Redhood_Face
+  - first:
+      213: 2525900233928014405
+    second: Redhood_Front_Leg
+  - first:
+      213: -8873788553795802129
+    second: Redhood_back_Leg
+  - first:
+      213: 7754608924215655328
+    second: Redhood_Braid1
+  - first:
+      213: 2097417321897437027
+    second: Redhood_Braid2
+  - first:
+      213: 1526481849317460067
+    second: Redhood_Hair1
+  - first:
+      213: -5924572680380514818
+    second: Redhood_Hair2
+  - first:
+      213: -1468436876755493069
+    second: Redhood_Hair3
+  - first:
+      213: 3140650441667616506
+    second: Redhood_Hair4
+  - first:
+      213: -2243048406245646217
+    second: RedHood_Face_Sad
+  - first:
+      213: -324680244879282719
+    second: Redhood_Face_Blur
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Chinese_Head
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 942
+        width: 74
+        height: 74
+      alignment: 9
+      pivot: {x: 0.31663895, y: 0.25551873}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d411f14d9166a974c83e4b47a8aab7bc
+      internalID: -6438877458524065732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinese_Hair1
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 967
+        width: 31
+        height: 46
+      alignment: 9
+      pivot: {x: 0.64590013, y: 0.1128487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0300411bf2a15a74e9b6c4fbf2f5db94
+      internalID: -7974810788798315533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinese_Hair2
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 975
+        width: 38
+        height: 37
+      alignment: 9
+      pivot: {x: 0.767803, y: 0.2931608}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b8fa3090bfcfe34e83c4c9184ed5822
+      internalID: 7211255130025146881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinese_Torso
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 803
+        width: 125
+        height: 122
+      alignment: 9
+      pivot: {x: 0.3307008, y: 0.14810681}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd4a597cde8c1bb4681c94e5826693d1
+      internalID: 9221580641475309440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinese_Pelvis
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 744
+        width: 105
+        height: 66
+      alignment: 9
+      pivot: {x: 0.49999985, y: 0.8255125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b361995af81b4a54ab65e21679e2fc93
+      internalID: 5337309540985264714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinese_Belt
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 853
+        width: 133
+        height: 82
+      alignment: 9
+      pivot: {x: 0.54742974, y: 0.11361992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7d9d764bcd52a34aa9ca61e5cde8315
+      internalID: 5362148245744439103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinese_Back_UpArm
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 889
+        width: 133
+        height: 90
+      alignment: 9
+      pivot: {x: 0.102709316, y: 0.1781528}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1fc1ea7903664843b4a4ab393c370e3
+      internalID: -2516501612978998367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinese_Back_Arm
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 913
+        width: 110
+        height: 103
+      alignment: 9
+      pivot: {x: 0.12557706, y: 0.2900687}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65ec519e50f018d409f2a414f6c65f91
+      internalID: -7757476159325557508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinese_Front_UpArm
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 715
+        width: 143
+        height: 111
+      alignment: 9
+      pivot: {x: 0.04590548, y: 0.35948443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1e8d2f30b8af574bb6faf5f34e60c38
+      internalID: 9172979448707527979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinese_Front_Arm
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 751
+        width: 108
+        height: 99
+      alignment: 9
+      pivot: {x: 0.078532465, y: 0.30065364}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 589a2ec48f8c4214a88a976fc6f3ab26
+      internalID: 4392535138219477060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinese_Right_UpLeg
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 917
+        width: 95
+        height: 85
+      alignment: 9
+      pivot: {x: 0.8106201, y: 0.7467788}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7618546b8918a8f4f8c8ea4dce3bd375
+      internalID: -7767297121009330812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinese_Right_Leg
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 755
+        width: 102
+        height: 66
+      alignment: 9
+      pivot: {x: 0.806731, y: 0.8016607}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 004313e3f0f69fc4cbf559e7a005d4b0
+      internalID: -8642647398575569465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinese_Left_UpLeg
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 915
+        width: 59
+        height: 95
+      alignment: 9
+      pivot: {x: 0.3131962, y: 0.7582263}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59946c73a95608f45abb53b799f6c701
+      internalID: -7226517600794983657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinese_Left_Leg
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 755
+        width: 53
+        height: 69
+      alignment: 9
+      pivot: {x: 0.6976134, y: 0.80357915}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b16c53c6e11a2aa41b86d2d524a4452f
+      internalID: -3932477625002709605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Afro_Hair
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 549
+        width: 131
+        height: 112
+      alignment: 9
+      pivot: {x: 0.53550214, y: 0.2000983}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06504c73db4949342977b0a5f14cb384
+      internalID: -3719203095461268142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Afro_Head
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 435
+        width: 58
+        height: 68
+      alignment: 9
+      pivot: {x: 0.40714118, y: 0.17735784}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04249cbbf937d7b418ca1cc080a7d72a
+      internalID: -9216923858946373255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Afro_Front_Leg
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 437
+        width: 84
+        height: 37
+      alignment: 9
+      pivot: {x: 0.8218442, y: 0.8355688}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e7147fdc3895f943b3d5a5be2ebf9b0
+      internalID: -7076206588946163884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Afro_Front_UpLeg
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 546
+        width: 43
+        height: 83
+      alignment: 9
+      pivot: {x: 0.44782168, y: 0.8689465}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e4db3b30abaadd43910775c59932c42
+      internalID: 1342310813580162666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Afro_Back_UpLeg
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 569
+        width: 76
+        height: 36
+      alignment: 9
+      pivot: {x: 0.16776356, y: 0.5045827}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56fbf6286f43b9b44a98f179fd1fa908
+      internalID: 788664025457982374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Afro_Back_Leg
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 428
+        width: 50
+        height: 84
+      alignment: 9
+      pivot: {x: 0.6133282, y: 0.9159869}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e2bf7644e937d74386cbc5568ae18b1
+      internalID: 2717308155933265212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Afro_Pelvis
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 439
+        width: 65
+        height: 58
+      alignment: 9
+      pivot: {x: 0.4328294, y: 0.91113174}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0ba8f2fc7da4fc4199a03408aacdd4b
+      internalID: 8436326211116799374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Afro_Gun
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 526
+        width: 56
+        height: 32
+      alignment: 9
+      pivot: {x: 0.21330588, y: 0.09272385}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49a7a9a6301c0b741af24da258ccfaaa
+      internalID: -6999923085618349601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Afro_Bullets
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 578
+        width: 37
+        height: 20
+      alignment: 9
+      pivot: {x: 0.48869696, y: 0.8854004}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 111ce8797a027ba4baa8e06901896888
+      internalID: -5096834746686516844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Afro_BackPack
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 549
+        width: 69
+        height: 64
+      alignment: 9
+      pivot: {x: 0.38502923, y: 0.13994503}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53e3a0044c131c94f8ab203327fa662c
+      internalID: -3646663862554911997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Afro_Torso
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 432
+        width: 53
+        height: 85
+      alignment: 9
+      pivot: {x: 0.58909404, y: 0.040019315}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98c56c33b2079584eaf9ad50951447ca
+      internalID: -8290205979707342661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Afro_Back_UpArm
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 564
+        width: 80
+        height: 28
+      alignment: 9
+      pivot: {x: 0.07247925, y: 0.5110038}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66b408b91a23809469468f76c0615462
+      internalID: -6548558563991205172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Afro_Back_Arm
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 564
+        width: 104
+        height: 29
+      alignment: 9
+      pivot: {x: 0.115896955, y: 0.45604205}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deff982160f82fd4aa7e99311e12d24a
+      internalID: 7676620209033527823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Afro_Front_UpArm
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 433
+        width: 87
+        height: 37
+      alignment: 9
+      pivot: {x: 0.105907224, y: 0.5195783}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b81b2977cf7b3834892d5b5f61032f02
+      internalID: -8673383126773717413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Afro_Front_Arm
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 435
+        width: 85
+        height: 27
+      alignment: 9
+      pivot: {x: 0.09841955, y: 0.45780548}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3f9c0f1cc0fdbb42b5324822c1ca05d
+      internalID: -1463200740453707320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redhood_head
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 265
+        width: 115
+        height: 102
+      alignment: 9
+      pivot: {x: 0.6690217, y: 0.13281609}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9ce3d8761e99b84cbf40964e8a6df0a
+      internalID: -5565390173848067538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redhood_Body
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 50
+        width: 107
+        height: 147
+      alignment: 9
+      pivot: {x: 0.40252444, y: 0.87733316}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09b068e7aece4cf4ab99a341396eca1f
+      internalID: -2574154939300856521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redhood_Front_Arm
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 237
+        width: 160
+        height: 141
+      alignment: 9
+      pivot: {x: 0.6214844, y: 0.9337377}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f74926ac8a24b4e4e8ab48445404c712
+      internalID: 4671258417404962117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redhood_Back_Arm
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 24
+        width: 77
+        height: 166
+      alignment: 9
+      pivot: {x: 0.15521042, y: 0.73989856}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 095614e0ea2231c448f87bec7a10819e
+      internalID: -7333952998175062305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redhood_Face
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 297
+        width: 31
+        height: 52
+      alignment: 9
+      pivot: {x: 0.57931966, y: 0.14020362}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b89edbccc0cb3cd4f91e918869b95f34
+      internalID: -1679882114584535601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redhood_Front_Leg
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 37
+        width: 30
+        height: 44
+      alignment: 9
+      pivot: {x: 0.30467632, y: 0.67756706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c13503bd5906f24ba93d0c3361bcbb3
+      internalID: 2525900233928014405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redhood_back_Leg
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 37
+        width: 31
+        height: 55
+      alignment: 9
+      pivot: {x: 0.47299784, y: 0.7130818}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c47845c7c1be2ab40b4d6376a858edf3
+      internalID: -8873788553795802129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redhood_Braid1
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 118
+        width: 45
+        height: 103
+      alignment: 9
+      pivot: {x: 0.18996039, y: 0.9009444}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ac139cac7a6d34287259bd585d1c0b
+      internalID: 7754608924215655328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redhood_Braid2
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 128
+        width: 41
+        height: 86
+      alignment: 9
+      pivot: {x: 0.28221688, y: 0.8861073}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9939f4daccc1f92469ee1209bb3629b3
+      internalID: 2097417321897437027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redhood_Hair1
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 301
+        width: 50
+        height: 42
+      alignment: 9
+      pivot: {x: 0.84282714, y: 0.8561845}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b089b36a21838f43996c6094b1cfe5d
+      internalID: 1526481849317460067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redhood_Hair2
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 247
+        width: 56
+        height: 30
+      alignment: 9
+      pivot: {x: 0.0881631, y: 0.18833873}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc168b0b7e42d6f40a91cfd0b854b22d
+      internalID: -5924572680380514818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redhood_Hair3
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 196
+        width: 52
+        height: 25
+      alignment: 9
+      pivot: {x: 0.14039142, y: 0.23820435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbcd435131193d843a5f188a6819cc67
+      internalID: -1468436876755493069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redhood_Hair4
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 122
+        width: 25
+        height: 29
+      alignment: 9
+      pivot: {x: 0.21327393, y: 0.18833975}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d07ab6ee09fcc64ab3200c7c2bef899
+      internalID: 3140650441667616506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHood_Face_Sad
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 297
+        width: 30
+        height: 52
+      alignment: 9
+      pivot: {x: 0.51749474, y: 0.10130192}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e7d2766b8ca4064cb4dd4e6707b1fd2
+      internalID: -2243048406245646217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redhood_Face_Blur
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 216
+        width: 32
+        height: 49
+      alignment: 9
+      pivot: {x: 0.5164013, y: 0.11438237}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8516460edd5f4a409422c7a6d746c28
+      internalID: -324680244879282719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: acba1e068478aba4e84c43755b4a9635
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

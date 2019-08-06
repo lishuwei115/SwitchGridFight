@@ -1,0 +1,329 @@
+----IL2CPP Arguments----
+--convert-to-cpp --emit-null-checks --enable-stacktrace --enable-array-bounds-check --dotnetprofile=unityaot --compile-cpp --platform=Switch --architecture=ARM64 --configuration=Release --outputpath=C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Native\SwitchPlayer.nss --cachedirectory=C:/Users/Dev/Documents/GridFight/Assets/../SwitchIL2CPPCache/il2cpp_cache --plugin=C:/Program Files/Unity2019.1.4/Editor/Data/PlaybackEngines/Switch/Tools\Il2CppPlugin.dll --additional-include-directories=C:\Program Files\Unity2019.1.4\Editor\Data\PlaybackEngines\Switch\Tools/il2cpp\bdwgc/include --additional-include-directories=C:\Program Files\Unity2019.1.4\Editor\Data\PlaybackEngines\Switch\Tools/il2cpp\libil2cpp/include --verbose --enable-stats --stats-output-dir=C:/Users/Dev/Documents/GridFight/Assets/../SwitchIL2CPPStats --libil2cpp-static --additional-defines=DEBUGMODE=1,UNITY_RELEASE=0,IL2CPP_USE_SOCKET_MULTIPLEX_IO=1 --configuration=Release --profiler-report --map-file-parser=C:/Program Files/Unity2019.1.4/Editor/Data/Tools/MapFileParser/MapFileParser.exe --directory=C:/Users/Dev/Documents/GridFight/Temp/StagingArea/Managed --generatedcppdir=C:/Users/Dev/Documents/GridFight/Temp/StagingArea/il2cppOutput
+
+----Assemblies Converted-----
+	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\Assembly-CSharp.dll
+	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\Mono.Security.dll
+	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\mscorlib.dll
+	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\Rewired_Core.dll
+	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\System.Configuration.dll
+	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\System.Core.dll
+	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\System.dll
+	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\System.Xml.dll
+	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\Unity.TextMeshPro.dll
+	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.AIModule.dll
+	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.AnimationModule.dll
+	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.AssetBundleModule.dll
+	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.AudioModule.dll
+	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.CoreModule.dll
+	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.DirectorModule.dll
+	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.dll
+	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.GridModule.dll
+	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.IMGUIModule.dll
+	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.InputModule.dll
+	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.ParticleSystemModule.dll
+	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.Physics2DModule.dll
+	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.PhysicsModule.dll
+	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.SharedInternalsModule.dll
+	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.SwitchModule.dll
+	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.TerrainModule.dll
+	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.TextCoreModule.dll
+	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.TextRenderingModule.dll
+	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.TilemapModule.dll
+	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.UI.dll
+	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.UIElementsModule.dll
+	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.UIModule.dll
+	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.UnityWebRequestModule.dll
+	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.VFXModule.dll
+	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.VideoModule.dll
+	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.VRModule.dll
+	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.XRModule.dll
+
+----- il2cpp Statistics -----
+General:
+	Conversion Time: 33.147 s
+	Files Written: 215
+	String Literals: 7429
+Methods:
+	Total Methods: 55546
+	Non-Generic Methods: 37608
+	Generic Type Methods: 15327
+	Generic Methods: 2611
+	Shared Methods: 17894
+	Methods with Tail Calls : 0
+Metadata:
+	Total: 6,161.28 kb
+	String Literals: 58.04 kb
+	String Literal Data: 211.50 kb
+	Metadata Strings: 839.74 kb
+	Events: 3.75 kb
+	Properties: 176.64 kb
+	Methods: 1,305.72 kb
+	Parameter Default Values: 4.29 kb
+	Field Default Values: 101.93 kb
+	Field and Parameter Default Values Data: 198.18 kb
+	Field Marshaled Sizes: 25.30 kb
+	Parameters: 510.21 kb
+	Fields: 309.49 kb
+	Generic Parameters: 13.84 kb
+	Generic Parameter Constraints: 0.92 kb
+	Generic Containers: 11.86 kb
+	Nested Types: 6.79 kb
+	Interfaces: 10.01 kb
+	VTables: 232.57 kb
+	Interface Offsets: 49.09 kb
+	Type Definitions: 482.55 kb
+	Images: 1.41 kb
+	Assemblies: 2.39 kb
+	Metadata Usage Lists: 436.44 kb
+	Metadata Usage Pairs: 999.26 kb
+	Field Refs: 1.88 kb
+	Referenced Assemblies: 0.70 kb
+	Attribute Types Ranges: 99.47 kb
+	Attribute Types: 50.54 kb
+	Unresolved Virtual Call Parameter Types: 8.30 kb
+	Unresolved Virtual Call Parameter Ranges: 5.48 kb
+	Windows Runtime type names: 0.00 kb
+	Exported Types: 3.01 kb
+Codegen:
+	NullChecks : 115421
+Hashing:
+	String Literal Hash Collisions : 0
+	Type Hash Collisions : 0
+	Method Hash Collisions : 0
+	Sequence Point Hash Collisions : 0
+Interop:
+	Windows Runtime boxed types : 0
+	Windows Runtime types with names : 0
+	Native to managed interface adapters : 0
+	Array COM callable wrappers : 0
+	COM callable wrappers : 0
+	COM callable wrapper methods that were implemented : 0
+	COM callable wrapper methods that were stripped : 0
+	COM callable wrapper methods that were forwarded to call base class method : 0
+Compilation:
+	Total Files: 282
+	Files Compiled: 34
+	Cache Hits: 248
+	Cache Hit %: 87
+
+
+----Assembly Conversion Times----
+	Convert Assembly-CSharp (948.220336914063ms)
+	Convert Mono.Security (147.384902954102ms)
+	Convert mscorlib (3632.52734375ms)
+	Convert Rewired_Core (4300.43017578125ms)
+	Convert System (1209.51513671875ms)
+	Convert System.Configuration (36.2344017028809ms)
+	Convert System.Core (34.24169921875ms)
+	Convert System.Xml (2070.06567382813ms)
+	Convert Unity.TextMeshPro (1294.98950195313ms)
+	Convert UnityEngine (3.95090007781982ms)
+	Convert UnityEngine.AIModule (8.94950008392334ms)
+	Convert UnityEngine.AnimationModule (40.5124015808105ms)
+	Convert UnityEngine.AssetBundleModule (9.19820022583008ms)
+	Convert UnityEngine.AudioModule (14.923900604248ms)
+	Convert UnityEngine.CoreModule (406.29541015625ms)
+	Convert UnityEngine.DirectorModule (7.34810018539429ms)
+	Convert UnityEngine.GridModule (5.87090015411377ms)
+	Convert UnityEngine.IMGUIModule (121.936599731445ms)
+	Convert UnityEngine.InputModule (13.7524003982544ms)
+	Convert UnityEngine.ParticleSystemModule (13.543399810791ms)
+	Convert UnityEngine.Physics2DModule (29.3664989471436ms)
+	Convert UnityEngine.PhysicsModule (23.3453998565674ms)
+	Convert UnityEngine.SharedInternalsModule (19.895299911499ms)
+	Convert UnityEngine.SwitchModule (20.4195995330811ms)
+	Convert UnityEngine.TerrainModule (24.5167999267578ms)
+	Convert UnityEngine.TextCoreModule (31.070499420166ms)
+	Convert UnityEngine.TextRenderingModule (30.1070022583008ms)
+	Convert UnityEngine.TilemapModule (22.1404991149902ms)
+	Convert UnityEngine.UI (968.174926757813ms)
+	Convert UnityEngine.UIElementsModule (11.5188999176025ms)
+	Convert UnityEngine.UIModule (31.1920986175537ms)
+	Convert UnityEngine.UnityWebRequestModule (8.29069995880127ms)
+	Convert UnityEngine.VFXModule (9.78040027618408ms)
+	Convert UnityEngine.VideoModule (12.1232995986938ms)
+	Convert UnityEngine.VRModule (7.93480014801025ms)
+	Convert UnityEngine.XRModule (38.7378997802734ms)
+
+----Misc Timing----
+	PreProcessStage: 667.500366210938
+	GenericsCollector.Collect: None
+	WriteGenerics: 6936.05517578125
+	AllAssemblyConversion: 15998.513671875
+
+----Generated Files----
+Assembly-CSharp.cpp	2890128
+Assembly-CSharp1.cpp	2229169
+Assembly-CSharp2.cpp	1950585
+Assembly-CSharp3.cpp	2651717
+Assembly-CSharp4.cpp	2374794
+Assembly-CSharp5.cpp	1462287
+GenericMethods.cpp	2188521
+GenericMethods1.cpp	2858001
+GenericMethods2.cpp	1916185
+GenericMethods3.cpp	2704216
+GenericMethods4.cpp	1785545
+GenericMethods5.cpp	2817254
+GenericMethods6.cpp	2260277
+GenericMethods7.cpp	212245
+Generics.cpp	2114535
+Generics1.cpp	1586129
+Generics10.cpp	1306646
+Generics11.cpp	1414512
+Generics12.cpp	1935292
+Generics13.cpp	1663347
+Generics14.cpp	1512417
+Generics15.cpp	1545838
+Generics16.cpp	1435732
+Generics17.cpp	1409540
+Generics18.cpp	1521849
+Generics19.cpp	2166552
+Generics2.cpp	1390909
+Generics20.cpp	1445199
+Generics21.cpp	1487412
+Generics22.cpp	1417740
+Generics23.cpp	1368997
+Generics24.cpp	1361560
+Generics25.cpp	1773320
+Generics26.cpp	1509132
+Generics27.cpp	1473750
+Generics28.cpp	1548021
+Generics29.cpp	1689288
+Generics3.cpp	1599940
+Generics30.cpp	1646730
+Generics31.cpp	1720326
+Generics32.cpp	313229
+Generics4.cpp	1400446
+Generics5.cpp	1694103
+Generics6.cpp	1951016
+Generics7.cpp	2107252
+Generics8.cpp	2075320
+Generics9.cpp	1303801
+Il2CppAttributes.cpp	7289050
+Il2CppCodeRegistration.cpp	6058
+Il2CppCompilerCalculateTypeValues.cpp	4937844
+Il2CppCompilerCalculateTypeValues1.cpp	5058441
+Il2CppCompilerCalculateTypeValues2.cpp	6233836
+Il2CppCompilerCalculateTypeValues3.cpp	1224044
+Il2CppCompilerCalculateTypeValuesTable.cpp	822717
+Il2CppGenericComDefinitions.cpp	214
+Il2CppGenericMethodPointerTable.cpp	4424501
+Il2CppInteropDataTable.cpp	243716
+Il2CppInvokerTable.cpp	4801542
+Il2CppReversePInvokeWrapperTable.cpp	7866
+Mono.Security.cpp	1639217
+Mono.Security1.cpp	417367
+mscorlib.cpp	1828571
+mscorlib1.cpp	1844360
+mscorlib10.cpp	1872615
+mscorlib11.cpp	2224357
+mscorlib12.cpp	1845486
+mscorlib13.cpp	2106593
+mscorlib14.cpp	2071239
+mscorlib15.cpp	1843090
+mscorlib16.cpp	1801497
+mscorlib17.cpp	1785119
+mscorlib18.cpp	1850977
+mscorlib19.cpp	2025714
+mscorlib2.cpp	1891004
+mscorlib20.cpp	1925810
+mscorlib21.cpp	1466516
+mscorlib3.cpp	2014059
+mscorlib4.cpp	1841716
+mscorlib5.cpp	1939755
+mscorlib6.cpp	1858692
+mscorlib7.cpp	2065453
+mscorlib8.cpp	1952065
+mscorlib9.cpp	1912459
+Rewired_Core.cpp	2316236
+Rewired_Core1.cpp	2311514
+Rewired_Core10.cpp	2212791
+Rewired_Core11.cpp	2024003
+Rewired_Core12.cpp	2235736
+Rewired_Core13.cpp	2345909
+Rewired_Core14.cpp	2660474
+Rewired_Core15.cpp	2495096
+Rewired_Core16.cpp	2993789
+Rewired_Core17.cpp	1982884
+Rewired_Core18.cpp	2326881
+Rewired_Core19.cpp	1964200
+Rewired_Core2.cpp	2218801
+Rewired_Core20.cpp	2118324
+Rewired_Core21.cpp	1653982
+Rewired_Core22.cpp	1920199
+Rewired_Core23.cpp	2179392
+Rewired_Core24.cpp	2196985
+Rewired_Core25.cpp	1883558
+Rewired_Core3.cpp	2117102
+Rewired_Core4.cpp	1879327
+Rewired_Core5.cpp	1954398
+Rewired_Core6.cpp	2472898
+Rewired_Core7.cpp	1846269
+Rewired_Core8.cpp	1748360
+Rewired_Core9.cpp	1818668
+System.Configuration.cpp	71407
+System.Core.cpp	463714
+System.cpp	2006586
+System.Xml.cpp	2036724
+System.Xml1.cpp	2406275
+System.Xml10.cpp	2123928
+System.Xml11.cpp	3105368
+System.Xml12.cpp	2083191
+System.Xml13.cpp	883329
+System.Xml2.cpp	2103547
+System.Xml3.cpp	3026272
+System.Xml4.cpp	2465444
+System.Xml5.cpp	1867544
+System.Xml6.cpp	2196365
+System.Xml7.cpp	2464518
+System.Xml8.cpp	2537783
+System.Xml9.cpp	2082419
+System1.cpp	1934502
+System2.cpp	2223538
+System3.cpp	2101294
+System4.cpp	2140575
+System5.cpp	1797138
+System6.cpp	1657572
+System7.cpp	401454
+Unity.TextMeshPro.cpp	2370558
+Unity.TextMeshPro1.cpp	2223819
+Unity.TextMeshPro2.cpp	3224719
+Unity.TextMeshPro3.cpp	2430891
+Unity.TextMeshPro4.cpp	1789727
+Unity.TextMeshPro5.cpp	202301
+UnityEngine.AIModule.cpp	24409
+UnityEngine.AnimationModule.cpp	296254
+UnityEngine.AssetBundleModule.cpp	28853
+UnityEngine.AudioModule.cpp	140637
+UnityEngine.CoreModule.cpp	1849319
+UnityEngine.CoreModule1.cpp	1763776
+UnityEngine.CoreModule2.cpp	745225
+UnityEngine.cpp	4580
+UnityEngine.DirectorModule.cpp	21240
+UnityEngine.GridModule.cpp	6007
+UnityEngine.IMGUIModule.cpp	1494119
+UnityEngine.InputModule.cpp	55882
+UnityEngine.ParticleSystemModule.cpp	94003
+UnityEngine.Physics2DModule.cpp	203640
+UnityEngine.PhysicsModule.cpp	227139
+UnityEngine.SharedInternalsModule.cpp	199451
+UnityEngine.SwitchModule.cpp	128021
+UnityEngine.TerrainModule.cpp	289540
+UnityEngine.TextCoreModule.cpp	344540
+UnityEngine.TextRenderingModule.cpp	230846
+UnityEngine.TilemapModule.cpp	96424
+UnityEngine.UI.cpp	2087386
+UnityEngine.UI1.cpp	2197836
+UnityEngine.UI2.cpp	1941370
+UnityEngine.UI3.cpp	658601
+UnityEngine.UIElementsModule.cpp	101699
+UnityEngine.UIModule.cpp	256703
+UnityEngine.UnityWebRequestModule.cpp	68076
+UnityEngine.VFXModule.cpp	58462
+UnityEngine.VideoModule.cpp	100608
+UnityEngine.VRModule.cpp	17631
+UnityEngine.XRModule.cpp	441323
+UnlinkedFunctions.cpp	331
+UnresolvedVirtualCallStubs.cpp	625712
+

@@ -1,0 +1,760 @@
+fileFormatVersion: 2
+guid: 77d07a8f90f82694aadf06fddf78bfc8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5380594714560774707
+    second: Boss_Back_Shoulder
+  - first:
+      213: -5783766460200979060
+    second: Boss_Head
+  - first:
+      213: -9123479066128142436
+    second: Boss_Jaw
+  - first:
+      213: 7571523474863001746
+    second: Boss_Back_Gun1
+  - first:
+      213: -3174840145149064534
+    second: Boss_Back_Gun2
+  - first:
+      213: -5430748108752158553
+    second: Boss_Front_Gun1
+  - first:
+      213: -8853861295514639767
+    second: Boss_Front_Gun2
+  - first:
+      213: -4996430413790571452
+    second: Boss_Torso
+  - first:
+      213: 8277789447891970740
+    second: Boss_Gunpipe
+  - first:
+      213: 6346355873874906466
+    second: Boss_Head_Fire
+  - first:
+      213: 3724273504262049352
+    second: Boss_Fire
+  - first:
+      213: 555371177086724024
+    second: Boss_Back_leg
+  - first:
+      213: 6225780847717512537
+    second: Boss_front_Leg
+  - first:
+      213: -6424427067608065291
+    second: Boss_Cable
+  - first:
+      213: 7871882176317780134
+    second: Boss_feet
+  - first:
+      213: 5403257512302813362
+    second: Boss_Front_Arm
+  - first:
+      213: -5064627061508603070
+    second: Boss_Front_Uparm
+  - first:
+      213: -8217003651075466170
+    second: Boss_Engine
+  - first:
+      213: 3003482895603375054
+    second: Boss_Engine2
+  - first:
+      213: 6146441886691077679
+    second: Boss_Pelvis
+  - first:
+      213: -3281565755343975940
+    second: Boss_Front_UparmDead
+  - first:
+      213: -8475949043516166940
+    second: Boss_TorsoDead
+  - first:
+      213: 2852886484751981432
+    second: Boss_HeadDead
+  - first:
+      213: -2025921837333864742
+    second: Boss_Front_Gun2Dead
+  - first:
+      213: -4879176056055799904
+    second: Boss_Back_Gun2Dead
+  - first:
+      213: -8591484416470946656
+    second: Boss_Front_Gun1Dead
+  - first:
+      213: -9126455644328002151
+    second: Boss_Back_Gun1Dead
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Boss_Back_Shoulder
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1947
+        width: 159
+        height: 101
+      alignment: 9
+      pivot: {x: 0.52592325, y: 0.26680097}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e9b2b93af9755f40809ed1a69e346b3
+      internalID: 5380594714560774707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Head
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1846
+        width: 86
+        height: 88
+      alignment: 9
+      pivot: {x: 0.49490657, y: 0.6592726}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 695892a27048186499ac282875a22034
+      internalID: -5783766460200979060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Jaw
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1790
+        width: 44
+        height: 54
+      alignment: 9
+      pivot: {x: 0.6891361, y: 0.808223}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fa5744b4b197b1409bab7dde84aff6f
+      internalID: -9123479066128142436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Back_Gun1
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 1978
+        width: 90
+        height: 70
+      alignment: 9
+      pivot: {x: 0.86611634, y: 0.70091903}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afa0a8f2db3cf2847b5007826668984e
+      internalID: 7571523474863001746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Back_Gun2
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 1880
+        width: 97
+        height: 73
+      alignment: 9
+      pivot: {x: 0.8976922, y: 0.7311945}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bdbc160d3f2237409a420ab54b567fd
+      internalID: -3174840145149064534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Front_Gun1
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 1974
+        width: 83
+        height: 72
+      alignment: 9
+      pivot: {x: 0.8776282, y: 0.7344055}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83553da1cecd1a44f8fd41fc0846ed2a
+      internalID: -5430748108752158553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Front_Gun2
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 1888
+        width: 85
+        height: 69
+      alignment: 9
+      pivot: {x: 0.8829252, y: 0.75042105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d45ee79a093e07742a5563d138017eb4
+      internalID: -8853861295514639767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Torso
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 1652
+        width: 196
+        height: 215
+      alignment: 9
+      pivot: {x: 0.37383512, y: 0.15906103}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74effc44026eac44d99b52d7b25d4bb7
+      internalID: -4996430413790571452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Gunpipe
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 2003
+        width: 37
+        height: 34
+      alignment: 9
+      pivot: {x: 0.5284647, y: 0.72457707}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 736c3509ec0bafc4da39de02d87d4f48
+      internalID: 8277789447891970740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Head_Fire
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 1686
+        width: 242
+        height: 204
+      alignment: 9
+      pivot: {x: 0.14822842, y: 0.24688542}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3656bb4a7b0944a48894fd8acdb393fe
+      internalID: 6346355873874906466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Fire
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 1397
+        width: 78
+        height: 188
+      alignment: 9
+      pivot: {x: 0.46043357, y: 0.06849378}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb2b680605df3b74f8b4bea4b2bdd5d3
+      internalID: 3724273504262049352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Back_leg
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1329
+        width: 112
+        height: 289
+      alignment: 9
+      pivot: {x: 0.78605986, y: 0.8969528}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a56e9ecc9a4138a418838993138615af
+      internalID: 555371177086724024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_front_Leg
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 1332
+        width: 141
+        height: 279
+      alignment: 9
+      pivot: {x: 0.22879635, y: 0.89265865}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 099cf0b5ef6011042a308a4efe9cbee5
+      internalID: 6225780847717512537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Cable
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1228
+        width: 64
+        height: 76
+      alignment: 9
+      pivot: {x: 0.6939287, y: 0.70903414}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57c7e1cfc1e7f2e4ba17ea6a34e1b8d6
+      internalID: -6424427067608065291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_feet
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1751
+        width: 433
+        height: 297
+      alignment: 9
+      pivot: {x: 0.592337, y: 0.27563393}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0906f13ef7259214fa0f67d5d5f3e82d
+      internalID: 7871882176317780134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Front_Arm
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 1338
+        width: 146
+        height: 257
+      alignment: 9
+      pivot: {x: 0.8260105, y: 0.89510316}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30ebb7e9fbb8abd42960b3571311dcb0
+      internalID: 5403257512302813362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Front_Uparm
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1349
+        width: 206
+        height: 342
+      alignment: 9
+      pivot: {x: 0.62323, y: 0.7263901}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 837a894f46f45d949a4ad646df20b58b
+      internalID: -5064627061508603070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Engine
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1330
+        width: 126
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf9776d9a0441084abbda7ef87e82b50
+      internalID: -8217003651075466170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Engine2
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1485
+        width: 179
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f66d8e26058f9dd46aa64b4956416dad
+      internalID: 3003482895603375054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Pelvis
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 1912
+        width: 95
+        height: 136
+      alignment: 9
+      pivot: {x: 0.3866346, y: 0.8546313}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fca1e6567029194418486d5346453a31
+      internalID: 6146441886691077679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Front_UparmDead
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 1663
+        width: 199
+        height: 359
+      alignment: 9
+      pivot: {x: 0.5917975, y: 0.7366144}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee122a35fb4932446965bc8e0d243b7a
+      internalID: -3281565755343975940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_TorsoDead
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 1633
+        width: 197
+        height: 214
+      alignment: 9
+      pivot: {x: 0.3350099, y: 0.13318726}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d7cfc02ca9552f4db1a422156d2f52b
+      internalID: -8475949043516166940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_HeadDead
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 1928
+        width: 87
+        height: 93
+      alignment: 9
+      pivot: {x: 0.4571435, y: 0.56586415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 398d239435b1f0d478aa46936c289176
+      internalID: 2852886484751981432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Front_Gun2Dead
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 1866
+        width: 89
+        height: 69
+      alignment: 9
+      pivot: {x: 0.83329856, y: 0.72160184}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf4ffab25cd3eb34a98c66945b3106fe
+      internalID: -2025921837333864742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Back_Gun2Dead
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 1859
+        width: 96
+        height: 67
+      alignment: 9
+      pivot: {x: 0.8590304, y: 0.75062126}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 492cda916813e0a4187a1e354e62a343
+      internalID: -4879176056055799904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Front_Gun1Dead
+      rect:
+        serializedVersion: 2
+        x: 1213
+        y: 1953
+        width: 99
+        height: 69
+      alignment: 9
+      pivot: {x: 0.8116665, y: 0.73064744}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec81dc840cf93548bf2bfc66e1f0a18
+      internalID: -8591484416470946656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss_Back_Gun1Dead
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 1952
+        width: 89
+        height: 74
+      alignment: 9
+      pivot: {x: 0.88049436, y: 0.70357203}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce28e15037e6fdb4597c8a159ee5afaf
+      internalID: -9126455644328002151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: c1db644974bf43e4d8c477e8a097ec52
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

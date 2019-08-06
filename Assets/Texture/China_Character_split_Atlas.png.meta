@@ -1,0 +1,832 @@
+fileFormatVersion: 2
+guid: 28d5fc1b1534dd440b5e3376ed2c236e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6438877458524065732
+    second: Chinese_Head
+  - first:
+      213: 9221580641475309440
+    second: Chinese_Torso
+  - first:
+      213: 7921337003980375363
+    second: Chinese_Jacket
+  - first:
+      213: 2721202141281613483
+    second: Chinese_Glasses
+  - first:
+      213: 6311543864438833341
+    second: Chinese_Hair_1
+  - first:
+      213: 318597608421100995
+    second: Chinese_Hair_2
+  - first:
+      213: 9172979448707527979
+    second: Chinese_Front_UpArm
+  - first:
+      213: 4392535138219477060
+    second: Chinese_Front_Arm
+  - first:
+      213: 5362148245744439103
+    second: Chinese_Belt
+  - first:
+      213: 3614712465483279968
+    second: Chinese_Front_Hand
+  - first:
+      213: 2472767688727183990
+    second: Chinese_Front_Hand_Finger2
+  - first:
+      213: 388560079563270040
+    second: Chinese_Front_Hand_Finger1
+  - first:
+      213: -7394897657802675656
+    second: Chinese_Front_Hand_Thumb
+  - first:
+      213: -7540445151926313271
+    second: Chinese_Back_Hand
+  - first:
+      213: 5337309540985264714
+    second: Chinese_Pelvis
+  - first:
+      213: 3340377358958707310
+    second: Chinese_Left_Upleg
+  - first:
+      213: -3932477625002709605
+    second: Chinese_Left_Leg
+  - first:
+      213: 7283817191422831605
+    second: Chinese_Left_Foot
+  - first:
+      213: 1371955233035396600
+    second: Chinese_Right_Upleg
+  - first:
+      213: -3795052664021846017
+    second: Chinese_Right_leg
+  - first:
+      213: -206276754364091966
+    second: Chinese_Right_Foot
+  - first:
+      213: -2524464168208221720
+    second: Chinese_Left_Buterffly
+  - first:
+      213: 6239500744233099406
+    second: Chinese_Right_Buterffly
+  - first:
+      213: -2516501612978998367
+    second: Chinese_Back_UpArm
+  - first:
+      213: -7757476159325557508
+    second: Chinese_Back_Arm
+  - first:
+      213: 1367000328995610738
+    second: Chinese_Back_Thumb
+  - first:
+      213: -545157568223232600
+    second: Chinese_Back_Hand_Finger1
+  - first:
+      213: 2903455182816933447
+    second: Chinese_Back_Hand_Finger2
+  - first:
+      213: -5504940980389245117
+    second: Chinese_Back_Hand_Finger3
+  - first:
+      213: -5961389532324113802
+    second: Chinese_Back_Hand_Finger4
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Chinese_Head
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 1354
+        width: 281
+        height: 336
+      alignment: 9
+      pivot: {x: 0.27711222, y: 0.2592294}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84ecfba87cc184b48b2856df37e67fa7
+      internalID: -6438877458524065732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinese_Torso
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 1110
+        width: 496
+        height: 525
+      alignment: 9
+      pivot: {x: 0.5559875, y: 0.04860282}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d5374fddebfb824f9a7158d598be585
+      internalID: 9221580641475309440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinese_Jacket
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 1011
+        width: 288
+        height: 319
+      alignment: 9
+      pivot: {x: 0.33221945, y: 0.3649887}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93423b507adc2544390f1b5155f1abc0
+      internalID: 7921337003980375363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinese_Glasses
+      rect:
+        serializedVersion: 2
+        x: 1579
+        y: 1324
+        width: 226
+        height: 112
+      alignment: 9
+      pivot: {x: 0.03481975, y: 0.83377403}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24b49b9f38c1dd84aac2675b5052a813
+      internalID: 2721202141281613483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinese_Hair_1
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 1869
+        width: 105
+        height: 124
+      alignment: 9
+      pivot: {x: 0.57796574, y: 0.13322498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f381e016d0120d549b9895565bd042a0
+      internalID: 6311543864438833341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinese_Hair_2
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 1847
+        width: 129
+        height: 135
+      alignment: 9
+      pivot: {x: 0.7940191, y: 0.16181731}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 944668480eb4e844897573c2204e67cc
+      internalID: 318597608421100995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinese_Front_UpArm
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 1708
+        width: 391
+        height: 314
+      alignment: 9
+      pivot: {x: 0.71720654, y: 0.89195263}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11b62d812f8e2c14f864346a739cf640
+      internalID: 9172979448707527979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinese_Front_Arm
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1439
+        width: 367
+        height: 239
+      alignment: 9
+      pivot: {x: 0.062672496, y: 0.33738345}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ae8bf8f02e305f43a91a22dd90e811d
+      internalID: 4392535138219477060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinese_Belt
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 990
+        width: 466
+        height: 177
+      alignment: 9
+      pivot: {x: 0.5047867, y: 0.092530675}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c28b56c0154a8d419524bdc98d63770
+      internalID: 5362148245744439103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinese_Front_Hand
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 1226
+        width: 113
+        height: 186
+      alignment: 9
+      pivot: {x: 0.21412523, y: 0.25014898}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 325d3f9080c042e41b911e8e0a52e33b
+      internalID: 3614712465483279968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinese_Front_Hand_Finger2
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1382
+        width: 26
+        height: 37
+      alignment: 9
+      pivot: {x: 0.4564033, y: 0.13238691}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1902270fcf22af4db5fc8af36492d81
+      internalID: 2472767688727183990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinese_Front_Hand_Finger1
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 1372
+        width: 25
+        height: 45
+      alignment: 9
+      pivot: {x: 0.49999878, y: 0.13477105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15e8bcf917ed7ec4c9c0bd12f72969cf
+      internalID: 388560079563270040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinese_Front_Hand_Thumb
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 1248
+        width: 74
+        height: 74
+      alignment: 9
+      pivot: {x: 0.21631436, y: 0.5359678}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a6b80b8637d78f47af580267a0412a8
+      internalID: -7394897657802675656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinese_Back_Hand
+      rect:
+        serializedVersion: 2
+        x: 1629
+        y: 1493
+        width: 143
+        height: 113
+      alignment: 9
+      pivot: {x: 0.15539807, y: 0.11624011}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d507bfb9f2289740b2981573aff89ed
+      internalID: -7540445151926313271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinese_Pelvis
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 730
+        width: 499
+        height: 212
+      alignment: 9
+      pivot: {x: 0.49137837, y: 0.90995264}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1768e0432cd3c2349a6546852b2a6584
+      internalID: 5337309540985264714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinese_Left_Upleg
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 696
+        width: 312
+        height: 260
+      alignment: 9
+      pivot: {x: 0.045968562, y: 0.5898182}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea91dbb27d7e4444b41722db4da7feb
+      internalID: 3340377358958707310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinese_Left_Leg
+      rect:
+        serializedVersion: 2
+        x: 1218
+        y: 451
+        width: 157
+        height: 231
+      alignment: 9
+      pivot: {x: 0.6414328, y: 0.95371556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca697b14fefc9e1489e64a54bc68380e
+      internalID: -3932477625002709605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinese_Left_Foot
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 360
+        width: 178
+        height: 79
+      alignment: 9
+      pivot: {x: 0.22523138, y: 0.84780884}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b7f59633ce9d59498b05443cd97d81d
+      internalID: 7283817191422831605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinese_Right_Upleg
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 699
+        width: 316
+        height: 245
+      alignment: 9
+      pivot: {x: 0.92386836, y: 0.6147013}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7d3558a84a43554d8482ff7b9e7a963
+      internalID: 1371955233035396600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinese_Right_leg
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 449
+        width: 140
+        height: 238
+      alignment: 9
+      pivot: {x: 0.35601676, y: 0.9319497}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64bc17c14cd64f14c9c43aa184bbbb6e
+      internalID: -3795052664021846017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinese_Right_Foot
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 361
+        width: 182
+        height: 77
+      alignment: 9
+      pivot: {x: 0.78531134, y: 0.8090876}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbd866d4c72c48e4285d184f3b5198dd
+      internalID: -206276754364091966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinese_Left_Buterffly
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 329
+        width: 255
+        height: 359
+      alignment: 9
+      pivot: {x: 0.09626441, y: 0.5372809}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de4794bcdf9e65049b6c48837477b06f
+      internalID: -2524464168208221720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinese_Right_Buterffly
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 328
+        width: 255
+        height: 356
+      alignment: 9
+      pivot: {x: 0.9239229, y: 0.55783886}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76b2825912b36a7419bc964463a1c52f
+      internalID: 6239500744233099406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinese_Back_UpArm
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 1744
+        width: 408
+        height: 236
+      alignment: 9
+      pivot: {x: 0.12281051, y: 0.87698776}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13cc33d774f18c64e9b988d30d0201ba
+      internalID: -2516501612978998367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinese_Back_Arm
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 1756
+        width: 311
+        height: 246
+      alignment: 9
+      pivot: {x: 0.06435853, y: 0.34264243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18d8523e2ccfaae459ee200eb5f353a6
+      internalID: -7757476159325557508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinese_Back_Thumb
+      rect:
+        serializedVersion: 2
+        x: 1804
+        y: 1516
+        width: 43
+        height: 27
+      alignment: 9
+      pivot: {x: 0.11123444, y: 0.51769114}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec8c5fe8cd234b048bece392b92e7671
+      internalID: 1367000328995610738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinese_Back_Hand_Finger1
+      rect:
+        serializedVersion: 2
+        x: 1675
+        y: 1632
+        width: 24
+        height: 51
+      alignment: 9
+      pivot: {x: 0.5, y: 0.09925992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40af06894e4a7f743934c277333af69d
+      internalID: -545157568223232600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinese_Back_Hand_Finger2
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 1643
+        width: 24
+        height: 40
+      alignment: 9
+      pivot: {x: 0.50000507, y: 0.20489196}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 039b395bbe356404fb192150ac3d17f9
+      internalID: 2903455182816933447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinese_Back_Hand_Finger3
+      rect:
+        serializedVersion: 2
+        x: 1753
+        y: 1631
+        width: 25
+        height: 50
+      alignment: 9
+      pivot: {x: 0.48922363, y: 0.112546384}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 179783edbbc64224c80bcf9d4cbb0f25
+      internalID: -5504940980389245117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chinese_Back_Hand_Finger4
+      rect:
+        serializedVersion: 2
+        x: 1709
+        y: 1640
+        width: 27
+        height: 43
+      alignment: 9
+      pivot: {x: 0.49999547, y: 0.16210653}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b14a9dfbca21cad4cb93afa22176cc7c
+      internalID: -5961389532324113802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 74a91c6498ad6dc48a3b5854b882d0d0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

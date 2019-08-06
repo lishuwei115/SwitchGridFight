@@ -1,0 +1,640 @@
+fileFormatVersion: 2
+guid: a4f0ea82af949114c8cd1a15c9d6d401
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7784908200735952502
+    second: Bluemoon_Head
+  - first:
+      213: -8859111228349268704
+    second: Bluemoon_Back_UpArm
+  - first:
+      213: 1598689362786828628
+    second: Bluemoon_Back_Arm
+  - first:
+      213: -6125721681377135978
+    second: Bluemoon_Front_UpArm
+  - first:
+      213: 8996484514452258311
+    second: Bluemoon_Front_Arm
+  - first:
+      213: -3582313126815381110
+    second: Bluemoon_Torso
+  - first:
+      213: 6032989233414392672
+    second: Bluemoon_neck
+  - first:
+      213: -174121439963860879
+    second: Bluemoon_waist
+  - first:
+      213: -7236996542586286459
+    second: Bluemoon_Right_UpLeg
+  - first:
+      213: 849625151973770164
+    second: Bluemoon_Left_UpLeg
+  - first:
+      213: -5685678397764094791
+    second: Bluemoon_EarRing
+  - first:
+      213: 590155077979359102
+    second: Character_split_Atlas_0
+  - first:
+      213: 9085904439344107999
+    second: Bluemoon_BackDress
+  - first:
+      213: 3541740669690603875
+    second: Bluemoon_FrontDress
+  - first:
+      213: -7429418817612647989
+    second: Bluemoon_FrontDress_Botton
+  - first:
+      213: 5559269631938507764
+    second: Bluemoon_BackDress_Botton
+  - first:
+      213: -5608642546911193856
+    second: Bluemoon_DressRing
+  - first:
+      213: 1621022311851235200
+    second: Bluemoon_Right_Leg
+  - first:
+      213: 2491811594058664188
+    second: Bluemoon_Left_Leg
+  - first:
+      213: 9051981848794288963
+    second: Bluemoon_Right_Foot
+  - first:
+      213: -5029786479573569418
+    second: Bluemoon_Left_Foot
+  - first:
+      213: -7488301150137157364
+    second: Bluemoon_Spear
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bluemoon_Head
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 1891
+        width: 133
+        height: 128
+      alignment: 9
+      pivot: {x: 0.39372817, y: 0.37632656}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e2e8520e7892564cb8b27fec190c643
+      internalID: 7784908200735952502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bluemoon_Back_UpArm
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 1724
+        width: 201
+        height: 92
+      alignment: 9
+      pivot: {x: 0.122058734, y: 0.42860743}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7e3a52988ee2e846ac0877352da57db
+      internalID: -8859111228349268704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bluemoon_Back_Arm
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 1731
+        width: 286
+        height: 81
+      alignment: 9
+      pivot: {x: 0.07382074, y: 0.5218099}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cb1f39552b83db4d8dbfac0b0ba8ed4
+      internalID: 1598689362786828628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bluemoon_Front_UpArm
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 1584
+        width: 155
+        height: 70
+      alignment: 9
+      pivot: {x: 0.8604839, y: 0.8618722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9bef729bd4c55147aa0636941cc4d2c
+      internalID: -6125721681377135978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bluemoon_Front_Arm
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1579
+        width: 318
+        height: 82
+      alignment: 9
+      pivot: {x: 0.074418746, y: 0.4467595}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 155d551e003086d499bcd79e606d51e2
+      internalID: 8996484514452258311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bluemoon_Torso
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 1456
+        width: 199
+        height: 292
+      alignment: 9
+      pivot: {x: 0.47941765, y: 0.04937744}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9074a6607febf3048bb282ef434e78b1
+      internalID: -3582313126815381110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bluemoon_neck
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 1704
+        width: 76
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.083305515}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e6f42bd82331f04db4877a776ba4c8a
+      internalID: 6032989233414392672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bluemoon_waist
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 1598
+        width: 150
+        height: 171
+      alignment: 9
+      pivot: {x: 0.49623618, y: 0.82020116}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 908d9abffea97a7469c69f5a82ef073a
+      internalID: -174121439963860879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bluemoon_Right_UpLeg
+      rect:
+        serializedVersion: 2
+        x: 1346
+        y: 1498
+        width: 105
+        height: 292
+      alignment: 9
+      pivot: {x: 0.5163923, y: 0.9342321}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a68bbc5992c810e439d713230be37e57
+      internalID: -7236996542586286459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bluemoon_Left_UpLeg
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 1515
+        width: 126
+        height: 288
+      alignment: 9
+      pivot: {x: 0.5591547, y: 0.92888343}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a13c967016d1c74697e4107a7c6d2de
+      internalID: 849625151973770164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bluemoon_EarRing
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 1899
+        width: 47
+        height: 52
+      alignment: 9
+      pivot: {x: 0.57280844, y: 0.87838745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddf41d6876db38b4fa9e1ace1bee714a
+      internalID: -5685678397764094791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_split_Atlas_0
+      rect:
+        serializedVersion: 2
+        x: 1715
+        y: 1871
+        width: 2
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 441e71b8f0056de4f85b68b52e6265c0
+      internalID: 590155077979359102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bluemoon_BackDress
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1123
+        width: 120
+        height: 190
+      alignment: 9
+      pivot: {x: 0.39669576, y: 0.9086387}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2354941e7a5482e49b92b000dc50c53b
+      internalID: 9085904439344107999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bluemoon_FrontDress
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 1089
+        width: 135
+        height: 205
+      alignment: 9
+      pivot: {x: 0.52416474, y: 0.920113}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b24953803415b749a9a145e0002af26
+      internalID: 3541740669690603875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bluemoon_FrontDress_Botton
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 878
+        width: 126
+        height: 195
+      alignment: 9
+      pivot: {x: 0.525891, y: 0.928274}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ae3621a333f4874f924df4471f86c0b
+      internalID: -7429418817612647989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bluemoon_BackDress_Botton
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 912
+        width: 131
+        height: 202
+      alignment: 9
+      pivot: {x: 0.41981727, y: 0.93140376}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c135806a45b3c84d942925b2508fb6c
+      internalID: 5559269631938507764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bluemoon_DressRing
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 1338
+        width: 91
+        height: 65
+      alignment: 9
+      pivot: {x: 0.5063577, y: 0.63350546}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c569f0c19d4ab9a4c98b15e17114b80f
+      internalID: -5608642546911193856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bluemoon_Right_Leg
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 1149
+        width: 95
+        height: 235
+      alignment: 9
+      pivot: {x: 0.46955246, y: 0.92096025}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e46a85f9964dcb4dac61d3c1df6f917
+      internalID: 1621022311851235200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bluemoon_Left_Leg
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 1171
+        width: 87
+        height: 223
+      alignment: 9
+      pivot: {x: 0.49452016, y: 0.88054407}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ed7a47cafafd3c4482139f8d4b02702
+      internalID: 2491811594058664188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bluemoon_Right_Foot
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 1278
+        width: 75
+        height: 115
+      alignment: 9
+      pivot: {x: 0.6398462, y: 0.7238642}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eea1b70a9e31ca41834222eeb91053c
+      internalID: 9051981848794288963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bluemoon_Left_Foot
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 1302
+        width: 76
+        height: 77
+      alignment: 9
+      pivot: {x: 0.27417153, y: 0.8405349}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64caa4e62cd58d345b3863b3f591b708
+      internalID: -5029786479573569418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bluemoon_Spear
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1859
+        width: 1363
+        height: 189
+      alignment: 9
+      pivot: {x: 0.30512765, y: 0.50546926}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f495f87cd6a5740964502166d7e885
+      internalID: -7488301150137157364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 721b4afa2da751746924afe46483ac83
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

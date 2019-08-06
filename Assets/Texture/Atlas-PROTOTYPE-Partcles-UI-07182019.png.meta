@@ -1,0 +1,614 @@
+fileFormatVersion: 2
+guid: dde633c45ec798446853202f421cbc89
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4970778256640945420
+    second: Atlas-PROTOTYPE-Partcles-UI-07182019_0
+  - first:
+      213: 330328525318769821
+    second: Atlas-PROTOTYPE-Partcles-UI-07182019_1
+  - first:
+      213: 5447142825936097736
+    second: Atlas-PROTOTYPE-Partcles-UI-07182019_2
+  - first:
+      213: -7254304885226860106
+    second: Atlas-PROTOTYPE-Partcles-UI-07182019_3
+  - first:
+      213: 1260720069923150928
+    second: Atlas-PROTOTYPE-Partcles-UI-07182019_4
+  - first:
+      213: 5567694776849231568
+    second: Atlas-PROTOTYPE-Partcles-UI-07182019_5
+  - first:
+      213: -5957988443211305394
+    second: Atlas-PROTOTYPE-Partcles-UI-07182019_6
+  - first:
+      213: 6158863297963244126
+    second: Atlas-PROTOTYPE-Partcles-UI-07182019_7
+  - first:
+      213: 2406437949267316998
+    second: Atlas-PROTOTYPE-Partcles-UI-07182019_8
+  - first:
+      213: -7472101309245002842
+    second: Atlas-PROTOTYPE-Partcles-UI-07182019_9
+  - first:
+      213: -831212497503638920
+    second: Atlas-PROTOTYPE-Partcles-UI-07182019_10
+  - first:
+      213: 1731716039510921309
+    second: Atlas-PROTOTYPE-Partcles-UI-07182019_11
+  - first:
+      213: -7114512428611549133
+    second: Atlas-PROTOTYPE-Partcles-UI-07182019_12
+  - first:
+      213: 3025426699699144554
+    second: Atlas-PROTOTYPE-Partcles-UI-07182019_13
+  - first:
+      213: 6982891871827919649
+    second: Atlas-PROTOTYPE-Partcles-UI-07182019_14
+  - first:
+      213: -8721821977083752990
+    second: Atlas-PROTOTYPE-Partcles-UI-07182019_Potion01
+  - first:
+      213: -5051273617141864100
+    second: Atlas-PROTOTYPE-Partcles-UI-07182019_Potion02
+  - first:
+      213: 3777863571873714734
+    second: Atlas-PROTOTYPE-Partcles-UI-07182019_Potion03
+  - first:
+      213: -7423839203213690883
+    second: Atlas-PROTOTYPE-Partcles-UI-07182019_pOWERuP-bg
+  - first:
+      213: 8459569101748769764
+    second: Atlas-PROTOTYPE-Partcles-UI-07182019_pOWERuP-bg2
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Atlas-PROTOTYPE-Partcles-UI-07182019_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58dff5e3f5bd0bd4ab1035ed868113fb
+      internalID: -4970778256640945420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas-PROTOTYPE-Partcles-UI-07182019_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 964
+        width: 66
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1a1d91b0e79c0440a85591022c5b212
+      internalID: 330328525318769821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas-PROTOTYPE-Partcles-UI-07182019_2
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 320
+        width: 54
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 083fbeb692db5694cb3801743e831162
+      internalID: 5447142825936097736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas-PROTOTYPE-Partcles-UI-07182019_3
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 322
+        width: 60
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1d292d6072f9bf469d16f58c7b93a62
+      internalID: -7254304885226860106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas-PROTOTYPE-Partcles-UI-07182019_4
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 203
+        width: 250
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 137d18ee805f0d549861dd8172f45ae2
+      internalID: 1260720069923150928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas-PROTOTYPE-Partcles-UI-07182019_5
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 198
+        width: 375
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c8a1f539bda3994485bfecb2a293812
+      internalID: 5567694776849231568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas-PROTOTYPE-Partcles-UI-07182019_6
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 66
+        width: 338
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dd5c565a60e1b44ba676a686dbeb3ce
+      internalID: -5957988443211305394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas-PROTOTYPE-Partcles-UI-07182019_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 319
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 087e39516edb6c143a3edbb240101412
+      internalID: 6158863297963244126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas-PROTOTYPE-Partcles-UI-07182019_8
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 14
+        width: 121
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83e1350f6e0ac9b47ac07412feaf1b39
+      internalID: 2406437949267316998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas-PROTOTYPE-Partcles-UI-07182019_9
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 0
+        width: 330
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e508db01191c9ac40bb6b56c6ef1e79f
+      internalID: -7472101309245002842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas-PROTOTYPE-Partcles-UI-07182019_10
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 867
+        width: 142
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f1666fc288740840b7a2d4394f4af43
+      internalID: -831212497503638920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas-PROTOTYPE-Partcles-UI-07182019_11
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 852
+        width: 158
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dabe533611daaed4095c633decff8a11
+      internalID: 1731716039510921309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas-PROTOTYPE-Partcles-UI-07182019_12
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 785
+        width: 32
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92e3e98186ae7ae4989564c349b85911
+      internalID: -7114512428611549133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas-PROTOTYPE-Partcles-UI-07182019_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12bc9d06fe4f2184eb46de7973913ed3
+      internalID: 3025426699699144554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas-PROTOTYPE-Partcles-UI-07182019_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae08d459f36a24947982a6449bafd1af
+      internalID: 6982891871827919649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas-PROTOTYPE-Partcles-UI-07182019_Potion01
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 452
+        width: 57
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a6d222491abb0441ab16c431a206ba8
+      internalID: -8721821977083752990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas-PROTOTYPE-Partcles-UI-07182019_Potion02
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 452
+        width: 57
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9e357a8dd8fe6841ba645c6caf7176f
+      internalID: -5051273617141864100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas-PROTOTYPE-Partcles-UI-07182019_Potion03
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 452
+        width: 57
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1454e7d27a7223d4485d5a01a8eb818c
+      internalID: 3777863571873714734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas-PROTOTYPE-Partcles-UI-07182019_pOWERuP-bg
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 562
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea8856e2601170c4990071a4bb899bfe
+      internalID: -7423839203213690883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas-PROTOTYPE-Partcles-UI-07182019_pOWERuP-bg2
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 562
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c4daf3b7d8e9144d9097fdc216671f9
+      internalID: 8459569101748769764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 164a2d4dd7594024a9d4b63a5b11f10e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
