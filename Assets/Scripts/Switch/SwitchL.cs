@@ -30,8 +30,12 @@ public class SwitchL : MonoBehaviour
     {
         // GetInput();
         //ProcessInput();
-        Vector2 joystic1 = new Vector2(Input.GetAxis("SwitchLeftJoysticHorizontal"), Input.GetAxis("SwitchLeftJoysticVertical"));
-        Vector2 joystic2 = new Vector2(Input.GetAxis("SwitchRightJoysticHorizontal"), Input.GetAxis("SwitchRightJoysticVertical"));
+        //Vector2 joystic1 = new Vector2(Input.GetAxis("SwitchLeftJoysticHorizontal"), Input.GetAxis("SwitchLeftJoysticVertical"));
+       // Vector2 joystic2 = new Vector2(Input.GetAxis("SwitchRightJoysticHorizontal"), Input.GetAxis("SwitchRightJoysticVertical"));
+
+        Vector2 joystic1 = new Vector2(Input.GetAxis("SwitchRightAbtn"), Input.GetAxis("SwitchRightBbtn"));
+        Vector2 joystic2 = new Vector2(Input.GetAxis("SwitchRightXbtn"), Input.GetAxis("SwitchRightYbtn"));
+
         Debug.Log("Joystic1   " + joystic1);
         Debug.Log("Joystic2   " + joystic2);
 
