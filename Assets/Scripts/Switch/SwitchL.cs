@@ -65,7 +65,22 @@ public class SwitchL : MonoBehaviour
         {
             Debug.Log("Joystic2   Y");
         }
-
+        else if (Input.GetButton("SwitchLeftLArrowbtn"))
+        {
+            Debug.Log("Joystic2   L");
+        }
+        else if (Input.GetButton("SwitchLeftRArrowbtn"))
+        {
+            Debug.Log("Joystic2   R");
+        }
+        else if (Input.GetButton("SwitchLeftUArrowbtn"))
+        {
+            Debug.Log("Joystic2   U");
+        }
+        else if (Input.GetButton("SwitchLeftDArrowbtn"))
+        {
+            Debug.Log("Joystic2   D");
+        }
 
     }
 

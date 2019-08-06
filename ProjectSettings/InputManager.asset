@@ -8292,7 +8292,7 @@ InputManager:
     invert: 0
     type: 0
     axis: 4
-    joyNum: 1
+    joyNum: 2
   - serializedVersion: 3
     m_Name: SwitchRightBbtn
     descriptiveName: SwitchRB
@@ -8324,7 +8324,71 @@ InputManager:
     invert: 0
     type: 0
     axis: 4
+    joyNum: 2
+  - serializedVersion: 3
+    m_Name: SwitchLeftLArrowbtn
+    descriptiveName: SwitchLL
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: joystick 1 button 4
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 0
+    dead: 0
+    sensitivity: 1000
+    snap: 0
+    invert: 0
+    type: 0
+    axis: 4
     joyNum: 1
+  - serializedVersion: 3
+    m_Name: SwitchLeftRArrowbtn
+    descriptiveName: SwitchLR
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: joystick 1 button 3
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 0
+    dead: 0
+    sensitivity: 1000
+    snap: 0
+    invert: 0
+    type: 0
+    axis: 4
+    joyNum: 1
+  - serializedVersion: 3
+    m_Name: SwitchLeftUArrowbtn
+    descriptiveName: SwitchLU
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: joystick 1 button 5
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 0
+    dead: 0
+    sensitivity: 1000
+    snap: 0
+    invert: 0
+    type: 0
+    axis: 4
+    joyNum: 1
+  - serializedVersion: 3
+    m_Name: SwitchLeftDArrowbtn
+    descriptiveName: SwitchLD
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: joystick 1 button 2
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 0
+    dead: 0
+    sensitivity: 1000
+    snap: 0
+    invert: 0
+    type: 0
+    axis: 4
+    joyNum: 2
   - serializedVersion: 3
     m_Name: Axis 1
     descriptiveName: 
