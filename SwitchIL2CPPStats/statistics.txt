@@ -1,49 +1,49 @@
 ----IL2CPP Arguments----
---convert-to-cpp --emit-null-checks --enable-stacktrace --enable-array-bounds-check --dotnetprofile=unityaot --compile-cpp --platform=Switch --architecture=ARM64 --configuration=Release --outputpath=C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Native\SwitchPlayer.nss --cachedirectory=C:/Users/Dev/Documents/GridFight/Assets/../SwitchIL2CPPCache/il2cpp_cache --plugin=C:/Program Files/Unity2019.1.4/Editor/Data/PlaybackEngines/Switch/Tools\Il2CppPlugin.dll --additional-include-directories=C:\Program Files\Unity2019.1.4\Editor\Data\PlaybackEngines\Switch\Tools/il2cpp\bdwgc/include --additional-include-directories=C:\Program Files\Unity2019.1.4\Editor\Data\PlaybackEngines\Switch\Tools/il2cpp\libil2cpp/include --verbose --enable-stats --stats-output-dir=C:/Users/Dev/Documents/GridFight/Assets/../SwitchIL2CPPStats --libil2cpp-static --additional-defines=DEBUGMODE=1,UNITY_RELEASE=0,IL2CPP_USE_SOCKET_MULTIPLEX_IO=1 --configuration=Release --profiler-report --map-file-parser=C:/Program Files/Unity2019.1.4/Editor/Data/Tools/MapFileParser/MapFileParser.exe --directory=C:/Users/Dev/Documents/GridFight/Temp/StagingArea/Managed --generatedcppdir=C:/Users/Dev/Documents/GridFight/Temp/StagingArea/il2cppOutput
+--convert-to-cpp --emit-null-checks --enable-stacktrace --enable-array-bounds-check --dotnetprofile=unityaot --compile-cpp --platform=Switch --architecture=ARM64 --configuration=Release --outputpath=C:\Users\Dev\Documents\PlaytraGames\SwutchGridFight_new\Temp\StagingArea\Native\SwitchPlayer.nss --cachedirectory=C:/Users/Dev/Documents/PlaytraGames/SwutchGridFight_new/Assets/../SwitchIL2CPPCache/il2cpp_cache --plugin=C:/Program Files/Unity2019.1.4/Editor/Data/PlaybackEngines/Switch/Tools\Il2CppPlugin.dll --additional-include-directories=C:\Program Files\Unity2019.1.4\Editor\Data\PlaybackEngines\Switch\Tools/il2cpp\bdwgc/include --additional-include-directories=C:\Program Files\Unity2019.1.4\Editor\Data\PlaybackEngines\Switch\Tools/il2cpp\libil2cpp/include --verbose --enable-stats --stats-output-dir=C:/Users/Dev/Documents/PlaytraGames/SwutchGridFight_new/Assets/../SwitchIL2CPPStats --libil2cpp-static --additional-defines=DEBUGMODE=1,UNITY_RELEASE=0,IL2CPP_USE_SOCKET_MULTIPLEX_IO=1 --configuration=Release --profiler-report --map-file-parser=C:/Program Files/Unity2019.1.4/Editor/Data/Tools/MapFileParser/MapFileParser.exe --directory=C:/Users/Dev/Documents/PlaytraGames/SwutchGridFight_new/Temp/StagingArea/Managed --generatedcppdir=C:/Users/Dev/Documents/PlaytraGames/SwutchGridFight_new/Temp/StagingArea/il2cppOutput
 
 ----Assemblies Converted-----
-	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\Assembly-CSharp.dll
-	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\Mono.Security.dll
-	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\mscorlib.dll
-	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\Rewired_Core.dll
-	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\System.Configuration.dll
-	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\System.Core.dll
-	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\System.dll
-	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\System.Xml.dll
-	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\Unity.TextMeshPro.dll
-	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.AIModule.dll
-	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.AnimationModule.dll
-	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.AssetBundleModule.dll
-	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.AudioModule.dll
-	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.CoreModule.dll
-	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.DirectorModule.dll
-	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.dll
-	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.GridModule.dll
-	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.IMGUIModule.dll
-	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.InputModule.dll
-	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.ParticleSystemModule.dll
-	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.Physics2DModule.dll
-	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.PhysicsModule.dll
-	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.SharedInternalsModule.dll
-	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.SwitchModule.dll
-	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.TerrainModule.dll
-	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.TextCoreModule.dll
-	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.TextRenderingModule.dll
-	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.TilemapModule.dll
-	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.UI.dll
-	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.UIElementsModule.dll
-	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.UIModule.dll
-	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.UnityWebRequestModule.dll
-	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.VFXModule.dll
-	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.VideoModule.dll
-	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.VRModule.dll
-	C:\Users\Dev\Documents\GridFight\Temp\StagingArea\Managed\UnityEngine.XRModule.dll
+	C:\Users\Dev\Documents\PlaytraGames\SwutchGridFight_new\Temp\StagingArea\Managed\Assembly-CSharp.dll
+	C:\Users\Dev\Documents\PlaytraGames\SwutchGridFight_new\Temp\StagingArea\Managed\Mono.Security.dll
+	C:\Users\Dev\Documents\PlaytraGames\SwutchGridFight_new\Temp\StagingArea\Managed\mscorlib.dll
+	C:\Users\Dev\Documents\PlaytraGames\SwutchGridFight_new\Temp\StagingArea\Managed\Rewired_Core.dll
+	C:\Users\Dev\Documents\PlaytraGames\SwutchGridFight_new\Temp\StagingArea\Managed\System.Configuration.dll
+	C:\Users\Dev\Documents\PlaytraGames\SwutchGridFight_new\Temp\StagingArea\Managed\System.Core.dll
+	C:\Users\Dev\Documents\PlaytraGames\SwutchGridFight_new\Temp\StagingArea\Managed\System.dll
+	C:\Users\Dev\Documents\PlaytraGames\SwutchGridFight_new\Temp\StagingArea\Managed\System.Xml.dll
+	C:\Users\Dev\Documents\PlaytraGames\SwutchGridFight_new\Temp\StagingArea\Managed\Unity.TextMeshPro.dll
+	C:\Users\Dev\Documents\PlaytraGames\SwutchGridFight_new\Temp\StagingArea\Managed\UnityEngine.AIModule.dll
+	C:\Users\Dev\Documents\PlaytraGames\SwutchGridFight_new\Temp\StagingArea\Managed\UnityEngine.AnimationModule.dll
+	C:\Users\Dev\Documents\PlaytraGames\SwutchGridFight_new\Temp\StagingArea\Managed\UnityEngine.AssetBundleModule.dll
+	C:\Users\Dev\Documents\PlaytraGames\SwutchGridFight_new\Temp\StagingArea\Managed\UnityEngine.AudioModule.dll
+	C:\Users\Dev\Documents\PlaytraGames\SwutchGridFight_new\Temp\StagingArea\Managed\UnityEngine.CoreModule.dll
+	C:\Users\Dev\Documents\PlaytraGames\SwutchGridFight_new\Temp\StagingArea\Managed\UnityEngine.DirectorModule.dll
+	C:\Users\Dev\Documents\PlaytraGames\SwutchGridFight_new\Temp\StagingArea\Managed\UnityEngine.dll
+	C:\Users\Dev\Documents\PlaytraGames\SwutchGridFight_new\Temp\StagingArea\Managed\UnityEngine.GridModule.dll
+	C:\Users\Dev\Documents\PlaytraGames\SwutchGridFight_new\Temp\StagingArea\Managed\UnityEngine.IMGUIModule.dll
+	C:\Users\Dev\Documents\PlaytraGames\SwutchGridFight_new\Temp\StagingArea\Managed\UnityEngine.InputModule.dll
+	C:\Users\Dev\Documents\PlaytraGames\SwutchGridFight_new\Temp\StagingArea\Managed\UnityEngine.ParticleSystemModule.dll
+	C:\Users\Dev\Documents\PlaytraGames\SwutchGridFight_new\Temp\StagingArea\Managed\UnityEngine.Physics2DModule.dll
+	C:\Users\Dev\Documents\PlaytraGames\SwutchGridFight_new\Temp\StagingArea\Managed\UnityEngine.PhysicsModule.dll
+	C:\Users\Dev\Documents\PlaytraGames\SwutchGridFight_new\Temp\StagingArea\Managed\UnityEngine.SharedInternalsModule.dll
+	C:\Users\Dev\Documents\PlaytraGames\SwutchGridFight_new\Temp\StagingArea\Managed\UnityEngine.SwitchModule.dll
+	C:\Users\Dev\Documents\PlaytraGames\SwutchGridFight_new\Temp\StagingArea\Managed\UnityEngine.TerrainModule.dll
+	C:\Users\Dev\Documents\PlaytraGames\SwutchGridFight_new\Temp\StagingArea\Managed\UnityEngine.TextCoreModule.dll
+	C:\Users\Dev\Documents\PlaytraGames\SwutchGridFight_new\Temp\StagingArea\Managed\UnityEngine.TextRenderingModule.dll
+	C:\Users\Dev\Documents\PlaytraGames\SwutchGridFight_new\Temp\StagingArea\Managed\UnityEngine.TilemapModule.dll
+	C:\Users\Dev\Documents\PlaytraGames\SwutchGridFight_new\Temp\StagingArea\Managed\UnityEngine.UI.dll
+	C:\Users\Dev\Documents\PlaytraGames\SwutchGridFight_new\Temp\StagingArea\Managed\UnityEngine.UIElementsModule.dll
+	C:\Users\Dev\Documents\PlaytraGames\SwutchGridFight_new\Temp\StagingArea\Managed\UnityEngine.UIModule.dll
+	C:\Users\Dev\Documents\PlaytraGames\SwutchGridFight_new\Temp\StagingArea\Managed\UnityEngine.UnityWebRequestModule.dll
+	C:\Users\Dev\Documents\PlaytraGames\SwutchGridFight_new\Temp\StagingArea\Managed\UnityEngine.VFXModule.dll
+	C:\Users\Dev\Documents\PlaytraGames\SwutchGridFight_new\Temp\StagingArea\Managed\UnityEngine.VideoModule.dll
+	C:\Users\Dev\Documents\PlaytraGames\SwutchGridFight_new\Temp\StagingArea\Managed\UnityEngine.VRModule.dll
+	C:\Users\Dev\Documents\PlaytraGames\SwutchGridFight_new\Temp\StagingArea\Managed\UnityEngine.XRModule.dll
 
 ----- il2cpp Statistics -----
 General:
-	Conversion Time: 33.147 s
+	Conversion Time: 33.282 s
 	Files Written: 215
-	String Literals: 7429
+	String Literals: 7433
 Methods:
 	Total Methods: 55546
 	Non-Generic Methods: 37608
@@ -52,9 +52,9 @@ Methods:
 	Shared Methods: 17894
 	Methods with Tail Calls : 0
 Metadata:
-	Total: 6,161.28 kb
-	String Literals: 58.04 kb
-	String Literal Data: 211.50 kb
+	Total: 6,161.46 kb
+	String Literals: 58.07 kb
+	String Literal Data: 211.62 kb
 	Metadata Strings: 839.74 kb
 	Events: 3.75 kb
 	Properties: 176.64 kb
@@ -76,7 +76,7 @@ Metadata:
 	Images: 1.41 kb
 	Assemblies: 2.39 kb
 	Metadata Usage Lists: 436.44 kb
-	Metadata Usage Pairs: 999.26 kb
+	Metadata Usage Pairs: 999.29 kb
 	Field Refs: 1.88 kb
 	Referenced Assemblies: 0.70 kb
 	Attribute Types Ranges: 99.47 kb
@@ -86,7 +86,7 @@ Metadata:
 	Windows Runtime type names: 0.00 kb
 	Exported Types: 3.01 kb
 Codegen:
-	NullChecks : 115421
+	NullChecks : 115423
 Hashing:
 	String Literal Hash Collisions : 0
 	Type Hash Collisions : 0
@@ -109,48 +109,48 @@ Compilation:
 
 
 ----Assembly Conversion Times----
-	Convert Assembly-CSharp (948.220336914063ms)
-	Convert Mono.Security (147.384902954102ms)
-	Convert mscorlib (3632.52734375ms)
-	Convert Rewired_Core (4300.43017578125ms)
-	Convert System (1209.51513671875ms)
-	Convert System.Configuration (36.2344017028809ms)
-	Convert System.Core (34.24169921875ms)
-	Convert System.Xml (2070.06567382813ms)
-	Convert Unity.TextMeshPro (1294.98950195313ms)
-	Convert UnityEngine (3.95090007781982ms)
-	Convert UnityEngine.AIModule (8.94950008392334ms)
-	Convert UnityEngine.AnimationModule (40.5124015808105ms)
-	Convert UnityEngine.AssetBundleModule (9.19820022583008ms)
-	Convert UnityEngine.AudioModule (14.923900604248ms)
-	Convert UnityEngine.CoreModule (406.29541015625ms)
-	Convert UnityEngine.DirectorModule (7.34810018539429ms)
-	Convert UnityEngine.GridModule (5.87090015411377ms)
-	Convert UnityEngine.IMGUIModule (121.936599731445ms)
-	Convert UnityEngine.InputModule (13.7524003982544ms)
-	Convert UnityEngine.ParticleSystemModule (13.543399810791ms)
-	Convert UnityEngine.Physics2DModule (29.3664989471436ms)
-	Convert UnityEngine.PhysicsModule (23.3453998565674ms)
-	Convert UnityEngine.SharedInternalsModule (19.895299911499ms)
-	Convert UnityEngine.SwitchModule (20.4195995330811ms)
-	Convert UnityEngine.TerrainModule (24.5167999267578ms)
-	Convert UnityEngine.TextCoreModule (31.070499420166ms)
-	Convert UnityEngine.TextRenderingModule (30.1070022583008ms)
-	Convert UnityEngine.TilemapModule (22.1404991149902ms)
-	Convert UnityEngine.UI (968.174926757813ms)
-	Convert UnityEngine.UIElementsModule (11.5188999176025ms)
-	Convert UnityEngine.UIModule (31.1920986175537ms)
-	Convert UnityEngine.UnityWebRequestModule (8.29069995880127ms)
-	Convert UnityEngine.VFXModule (9.78040027618408ms)
-	Convert UnityEngine.VideoModule (12.1232995986938ms)
-	Convert UnityEngine.VRModule (7.93480014801025ms)
-	Convert UnityEngine.XRModule (38.7378997802734ms)
+	Convert Assembly-CSharp (1021.3623046875ms)
+	Convert Mono.Security (145.832290649414ms)
+	Convert mscorlib (3495.56811523438ms)
+	Convert Rewired_Core (4427.11328125ms)
+	Convert System (1160.07641601563ms)
+	Convert System.Configuration (14.9440002441406ms)
+	Convert System.Core (30.7264003753662ms)
+	Convert System.Xml (2120.86743164063ms)
+	Convert Unity.TextMeshPro (1259.20642089844ms)
+	Convert UnityEngine (3.33599996566772ms)
+	Convert UnityEngine.AIModule (8.38459968566895ms)
+	Convert UnityEngine.AnimationModule (40.5110015869141ms)
+	Convert UnityEngine.AssetBundleModule (9.89739990234375ms)
+	Convert UnityEngine.AudioModule (15.0635995864868ms)
+	Convert UnityEngine.CoreModule (391.174499511719ms)
+	Convert UnityEngine.DirectorModule (7.42689990997314ms)
+	Convert UnityEngine.GridModule (5.9951000213623ms)
+	Convert UnityEngine.IMGUIModule (124.641304016113ms)
+	Convert UnityEngine.InputModule (12.957799911499ms)
+	Convert UnityEngine.ParticleSystemModule (13.2953996658325ms)
+	Convert UnityEngine.Physics2DModule (29.7656002044678ms)
+	Convert UnityEngine.PhysicsModule (23.7764987945557ms)
+	Convert UnityEngine.SharedInternalsModule (20.5401000976563ms)
+	Convert UnityEngine.SwitchModule (20.7049999237061ms)
+	Convert UnityEngine.TerrainModule (25.5806007385254ms)
+	Convert UnityEngine.TextCoreModule (31.1907997131348ms)
+	Convert UnityEngine.TextRenderingModule (48.5004005432129ms)
+	Convert UnityEngine.TilemapModule (21.2082004547119ms)
+	Convert UnityEngine.UI (981.617065429688ms)
+	Convert UnityEngine.UIElementsModule (11.670599937439ms)
+	Convert UnityEngine.UIModule (31.0895004272461ms)
+	Convert UnityEngine.UnityWebRequestModule (8.09640026092529ms)
+	Convert UnityEngine.VFXModule (9.89669990539551ms)
+	Convert UnityEngine.VideoModule (11.9829998016357ms)
+	Convert UnityEngine.VRModule (7.2463002204895ms)
+	Convert UnityEngine.XRModule (39.233699798584ms)
 
 ----Misc Timing----
-	PreProcessStage: 667.500366210938
+	PreProcessStage: 678.770385742188
 	GenericsCollector.Collect: None
-	WriteGenerics: 6936.05517578125
-	AllAssemblyConversion: 15998.513671875
+	WriteGenerics: 6927.38720703125
+	AllAssemblyConversion: 16026.6240234375
 
 ----Generated Files----
 Assembly-CSharp.cpp	2890128
@@ -158,7 +158,7 @@ Assembly-CSharp1.cpp	2229169
 Assembly-CSharp2.cpp	1950585
 Assembly-CSharp3.cpp	2651717
 Assembly-CSharp4.cpp	2374794
-Assembly-CSharp5.cpp	1462287
+Assembly-CSharp5.cpp	1466036
 GenericMethods.cpp	2188521
 GenericMethods1.cpp	2858001
 GenericMethods2.cpp	1916185
