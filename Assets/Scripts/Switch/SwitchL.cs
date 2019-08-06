@@ -33,7 +33,7 @@ public class SwitchL : MonoBehaviour
         //Vector2 joystic1 = new Vector2(Input.GetAxis("SwitchLeftJoysticHorizontal"), Input.GetAxis("SwitchLeftJoysticVertical"));
        // Vector2 joystic2 = new Vector2(Input.GetAxis("SwitchRightJoysticHorizontal"), Input.GetAxis("SwitchRightJoysticVertical"));
 
-        Vector2 joystic1 = new Vector2(Input.GetAxis("SwitchRightAbtn"), Input.GetAxis("SwitchRightBbtn"));
+       /* Vector2 joystic1 = new Vector2(Input.GetAxis("SwitchRightAbtn"), Input.GetAxis("SwitchRightBbtn"));
         Vector2 joystic2 = new Vector2(Input.GetAxis("SwitchRightXbtn"), Input.GetAxis("SwitchRightYbtn"));
 
         Debug.Log("Joystic1   " + joystic1);
@@ -46,6 +46,24 @@ public class SwitchL : MonoBehaviour
         else
         {
             ((RectTransform)transform).anchoredPosition += joystic2;
+        }*/
+
+
+        if(Input.GetButton("SwitchRightAbtn"))
+        {
+            Debug.Log("Joystic2   A");
+        }
+        else if (Input.GetButton("SwitchRightBbtn"))
+        {
+            Debug.Log("Joystic2   B");
+        }
+        else if (Input.GetButton("SwitchRightXbtn"))
+        {
+            Debug.Log("Joystic2   X");
+        }
+        else if (Input.GetButton("SwitchRightYbtn"))
+        {
+            Debug.Log("Joystic2   Y");
         }
 
 
