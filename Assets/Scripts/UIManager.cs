@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Linq;
 
 public class UIManager : MonoBehaviour {
 
@@ -22,6 +23,9 @@ public class UIManager : MonoBehaviour {
 
 	public Animation WholeAttackAnim;
 
+
+    public List<Animator> UICardsAnim = new List<Animator>();
+    private Animator CurrentCard;
 
 	private GameState PrevState;
 
@@ -125,5 +129,28 @@ public class UIManager : MonoBehaviour {
 		TutorialParent.blocksRaycasts = false;
 		GameManagerScript.Instance.CurrentGameState = PrevState;
 		PlayerPrefs.SetInt("TutorialCompleted", 1);
+
+        CurrentCard = UICardsAnim[0];
+        CurrentCard.SetBool("State", true);
     }
+
+
+    public void SwitchUIPlayerSelectio(int nextV)
+    {
+        CurrentCard.SetBool("State", false);
+        List<Animator> res = UICardsAnim.Where(r => !r.gameObject.GetComponent<UICharacterIconScript>().isAlreadyUsed).ToList();
+        int next = res.IndexOf(CurrentCard) + nextV;
+        if(next < 0)
+        {
+            next = res.Count - 1;
+        }
+        else if(next == res.Count)
+        {
+            next = 0;
+        }
+
+        CurrentCard = res[next];
+        CurrentCard.SetBool("State", true);
+    }
+
 }
