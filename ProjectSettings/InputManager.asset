@@ -8362,7 +8362,7 @@ InputManager:
     descriptiveName: SwitchLU
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick 1 button 5
+    positiveButton: joystick 2 button 5
     altNegativeButton: 
     altPositiveButton: 
     gravity: 0
