@@ -5232,6 +5232,11 @@ PrefabInstance:
     - target: {fileID: 1686943309211043912, guid: 77017f7ba5b52442fbd7609b7e441191,
         type: 3}
       propertyPath: Cards.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686943309211043912, guid: 77017f7ba5b52442fbd7609b7e441191,
+        type: 3}
+      propertyPath: UICardsAnim.Array.size
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1686943309211043912, guid: 77017f7ba5b52442fbd7609b7e441191,
@@ -5254,6 +5259,26 @@ PrefabInstance:
       propertyPath: Cards.Array.data[3]
       value: 
       objectReference: {fileID: 918182124}
+    - target: {fileID: 1686943309211043912, guid: 77017f7ba5b52442fbd7609b7e441191,
+        type: 3}
+      propertyPath: UICardsAnim.Array.data[0]
+      value: 
+      objectReference: {fileID: 918182135}
+    - target: {fileID: 1686943309211043912, guid: 77017f7ba5b52442fbd7609b7e441191,
+        type: 3}
+      propertyPath: UICardsAnim.Array.data[1]
+      value: 
+      objectReference: {fileID: 918182134}
+    - target: {fileID: 1686943309211043912, guid: 77017f7ba5b52442fbd7609b7e441191,
+        type: 3}
+      propertyPath: UICardsAnim.Array.data[2]
+      value: 
+      objectReference: {fileID: 918182133}
+    - target: {fileID: 1686943309211043912, guid: 77017f7ba5b52442fbd7609b7e441191,
+        type: 3}
+      propertyPath: UICardsAnim.Array.data[3]
+      value: 
+      objectReference: {fileID: 918182132}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77017f7ba5b52442fbd7609b7e441191, type: 3}
 --- !u!224 &918182124 stripped
@@ -12544,6 +12569,9 @@ MonoBehaviour:
     - _name: Default
       _descriptiveName: Default
       _id: 0
+    - _name: Switch
+      _descriptiveName: Switch
+      _id: 2
     keyboardLayouts:
     - _name: Default
       _descriptiveName: Default
@@ -12575,6 +12603,96 @@ MonoBehaviour:
         _modifierKey1: 0
         _modifierKey2: 0
         _modifierKey3: 0
+    - id: 1
+      categoryId: 0
+      layoutId: 0
+      name: 
+      hardwareGuidString: 521b808c-0248-4526-bc10-f1d16ee76bf1
+      customControllerUid: 0
+      actionElementMaps:
+      - _actionCategoryId: 0
+        _actionId: 0
+        _elementType: 1
+        _elementIdentifierId: 21
+        _axisRange: 0
+        _invert: 0
+        _axisContribution: 0
+        _keyboardKeyCode: 0
+        _modifierKey1: 0
+        _modifierKey2: 0
+        _modifierKey3: 0
+    - id: 2
+      categoryId: 0
+      layoutId: 0
+      name: 
+      hardwareGuidString: 1fbdd13b-0795-4173-8a95-a2a75de9d204
+      customControllerUid: 0
+      actionElementMaps:
+      - _actionCategoryId: 0
+        _actionId: 0
+        _elementType: 1
+        _elementIdentifierId: 21
+        _axisRange: 0
+        _invert: 0
+        _axisContribution: 0
+        _keyboardKeyCode: 0
+        _modifierKey1: 0
+        _modifierKey2: 0
+        _modifierKey3: 0
+    - id: 3
+      categoryId: 0
+      layoutId: 2
+      name: 
+      hardwareGuidString: 1fbdd13b-0795-4173-8a95-a2a75de9d204
+      customControllerUid: 0
+      actionElementMaps:
+      - _actionCategoryId: 0
+        _actionId: 0
+        _elementType: 1
+        _elementIdentifierId: 21
+        _axisRange: 0
+        _invert: 0
+        _axisContribution: 0
+        _keyboardKeyCode: 0
+        _modifierKey1: 0
+        _modifierKey2: 0
+        _modifierKey3: 0
+    - id: 4
+      categoryId: 0
+      layoutId: 2
+      name: 
+      hardwareGuidString: 521b808c-0248-4526-bc10-f1d16ee76bf1
+      customControllerUid: 0
+      actionElementMaps:
+      - _actionCategoryId: 0
+        _actionId: 0
+        _elementType: 1
+        _elementIdentifierId: 21
+        _axisRange: 0
+        _invert: 0
+        _axisContribution: 0
+        _keyboardKeyCode: 0
+        _modifierKey1: 0
+        _modifierKey2: 0
+        _modifierKey3: 0
+    - id: 5
+      categoryId: 0
+      layoutId: 2
+      name: 
+      hardwareGuidString: 3eb01142-da0e-4a86-8ae8-a15c2b1f2a04
+      customControllerUid: 0
+      actionElementMaps:
+      - _actionCategoryId: 0
+        _actionId: 0
+        _elementType: 1
+        _elementIdentifierId: 4
+        _axisRange: 0
+        _invert: 0
+        _axisContribution: 0
+        _keyboardKeyCode: 0
+        _modifierKey1: 0
+        _modifierKey2: 0
+        _modifierKey3: 0
     keyboardMaps: []
     mouseMaps: []
     customControllerMaps: []
@@ -12586,11 +12704,11 @@ MonoBehaviour:
     actionCategoryIdCounter: 1
     inputBehaviorIdCounter: 1
     mapCategoryIdCounter: 1
-    joystickLayoutIdCounter: 1
+    joystickLayoutIdCounter: 3
     keyboardLayoutIdCounter: 1
     mouseLayoutIdCounter: 1
     customControllerLayoutIdCounter: 1
-    joystickMapIdCounter: 1
+    joystickMapIdCounter: 6
     keyboardMapIdCounter: 0
     mouseMapIdCounter: 0
     customControllerMapIdCounter: 0

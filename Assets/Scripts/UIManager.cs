@@ -41,7 +41,9 @@ public class UIManager : MonoBehaviour {
 		{
 			StartTutorial();
 		}
-	}
+        CurrentCard = UICardsAnim[0];
+        CurrentCard.SetBool("State", true);
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -130,8 +132,7 @@ public class UIManager : MonoBehaviour {
 		GameManagerScript.Instance.CurrentGameState = PrevState;
 		PlayerPrefs.SetInt("TutorialCompleted", 1);
 
-        CurrentCard = UICardsAnim[0];
-        CurrentCard.SetBool("State", true);
+       
     }
 
 
