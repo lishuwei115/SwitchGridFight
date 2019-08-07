@@ -27,7 +27,7 @@ public class InputManager : MonoBehaviour
     {
         // Get the Rewired Player object for this player and keep it for the duration of the character's lifetime
         player = ReInput.players.GetPlayer("Player");
-
+        Debug.Log("Player");
         // Get the character controller
         cc = GetComponent<CharacterController>();
     }
@@ -43,9 +43,12 @@ public class InputManager : MonoBehaviour
         // Get the input from the Rewired Player. All controllers that the Player owns will contribute, so it doesn't matter
         // whether the input is coming from a joystick, the keyboard, mouse, or a custom controller.
 
-       // moveVector.x = player.GetAxis("Move Horizontal"); // get input by name or action id
-       // moveVector.y = player.GetAxis("Move Vertical");
-        fire = player.GetButtonDown("LLeftArrow");
+        // moveVector.x = player.GetAxis("Move Horizontal"); // get input by name or action id
+        // moveVector.y = player.GetAxis("Move Vertical");
+      //  if (player != null)
+    //    {
+            fire = player.GetButtonDown("LLeftArrow");
+     //   }
     }
 
     private void ProcessInput()
