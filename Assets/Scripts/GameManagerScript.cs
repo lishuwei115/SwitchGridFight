@@ -133,7 +133,7 @@ public class GameManagerScript : MonoBehaviour
                 timer += Time.fixedDeltaTime;
             }
             CurrentWaveIndex++;
-            SetUpMatch(false);
+            SetUpMatch();
         }
         else
         {
@@ -217,9 +217,9 @@ public class GameManagerScript : MonoBehaviour
 
 
 
-	private void SetUpMatch(bool firstWave = true)
+	private void SetUpMatch()
 	{
-        SetUpWave(firstWave);
+        SetUpWave();
 	}
 
 
@@ -249,15 +249,17 @@ public class GameManagerScript : MonoBehaviour
         cb.BSCs.Add(BattleGroundManager.Instance.EBG.GetBattleGroundPositionIfFree(enemy.StartingPos));
         cb.Pos = cb.BSCs.Last().Pos;
         BattleSquareClass bsc = BattleGroundManager.Instance.EBG.GetBattleGroundPosition(cb.BSCs.Last().Pos);
-        cb.transform.position = bsc.T.position;
+        Vector3 BasePos = bsc.T.position + new Vector3(10,0,0);
+        cb.transform.position = BasePos;
+        cb.BSC = bsc;
         Enemies.Add(cb);
         cb.SetSkin();
-
+        StartCoroutine(cb.MoveToStartingPos(bsc.T.position));
     }
 
-
-    public void SetUpWave(bool firstWave = true)
+    public void SetUpWave()
     {
+        CurrentGameState = GameState.Intro;
         foreach (CharacterBase item in Enemies)
         {
             item.gameObject.SetActive(false);
@@ -266,11 +268,6 @@ public class GameManagerScript : MonoBehaviour
         for (int i = 0; i < NextWave.StartingEnemies.Count; i++)
         {
             CreateSingleEnemy(NextWave.StartingEnemies[i]);
-        }
-
-        if(!firstWave)
-        {
-            CurrentGameState = GameState.StartMatch;
         }
     }
 
@@ -347,6 +344,7 @@ public class EnemyInfoClass
 public enum GameState
 {
 	Intro,
+    EndIntro,
     StartMatch,
     Pause,
     Menu,

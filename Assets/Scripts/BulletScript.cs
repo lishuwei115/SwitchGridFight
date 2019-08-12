@@ -35,14 +35,22 @@ public class BulletScript : MonoBehaviour
 		}
     }
 
-	public IEnumerator SelfDeactivate(float delay)
+    private void Update()
+    {
+        if(GameManagerScript.Instance.CurrentGameState == GameState.End)
+        {
+            StartCoroutine(SelfDeactivate(0));
+        }
+    }
+
+    public IEnumerator SelfDeactivate(float delay)
 	{
 		float timer = 0;
 		while (timer < delay)
         {
 			timer += Time.fixedDeltaTime;
 			yield return new WaitForFixedUpdate();
-            while (GameManagerScript.Instance.CurrentGameState != GameState.StartMatch)
+            while (GameManagerScript.Instance.CurrentGameState != GameState.StartMatch && GameManagerScript.Instance.CurrentGameState != GameState.End)
             {
 				yield return new WaitForFixedUpdate();
             }

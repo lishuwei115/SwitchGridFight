@@ -189,6 +189,11 @@ public class UIManager : MonoBehaviour {
             return;
         }
 
+        if (GameManagerScript.Instance.CurrentGameState == GameState.Intro)
+        {
+            return;
+        }
+
         if (CurrentCard.GetComponent<UICharacterIconScript>().isAlreadyUsed)
         {
             UICharacterIconScript UIC = CurrentCard.GetComponent<UICharacterIconScript>();
@@ -205,7 +210,7 @@ public class UIManager : MonoBehaviour {
                 UIC.CurrentPlayer = Pchar;
             }
             UIC.CurrentPlayer.IsTouchingMe = true;
-            if (GameManagerScript.Instance.CurrentGameState == GameState.Intro)
+            if (GameManagerScript.Instance.CurrentGameState == GameState.EndIntro)
             {
                 GameManagerScript.Instance.Invoke("StartMatch", GameManagerScript.Instance.StartingTime);
             }

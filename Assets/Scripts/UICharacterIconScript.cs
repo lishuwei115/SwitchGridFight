@@ -130,7 +130,7 @@ public class UICharacterIconScript : MonoBehaviour , IBeginDragHandler, IDragHan
                     isAlreadyUsed = true;
 					CurrentPlayer = GameManagerScript.Instance.CreatePlayerChar(PCType, false, bsc.Pos);
 					GameManagerScript.Instance.ManaPool -= CurrentPlayer.ManaCost;
-                    if (GameManagerScript.Instance.CurrentGameState == GameState.Intro)
+                    if (GameManagerScript.Instance.CurrentGameState == GameState.EndIntro)
                     {
                         GameManagerScript.Instance.Invoke("StartMatch", GameManagerScript.Instance.StartingTime);
                     }

@@ -286,8 +286,8 @@ MonoBehaviour:
       StartingPos: {x: 0, y: 0}
       MinTimer: 0
       MaxTimer: 0
-      MinMovementTimer: 0
-      MaxMovementTimer: 0
+      MinMovementTimer: 5
+      MaxMovementTimer: 8
       Hp: 40
       PercOfCounterAtt: 50
       Attacks:

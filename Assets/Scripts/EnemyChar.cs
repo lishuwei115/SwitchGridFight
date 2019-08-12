@@ -192,9 +192,31 @@ public class EnemyChar : CharacterBase
             complete = true;
         }
     }
-   
 
-	private IEnumerator AttackToChar(BattleSquareClass bsc, float yellowTargetTimer)
+
+    public IEnumerator MoveToStartingPos(Vector3 startingPos)
+    {
+        Anim.SetInteger("State", 0);
+        float timer = 0;
+        Vector3 offset = transform.position;
+        while (timer < 1)
+        {
+            yield return new WaitForFixedUpdate();
+            while (GameManagerScript.Instance.CurrentGameState != GameState.Intro)
+            {
+                yield return new WaitForEndOfFrame();
+            }
+            timer += Time.fixedDeltaTime /2;
+            transform.position = Vector3.Lerp(offset, startingPos, timer);
+        }
+        isMoving = false;
+        transform.position = startingPos;
+
+        GameManagerScript.Instance.CurrentGameState = GameManagerScript.Instance.Characters.Count > 0 ? GameState.StartMatch : GameState.EndIntro;
+    }
+
+
+    private IEnumerator AttackToChar(BattleSquareClass bsc, float yellowTargetTimer)
 	{
 		float timer = 0;
 		while (timer < yellowTargetTimer)
