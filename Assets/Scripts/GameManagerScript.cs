@@ -19,20 +19,28 @@ public class GameManagerScript : MonoBehaviour
 	public GameObject Medieval;
 	public GameObject Redhood;
 	public GameObject Bluemoon;
-	public GameObject Enemy;
-	public GameObject PowerUp;
+    public GameObject Baby;
+    public GameObject Skeleton_Arm;
+    public GameObject Skeleton_Guns;
+    public GameObject Skeleton_Torso;
+    public GameObject Skeleton_Head;
+    public GameObject PowerUp;
 	public GameObject Bullet;
 	public Transform CharsContainer;
     public Transform EnemiesContainer;
-	public List<CharacterBase> Characters = new List<CharacterBase>();
-	public List<CharacterBase> Enemies = new List<CharacterBase>();
+	public List<PlayerChar> Characters = new List<PlayerChar>();
+	public List<EnemyChar> Enemies = new List<EnemyChar>();
 	public GameState CurrentGameState;
 	public List<CharInfoClass> StartingChars = new List<CharInfoClass>();
-	public List<EnemyInfoClass> StartingEnemies = new List<EnemyInfoClass>();
+
+
+    public List<Wave> Waves = new List<Wave>();
+
 	public List<BattleSquareClass> EnemiesBSCs = new List<BattleSquareClass>();
 	public List<BattleSquareClass> CharsBSCs = new List<BattleSquareClass>();
 	public float StartingTime = 2;
-
+    public int CurrentWaveIndex = 0;
+    public Wave CurrentWave;
 	public float ManaPool;
 
 	private void Awake()
@@ -69,7 +77,14 @@ public class GameManagerScript : MonoBehaviour
 		}
 
 
-		if(CurrentGameState == GameState.Pause && !isGamePaused)
+        if (CurrentGameState == GameState.StartMatch && Enemies.Where(r => ((EnemyChar)r).EIC.Hp > 0).ToList().Count == 0)
+        {
+            CurrentGameState = GameState.End;
+            StartCoroutine(EndMatch());
+        }
+
+
+        if (CurrentGameState == GameState.Pause && !isGamePaused)
 		{
 			isGamePaused = true;
 			foreach (PlayerChar item in Characters.Where(r=> r.isActiveAndEnabled).ToList())
@@ -100,9 +115,38 @@ public class GameManagerScript : MonoBehaviour
 	}
 
 
+
+    private IEnumerator EndMatch()
+    {
+
+        if(CurrentWaveIndex + 1 != Waves.Count)
+        {
+            float timer = 0;
+            while (timer < 1)
+            {
+                while (GameManagerScript.Instance.CurrentGameState != GameState.End)
+                {
+                    yield return new WaitForEndOfFrame();
+                }
+                yield return new WaitForFixedUpdate();
+
+                timer += Time.fixedDeltaTime;
+            }
+            CurrentWaveIndex++;
+            SetUpMatch(false);
+        }
+        else
+        {
+            UIManager.Instance.WinPanel.SetActive(true);
+        }
+
+       
+    }
+
     public void RestartScene()
 	{
-		SceneManager.LoadScene(1);
+        UIManager.Instance.DetachEvent();
+        SceneManager.LoadScene(1);
 	}
 
 	public PlayerChar CreatePlayerChar(PlayerCharType ctype, bool isRandomPos, Vector2Int pos)
@@ -173,70 +217,68 @@ public class GameManagerScript : MonoBehaviour
 
 
 
-	private void SetUpMatch()
+	private void SetUpMatch(bool firstWave = true)
 	{
-		/*for (int i = 0; i < StartingChars.Count; i++)
-		{
-			CreatePlayerChar(StartingChars[i].PCT, true, Vector2Int.zero);
-		}*/
-		Enemies = new List<CharacterBase>();
-		for (int i = 0; i < StartingEnemies.Count; i++)
-        {
-			GameObject c = Instantiate(Enemy, EnemiesContainer);
-			EnemyChar cb = c.GetComponent<EnemyChar>();
-			cb.EIC = StartingEnemies[i];
-			if(cb.EIC.EPType == EnemyPosType.Whole && StartingEnemies[i].EnemyParts.Count > 0)
-			{
-				for (int ia= 0; ia < StartingEnemies[i].EnemyParts.Count; ia++)
-				{
-					switch (StartingEnemies[i].EnemyParts[ia].EPType)
-					{
-						case EnemyPosType.Top:
-							cb.BSCs.Add(BattleGroundManager.Instance.EBG.GetBattleGroundPositionIfFree(new Vector2Int(0, 0)));
-							break;
-						case EnemyPosType.MidHigh:
-							cb.BSCs.Add(BattleGroundManager.Instance.EBG.GetBattleGroundPositionIfFree(new Vector2Int(1, 0)));
-                            break;
-						case EnemyPosType.MidLow:
-							cb.BSCs.Add(BattleGroundManager.Instance.EBG.GetBattleGroundPositionIfFree(new Vector2Int(2, 0)));
-                            break;
-						case EnemyPosType.Bottom:
-							cb.BSCs.Add(BattleGroundManager.Instance.EBG.GetBattleGroundPositionIfFree(new Vector2Int(3, 0)));
-                            break;
-						case EnemyPosType.Whole:
-                            break;
-					}
-
-					cb.BSCs.Last().Owner = cb;
-					StartingEnemies[i].EnemyParts[ia].Pos = cb.BSCs.Last().Pos;
-				}
-
-				BattleSquareClass bsc = BattleGroundManager.Instance.EBG.GetBattleGroundPosition(new Vector2Int(3,0));
-                cb.transform.position = bsc.T.position;
-			}
-			Enemies.Add(cb);
-            cb.SetSkin();
-        }
+        SetUpWave(firstWave);
 	}
+
+
+    public void CreateSingleEnemy(EnemyInfoClass enemy)
+    {
+        GameObject c = null;
+        switch (enemy.EType)
+        {
+            case EnemyType.SkeletonMonsterHead:
+                c = Instantiate(Skeleton_Head, EnemiesContainer);
+                break;
+            case EnemyType.SkeletonMonsterTorso:
+                c = Instantiate(Skeleton_Torso, EnemiesContainer);
+                break;
+            case EnemyType.SkeletonMonsterGuns:
+                c = Instantiate(Skeleton_Guns, EnemiesContainer);
+                break;
+            case EnemyType.SkeletonMonsterArm:
+                c = Instantiate(Skeleton_Arm, EnemiesContainer);
+                break;
+            case EnemyType.Baby:
+                c = Instantiate(Baby, EnemiesContainer);
+                break;
+        }
+        EnemyChar cb = c.GetComponent<EnemyChar>();
+        cb.EIC = enemy;
+        cb.BSCs.Add(BattleGroundManager.Instance.EBG.GetBattleGroundPositionIfFree(enemy.StartingPos));
+        cb.Pos = cb.BSCs.Last().Pos;
+        BattleSquareClass bsc = BattleGroundManager.Instance.EBG.GetBattleGroundPosition(cb.BSCs.Last().Pos);
+        cb.transform.position = bsc.T.position;
+        Enemies.Add(cb);
+        cb.SetSkin();
+
+    }
+
+
+    public void SetUpWave(bool firstWave = true)
+    {
+        foreach (CharacterBase item in Enemies)
+        {
+            item.gameObject.SetActive(false);
+        }
+        Wave NextWave = Waves[CurrentWaveIndex];
+        for (int i = 0; i < NextWave.StartingEnemies.Count; i++)
+        {
+            CreateSingleEnemy(NextWave.StartingEnemies[i]);
+        }
+
+        if(!firstWave)
+        {
+            CurrentGameState = GameState.StartMatch;
+        }
+    }
+
 
 	public void GameComplete()
 	{
-		SceneManager.LoadScene(0);
-	}
-
-
-
-	public void AttackToEnemy(AttackClass attack,Vector2Int dest)
-	{
-		
-		BattleSquareClass Target = EnemiesBSCs.Where(r => r.Pos == dest).FirstOrDefault();
-
-		if(Target != null)
-        {
-			EnemyPartClass epc = ((EnemyChar)Enemies.Where(r => ((EnemyChar)r).EIC.EnemyParts.Where(a => a.Pos == dest).FirstOrDefault().Pos == dest)
-			                      .First()).EIC.EnemyParts.Where(a => a.Pos == dest).First();
-			epc.Hp -= attack.AttackPower;
-        }
+        UIManager.Instance.DetachEvent();
+        SceneManager.LoadScene(0);
 	}
 
 	public void AttackToChar(AttackClass attack, Vector2Int dest)
@@ -286,39 +328,21 @@ public class CharInfoClass
 public class EnemyInfoClass
 {
 	public EnemyType EType;
-	public EnemyPosType EPType;
 	public int MinPartsToStartNewAttack = 2;
+    public Vector2Int StartingPos;
 	public float MinTimer;
 	public float MaxTimer;
-	public List<AttackClass> Attacks = new List<AttackClass>();
+    public float MinMovementTimer;
+    public float MaxMovementTimer;
+    public float Hp;
+    public float PercOfCounterAtt = 50;
+    public List<AttackClass> Attacks = new List<AttackClass>();
     public List<EnemyAttackAction> Actions = new List<EnemyAttackAction>();
-	public List<EnemyPartClass> EnemyParts = new List<EnemyPartClass>();
 	public EnemyInfoClass()
     {
 
     }
 }
-[System.Serializable]
-public class EnemyPartClass
-{
-	public EnemyPosType EPType;
-    public List<AttackClass> Attacks = new List<AttackClass>();
-	public List<EnemyAttackAction> Actions = new List<EnemyAttackAction>();
-	[HideInInspector]
-	public AttackClass CurrentAttack;
-	[HideInInspector]
-	public Vector2Int Pos;
-	public float Hp;
-	[HideInInspector]
-	public float BaseHp;
-	public float PercOfCounterAtt = 50;
-    public EnemyPartClass()
-	{
-
-	}
-}
-
-
 
 public enum GameState
 {
@@ -334,4 +358,11 @@ public enum ControllerType
 {
 	Player,
     Enemy
+}
+
+
+[System.Serializable]
+public class Wave
+{
+    public List<EnemyInfoClass> StartingEnemies = new List<EnemyInfoClass>();
 }

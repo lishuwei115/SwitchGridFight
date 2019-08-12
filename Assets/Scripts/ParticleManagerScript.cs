@@ -23,8 +23,10 @@ public class ParticleManagerScript : MonoBehaviour
     public GameObject TorsoAParticles;
     public GameObject GunAParticles;
     public GameObject ArmAParticles;
+    public GameObject BabyParticles;
+    public GameObject BabyAParticles;
 
-	public List<ParticlesClass> ParticlesFired = new List<ParticlesClass>();
+    public List<ParticlesClass> ParticlesFired = new List<ParticlesClass>();
 
 	private void Awake()
 	{
@@ -60,6 +62,9 @@ public class ParticleManagerScript : MonoBehaviour
                     break;
 				case ParticleTypes.SkeletonAWhole:
                     ps = WholeAParticles;
+                    break;
+                case ParticleTypes.BabyA:
+                    ps = BabyAParticles;
                     break;
             }
             GameObject go;
@@ -327,5 +332,7 @@ public enum ParticleTypes
 	SkeletonAHead,
     SkeletonATorso,
     SkeletonAGuns,
-    SkeletonAArm
+    SkeletonAArm,
+    Baby,
+    BabyA
 }

@@ -29,6 +29,8 @@ public class PlayerChar : CharacterBase
 	public List<ParticleSystem> PowerUpParticles = new List<ParticleSystem>();
 	public List<SpriteRenderer> BodyParts = new List<SpriteRenderer>();
 	public float HitTime = -10;
+    public float MovingCoolDown = 0.2f;
+    private float MovingOffset = 0;
 	[Header("Audio")]
 	public AudioClip AttackAudio;
 
@@ -218,7 +220,53 @@ public class PlayerChar : CharacterBase
 	}
 
 
-	public void OnMouseDown()
+    public void MoveChar(InputDirection nextDir)
+    {
+        if(Time.time - MovingOffset > MovingCoolDown)
+        {
+            Debug.Log(Time.time + "  " + MovingOffset + "  " + MovingCoolDown);
+            MovingOffset = Time.time;
+            BattleSquareClass prevBSC = BSC;
+            int AnimState = 0;
+            Debug.Log(nextDir);
+            switch (nextDir)
+            {
+                case InputDirection.Up:
+                    BSC = BattleGroundManager.Instance.PBG.GetBattleGroundPositionIfFree(new Vector2Int(Pos.x - 1, Pos.y));
+                    AnimState = 2;
+                    break;
+                case InputDirection.Down:
+                    BSC = BattleGroundManager.Instance.PBG.GetBattleGroundPositionIfFree(new Vector2Int(Pos.x + 1, Pos.y));
+                    AnimState = 3;
+                    break;
+                case InputDirection.Right:
+                    BSC = BattleGroundManager.Instance.PBG.GetBattleGroundPositionIfFree(new Vector2Int(Pos.x, Pos.y + 1));
+                    AnimState = 2;
+                    break;
+                case InputDirection.Left:
+                    BSC = BattleGroundManager.Instance.PBG.GetBattleGroundPositionIfFree(new Vector2Int(Pos.x, Pos.y - 1));
+                    AnimState = 3;
+                    break;
+            }
+
+            if (BSC.T != null)
+            {
+                isMoving = true;
+                BattleGroundManager.Instance.PBG.p[Pos.x].PBG[Pos.y].IsEmpty = true;
+                Pos = BSC.Pos;
+                StartCoroutine(Move(BSC.T.position, AnimState));
+            }
+
+            if (prevBSC != BSC)
+            {
+                GameManagerScript.Instance.CharsBSCs.Remove(prevBSC);
+                GameManagerScript.Instance.CharsBSCs.Add(BSC);
+            }
+        }
+
+    }
+
+    public void OnMouseDown()
     {
 		//Debug.Log("Down");
         MouseIn = Input.mousePosition;
@@ -226,90 +274,40 @@ public class PlayerChar : CharacterBase
 
     }
 
-	private void OnMouseDrag()
-	{
-
-		float X = Mathf.Abs(Input.mousePosition.x) - Mathf.Abs(MouseIn.x);
+    private void OnMouseDrag()
+    {
+        float X = Mathf.Abs(Input.mousePosition.x) - Mathf.Abs(MouseIn.x);
         float Y = Mathf.Abs(Input.mousePosition.y) - Mathf.Abs(MouseIn.y);
-		if (IsTouchingMe && (Mathf.Abs(X) > 20 || Mathf.Abs(Y) > 20) && !isDragging)
+        if (IsTouchingMe && (Mathf.Abs(X) > 20 || Mathf.Abs(Y) > 20) && !isDragging)
         {
-			
-            //Debug.Log("moving");
-            BattleSquareClass prevBSC = BSC;
-			//Debug.Log(Input.mousePosition + "   " + MouseIn);
-			isDragging = true;
+            isDragging = true;
             if (Mathf.Abs(X) > Mathf.Abs(Y))
             {
                 if (Input.mousePosition.x > MouseIn.x)
                 {
-                    //Debug.Log("Right");
-                    BSC = BattleGroundManager.Instance.PBG.GetBattleGroundPositionIfFree(new Vector2Int(Pos.x, Pos.y + 1));
-
-                    if (BSC.T != null)
-                    {
-                        isMoving = true;
-                        Anim.SetInteger("State", 2);
-                        BattleGroundManager.Instance.PBG.p[Pos.x].PBG[Pos.y].IsEmpty = true;
-                        Pos.y++;
-                        StartCoroutine(Move(BSC.T.position));
-                    }
+                    MoveChar(InputDirection.Right);
                 }
                 else
                 {
-                   // Debug.Log("Left");
-                    BSC = BattleGroundManager.Instance.PBG.GetBattleGroundPositionIfFree(new Vector2Int(Pos.x, Pos.y - 1));
-                    if (BSC.T != null)
-                    {
-                        isMoving = true;
-                        Anim.SetInteger("State", 3);
-                        BattleGroundManager.Instance.PBG.p[Pos.x].PBG[Pos.y].IsEmpty = true;
-                        Pos.y--;
-                        StartCoroutine(Move(BSC.T.position));
-                    }
+                    MoveChar(InputDirection.Left);
                 }
             }
             else
             {
                 if (Input.mousePosition.y > MouseIn.y)
                 {
-                    //Debug.Log("Up");
-                    BSC = BattleGroundManager.Instance.PBG.GetBattleGroundPositionIfFree(new Vector2Int(Pos.x - 1, Pos.y));
-                    if (BSC.T != null)
-                    {
-                        isMoving = true;
-                        Anim.SetInteger("State", 3);
-                        BattleGroundManager.Instance.PBG.p[Pos.x].PBG[Pos.y].IsEmpty = true;
-                        Pos.x--;
-                        StartCoroutine(Move(BSC.T.position));
-                    }
+                    MoveChar(InputDirection.Up);
                 }
                 else
                 {
-                   // Debug.Log("Down");
-                    BSC = BattleGroundManager.Instance.PBG.GetBattleGroundPositionIfFree(new Vector2Int(Pos.x + 1, Pos.y));
-                    if (BSC.T != null)
-                    {
-                        isMoving = true;
-                        Anim.SetInteger("State", 2);
-                        BattleGroundManager.Instance.PBG.p[Pos.x].PBG[Pos.y].IsEmpty = true;
-                        Pos.x++;
-                        StartCoroutine(Move(BSC.T.position));
-                    }
+                    MoveChar(InputDirection.Down);
                 }
             }
-
-            if(prevBSC != BSC)
-            {
-                GameManagerScript.Instance.CharsBSCs.Remove(prevBSC);
-                GameManagerScript.Instance.CharsBSCs.Add(BSC);
-            }
         }
-        //IsTouchingMe = false;
-        
-	}
+    }
 
 
-	public void OnMouseUp()
+    public void OnMouseUp()
     {
 		//Debug.Log("Up");
 		/*if (IsTouchingMe)
@@ -390,10 +388,14 @@ public class PlayerChar : CharacterBase
     }
 
 
-	private IEnumerator Move(Vector3 nextPos)
+	private IEnumerator Move(Vector3 nextPos, int animState)
 	{
-		
-		float timer = 0;
+
+        Anim.SetInteger("State", 0);
+        yield return new WaitForEndOfFrame();
+        Anim.SetInteger("State", animState);
+
+        float timer = 0;
 		Vector3 offset = transform.position;
 		while (timer < 1)
 		{
@@ -440,7 +442,8 @@ public class AttackClass
 	
 	public int AttackPower;
 	public AttackType AttackT;
-	public float AttackSpeed;
+    public ParticleTypes ParticleType;
+    public float AttackSpeed;
 	public int AttackAngle;
 	public int NumberOfBullets;
 	public float BulletSpeed;
@@ -450,4 +453,13 @@ public class AttackClass
     public AttackClass()
 	{
 	}
+}
+
+
+public enum InputDirection
+{
+    Left,
+    Right,
+    Up,
+    Down
 }

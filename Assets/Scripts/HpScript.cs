@@ -6,6 +6,7 @@ public class HpScript : MonoBehaviour
 {
 
 	public PlayerChar Parent;
+    public EnemyChar ParentE;
 	private float BaseSize;
 	private float CurrentSize;
 
@@ -21,12 +22,18 @@ public class HpScript : MonoBehaviour
 
 		if(GameManagerScript.Instance.CurrentGameState == GameState.StartMatch)
 		{
-			if(Parent.Hp > 0)
+			if(Parent != null && Parent.Hp > 0)
 			{
 				CurrentSize = ((Parent.Hp * 100) / Parent.BaseHp) * (BaseSize / 100);
                 transform.localScale = new Vector3(0.5f, CurrentSize, 1);
             }
-		}
+
+            if (ParentE != null && ParentE.EIC.Hp > 0)
+            {
+                CurrentSize = ((ParentE.EIC.Hp * 100) / ParentE.BaseHp) * (BaseSize / 100);
+                transform.localScale = new Vector3(0.5f, CurrentSize, 1);
+            }
+        }
 
     }
 }

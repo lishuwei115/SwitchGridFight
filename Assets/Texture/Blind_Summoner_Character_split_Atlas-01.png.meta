@@ -1,0 +1,952 @@
+fileFormatVersion: 2
+guid: f57bd9ec3585e994c8e727e6c2c9bbf0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3278996446974018014
+    second: Blind_Front_Dress3
+  - first:
+      213: -1631248743238753384
+    second: Blind_Front_Leg
+  - first:
+      213: -439985715595095258
+    second: Blind_Front_hand
+  - first:
+      213: 6184893825026627084
+    second: Blind_Front_Arm
+  - first:
+      213: 6285767815703717511
+    second: Blind_Front_ArmUp
+  - first:
+      213: 8817810168305674538
+    second: Blind_Front_Dress2
+  - first:
+      213: -7057722837174615702
+    second: Blind_Torso
+  - first:
+      213: -7642829222026624516
+    second: Blind_Neck2
+  - first:
+      213: -6331473870187805320
+    second: Blind_Front_Dress1
+  - first:
+      213: 1157939103006612962
+    second: Blind_Neck1
+  - first:
+      213: 4963711005740737227
+    second: Blind_Back_Dress
+  - first:
+      213: 4375224173618679511
+    second: Blind_Back_Neckless
+  - first:
+      213: 3039285266542285764
+    second: Blind_Front_Neckless
+  - first:
+      213: 5872975872664317013
+    second: Blind_Waist
+  - first:
+      213: -7714338314529136744
+    second: Blind_Back_Indicator1
+  - first:
+      213: -6762996734173290244
+    second: Blind_Back_Indicator2
+  - first:
+      213: 6671937252839662071
+    second: Blind_Back_Indicator3
+  - first:
+      213: -3169574660517332402
+    second: Blind_Back_hand
+  - first:
+      213: -4056788558284673044
+    second: Blind_Back_Middle1
+  - first:
+      213: 7308544145155773192
+    second: Blind_Back_Middle2
+  - first:
+      213: 2912249821652090196
+    second: Blind_Back_Middle3
+  - first:
+      213: -6152263666645295663
+    second: Blind_Back_Ring1
+  - first:
+      213: -9049327029717215166
+    second: Blind_Back_Ring2
+  - first:
+      213: -1800785990245446944
+    second: Blind_Back_Ring3
+  - first:
+      213: 129355395962296993
+    second: Blind_Back_Small1
+  - first:
+      213: -3737091945619023441
+    second: Blind_Back_Small2
+  - first:
+      213: 7441041659781781532
+    second: Blind_Back_Small3
+  - first:
+      213: -8275680069750892300
+    second: Blind_Back_Thumb
+  - first:
+      213: -6003868242637466432
+    second: Blind_Bandage3
+  - first:
+      213: 2190267836026019243
+    second: Blind_Bandage2
+  - first:
+      213: -709210592731312995
+    second: Blind_Bandage1
+  - first:
+      213: 127865046720950835
+    second: Blind_Back_Arm
+  - first:
+      213: 6208097028774729788
+    second: Blind_Head
+  - first:
+      213: -5415829883177906335
+    second: Blind_Back_ArmUp
+  - first:
+      213: -7390978310900872742
+    second: Blind_Shadow
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Blind_Front_Dress3
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 1795
+        width: 224
+        height: 209
+      alignment: 9
+      pivot: {x: 0.78859526, y: 0.9325985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d5889538a4d0d040a06df008f1eca98
+      internalID: -3278996446974018014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blind_Front_Leg
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 1766
+        width: 634
+        height: 254
+      alignment: 9
+      pivot: {x: 0.4973957, y: 0.9788602}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a9860c7e657a2f4ca5f4a9414f6a09d
+      internalID: -1631248743238753384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blind_Front_hand
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 1897
+        width: 84
+        height: 102
+      alignment: 9
+      pivot: {x: 0.8494466, y: 0.11183196}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 657fc14321cb78c4d8e6032dd84aa67c
+      internalID: -439985715595095258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blind_Front_Arm
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 1852
+        width: 177
+        height: 159
+      alignment: 9
+      pivot: {x: 0.91834944, y: 0.8958533}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2cb13fdde8414d49a60a0cf80c4bada
+      internalID: 6184893825026627084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blind_Front_ArmUp
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 1804
+        width: 121
+        height: 222
+      alignment: 9
+      pivot: {x: 0.13282058, y: 0.94028395}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f816fe658e9b2fa40ac3c5fcb24fc5f3
+      internalID: 6285767815703717511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blind_Front_Dress2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1567
+        width: 128
+        height: 169
+      alignment: 9
+      pivot: {x: 0.4858731, y: 0.9600902}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f07ff8c988ad604785ed6676a6f3b90
+      internalID: 8817810168305674538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blind_Torso
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 1333
+        width: 267
+        height: 375
+      alignment: 9
+      pivot: {x: 0.2586112, y: 0.02012858}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ae53c6df859ebb4e97b9122a7ae364d
+      internalID: -7057722837174615702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blind_Neck2
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1622
+        width: 82
+        height: 78
+      alignment: 9
+      pivot: {x: 0.41399252, y: 0.061471794}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4f307e870746734e8dc03d8aa956e08
+      internalID: -7642829222026624516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blind_Front_Dress1
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 1306
+        width: 117
+        height: 242
+      alignment: 9
+      pivot: {x: 0.49227247, y: 0.96514136}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e782c1038d482a428f3c9707991203a
+      internalID: -6331473870187805320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blind_Neck1
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 1506
+        width: 69
+        height: 64
+      alignment: 9
+      pivot: {x: 0.3415713, y: 0.14185905}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fcf09a2b7722e74899a6ca05df57e73
+      internalID: 1157939103006612962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blind_Back_Dress
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 1095
+        width: 94
+        height: 183
+      alignment: 9
+      pivot: {x: 0.52191967, y: 0.954884}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b7dd66d205f4049816f3ce96c8a0a3
+      internalID: 4963711005740737227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blind_Back_Neckless
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 1254
+        width: 60
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4284f17d573fe249822edaabc777523
+      internalID: 4375224173618679511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blind_Front_Neckless
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 1156
+        width: 85
+        height: 70
+      alignment: 9
+      pivot: {x: 0.61742413, y: 0.9375942}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b35515f9d34705342b211964e965fff7
+      internalID: 3039285266542285764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blind_Waist
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 960
+        width: 142
+        height: 105
+      alignment: 9
+      pivot: {x: 0.49046767, y: 0.05740618}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 197df6fbc7f7d8d469a874f40646f2b7
+      internalID: 5872975872664317013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blind_Back_Indicator1
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 1057
+        width: 15
+        height: 7
+      alignment: 9
+      pivot: {x: 0.8679057, y: 0.4641462}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bb5c3dbb68056245a815d63a0421946
+      internalID: -7714338314529136744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blind_Back_Indicator2
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 1056
+        width: 25
+        height: 9
+      alignment: 9
+      pivot: {x: 0.90636843, y: 0.47211373}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc031400bc94cc4e9e0d37e596da2d2
+      internalID: -6762996734173290244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blind_Back_Indicator3
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 1056
+        width: 30
+        height: 13
+      alignment: 9
+      pivot: {x: 0.9138926, y: 0.57717663}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e034f84615ce91342b121d96d8faa162
+      internalID: 6671937252839662071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blind_Back_hand
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 1032
+        width: 77
+        height: 41
+      alignment: 9
+      pivot: {x: 0.8990613, y: 0.4474026}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b01640c4d600f9641af7cf111c9c2868
+      internalID: -3169574660517332402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blind_Back_Middle1
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 1032
+        width: 13
+        height: 7
+      alignment: 9
+      pivot: {x: 0.8376747, y: 0.44623676}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23adb391f49c885419e1bb7540f48b9f
+      internalID: -4056788558284673044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blind_Back_Middle2
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 1033
+        width: 19
+        height: 8
+      alignment: 9
+      pivot: {x: 0.88946694, y: 0.46862793}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b196f100f3ce154d8994128b1e45312
+      internalID: 7308544145155773192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blind_Back_Middle3
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 1031
+        width: 28
+        height: 12
+      alignment: 9
+      pivot: {x: 0.90314263, y: 0.5417989}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8f9f7dd1aa1c9e42b21c84dd065eeef
+      internalID: 2912249821652090196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blind_Back_Ring1
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 1009
+        width: 10
+        height: 7
+      alignment: 9
+      pivot: {x: 0.87626344, y: 0.51790076}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8989b1862e06c1d47a296e4fc6fecbd7
+      internalID: -6152263666645295663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blind_Back_Ring2
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 1009
+        width: 19
+        height: 9
+      alignment: 9
+      pivot: {x: 0.89607, y: 0.49998644}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 583c5ec1cb1963d45b122cdc0c865486
+      internalID: -9049327029717215166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blind_Back_Ring3
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1009
+        width: 23
+        height: 8
+      alignment: 9
+      pivot: {x: 0.914438, y: 0.45294952}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de41e89284ba97c4487e8860b04ee618
+      internalID: -1800785990245446944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blind_Back_Small1
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 989
+        width: 11
+        height: 6
+      alignment: 9
+      pivot: {x: 0.83065516, y: 0.58359784}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f64c2de8537dba418c57a0efe3ebb34
+      internalID: 129355395962296993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blind_Back_Small2
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 989
+        width: 15
+        height: 7
+      alignment: 9
+      pivot: {x: 0.9013489, y: 0.49998257}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbef2d06f7a05e0418ece6f159f9a774
+      internalID: -3737091945619023441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blind_Back_Small3
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 990
+        width: 20
+        height: 9
+      alignment: 9
+      pivot: {x: 0.90762174, y: 0.47211373}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 159e3ad5ae1514840a1343cee1577d04
+      internalID: 7441041659781781532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blind_Back_Thumb
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 949
+        width: 35
+        height: 15
+      alignment: 9
+      pivot: {x: 0.9405378, y: 0.49136963}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7181edb49e64729478ddbe85d7dc0743
+      internalID: -8275680069750892300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blind_Bandage3
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 727
+        width: 39
+        height: 194
+      alignment: 9
+      pivot: {x: 0.5466471, y: 0.9618439}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 983e6021ac69ffb41a86f3bf6e51a944
+      internalID: -6003868242637466432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blind_Bandage2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 783
+        width: 38
+        height: 137
+      alignment: 9
+      pivot: {x: 0.51196873, y: 0.9481709}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f22dea81f506b4049a7066ff487cbec1
+      internalID: 2190267836026019243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blind_Bandage1
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 776
+        width: 47
+        height: 150
+      alignment: 9
+      pivot: {x: 0.693536, y: 0.9699711}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0aee7d55f4c9434297cefe6c22ed22c
+      internalID: -709210592731312995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blind_Back_Arm
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 752
+        width: 184
+        height: 149
+      alignment: 9
+      pivot: {x: 0.94095397, y: 0.0813697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de42c90a789689e4b8cfa4fddb8dba45
+      internalID: 127865046720950835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blind_Head
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 509
+        width: 150
+        height: 184
+      alignment: 9
+      pivot: {x: 0.7063754, y: 0.23789778}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecd7909cca0f6e0448437d80c9809556
+      internalID: 6208097028774729788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blind_Back_ArmUp
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 548
+        width: 231
+        height: 170
+      alignment: 9
+      pivot: {x: 0.9439811, y: 0.88501513}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f9f23b68f2aac84384efe0d2ecec45a
+      internalID: -5415829883177906335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blind_Shadow
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 280
+        width: 516
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52cdfcb4694946e4994ab2d535a14f7d
+      internalID: -7390978310900872742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 114d63225a4239441a1b8709e4dfcffd
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

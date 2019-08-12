@@ -1,9 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
+﻿using System.Collections.Generic;
 using System.Linq;
+using TMPro;
+using UnityEngine;
 
 public class UIManager : MonoBehaviour {
 
@@ -29,77 +27,104 @@ public class UIManager : MonoBehaviour {
 
 	private GameState PrevState;
 
-	void Awake()
+
+    void Awake()
     {
         Instance = this;
     }
 
 	// Use this for initialization
 	void Start () {
+        InputManager_Riki.Instance.ButtonLeftPressedEvent += Instance_ButtonLeftPressedEvent;
+        InputManager_Riki.Instance.ButtonRightPressedEvent += Instance_ButtonRightPressedEvent;
+        InputManager_Riki.Instance.ButtonAPressedEvent += Instance_ButtonAPressedEvent; 
+        InputManager_Riki.Instance.ButtonLPressedEvent += Instance_ButtonLPressedEvent; 
+        InputManager_Riki.Instance.ButtonRPressedEvent += Instance_ButtonRPressedEvent;
+        InputManager_Riki.Instance.ButtonPlusPressedEvent += Instance_ButtonPlusPressedEvent;
+        InputManager_Riki.Instance.RightJoystickUsedEvent += Instance_RightJoystickUsedEvent; 
+        InputManager_Riki.Instance.LeftJoystickUsedEvent += Instance_LeftJoystickUsedEvent; 
 
-		if(PlayerPrefs.GetInt("TutorialCompleted") != 1)
+
+        if (PlayerPrefs.GetInt("TutorialCompleted") != 1)
 		{
 			StartTutorial();
 		}
         CurrentCard = UICardsAnim[0];
         CurrentCard.SetBool("State", true);
+       
+
     }
-	
-	// Update is called once per frame
-	void Update () {
-		ManaTxt.text = GameManagerScript.Instance.ManaPool.ToString();
-	}
 
+   
 
-	/*public bool IsCardOverlapping(UICardID cardID, out UICardID secondCard)
-	{
-		secondCard = UICardID.none;
+    public void DetachEvent()
+    {
 
-		bool res = false;
-		switch (cardID)
-		{
-			case UICardID.Card1:
-				res = IsMouseInside(Char2);
-				secondCard = UICardID.Card2;
-				if(!res)
-				{
-					res = IsMouseInside(Char3);
-					secondCard = UICardID.Card3;
-				}
-				break;
-			case UICardID.Card2:
-				res = IsMouseInside(Char1);
-				secondCard = UICardID.Card1;
-                if (!res)
-                {
-					res = IsMouseInside(Char3);
-					secondCard = UICardID.Card3;
-                }
-                break;
-			case UICardID.Card3:
-				res = IsMouseInside(Char2);
-				secondCard = UICardID.Card2;
-                if (!res)
-                {
-					res = IsMouseInside(Char1);
-					secondCard = UICardID.Card1;
-                }
-                break;
-		}
+        InputManager_Riki.Instance.ButtonLeftPressedEvent -= Instance_ButtonLeftPressedEvent;
+        InputManager_Riki.Instance.ButtonRightPressedEvent -= Instance_ButtonRightPressedEvent;
+        InputManager_Riki.Instance.ButtonAPressedEvent -= Instance_ButtonAPressedEvent;
+        InputManager_Riki.Instance.ButtonLPressedEvent -= Instance_ButtonLPressedEvent;
+        InputManager_Riki.Instance.ButtonRPressedEvent -= Instance_ButtonRPressedEvent;
+        InputManager_Riki.Instance.ButtonPlusPressedEvent -= Instance_ButtonPlusPressedEvent;
+        InputManager_Riki.Instance.RightJoystickUsedEvent -= Instance_RightJoystickUsedEvent; 
+        InputManager_Riki.Instance.LeftJoystickUsedEvent -= Instance_LeftJoystickUsedEvent; 
+    }
 
-		return res;
-	}*/
+    private void Instance_ButtonRPressedEvent()
+    {
+        MoveUI(1);
+    }
 
-	public bool IsMouseInside(RectTransform rectTransform)
-	{
+    private void Instance_ButtonLPressedEvent()
+    {
+        MoveUI(-1);
+    }
 
-		Vector2 localMousePosition = rectTransform.InverseTransformPoint(Input.mousePosition);
-		if (rectTransform.rect.Contains(localMousePosition))
+    private void Instance_ButtonAPressedEvent()
+    {
+        UICardSelection();
+    }
+
+    private void Instance_ButtonRightPressedEvent()
+    {
+        NextTutorial();
+    }
+
+    private void Instance_ButtonLeftPressedEvent()
+    {
+        PrevTutorial();
+    }
+
+    private void Instance_ButtonPlusPressedEvent()
+    {
+        StartTutorial();
+
+    }
+
+    private void Instance_LeftJoystickUsedEvent(InputDirection dir)
+    {
+        if (CurrentCard != null)
         {
-            return true;
+            UICharacterIconScript UIC = CurrentCard.GetComponent<UICharacterIconScript>();
+            if (UIC.isAlreadyUsed && UIC.CurrentPlayer.IsTouchingMe)
+            {
+                if(UIC.CurrentPlayer.Hp >0)
+                {
+                    UIC.CurrentPlayer.MoveChar(dir);
+                }
+            }
         }
-		return false;
-	}
+       
+    }
+
+    private void Instance_RightJoystickUsedEvent(InputDirection dir)
+    {
+    }
+
+    // Update is called once per frame
+    void Update () {
+		ManaTxt.text = GameManagerScript.Instance.ManaPool.ToString();
+    }
 
     public void StartTutorial()
 	{
@@ -110,7 +135,6 @@ public class UIManager : MonoBehaviour {
 		PrevState = GameManagerScript.Instance.CurrentGameState;
 		GameManagerScript.Instance.CurrentGameState = GameState.Pause;
 	}
-
 
     public void NextTutorial()
 	{
@@ -131,27 +155,73 @@ public class UIManager : MonoBehaviour {
 		TutorialParent.blocksRaycasts = false;
 		GameManagerScript.Instance.CurrentGameState = PrevState;
 		PlayerPrefs.SetInt("TutorialCompleted", 1);
-
-       
     }
 
-
-    public void SwitchUIPlayerSelectio(int nextV)
+    private void MoveUI(int nextV)
     {
         CurrentCard.SetBool("State", false);
-        List<Animator> res = UICardsAnim.Where(r => !r.gameObject.GetComponent<UICharacterIconScript>().isAlreadyUsed).ToList();
+        List<Animator> res = UICardsAnim.Where(r => r.gameObject.GetComponent<UICharacterIconScript>().CurrentPlayer == null || r.gameObject.GetComponent<UICharacterIconScript>().CurrentPlayer.Hp > 0).ToList();
+            
         int next = res.IndexOf(CurrentCard) + nextV;
-        if(next < 0)
+        if (next < 0)
         {
             next = res.Count - 1;
         }
-        else if(next == res.Count)
+        else if (next == res.Count)
         {
             next = 0;
         }
-
         CurrentCard = res[next];
         CurrentCard.SetBool("State", true);
     }
 
+    public void UICardSelection()
+    {
+        if(GameManagerScript.Instance.CurrentGameState == GameState.Pause)
+        {
+            CloseTutorial();
+            return;
+        }
+
+        if (GameManagerScript.Instance.CurrentGameState == GameState.End)
+        {
+            GameManagerScript.Instance.RestartScene();
+            return;
+        }
+
+        if (CurrentCard.GetComponent<UICharacterIconScript>().isAlreadyUsed)
+        {
+            UICharacterIconScript UIC = CurrentCard.GetComponent<UICharacterIconScript>();
+            UIC.CurrentPlayer.IsTouchingMe = true;
+        }
+        else
+        {
+            UICharacterIconScript UIC = CurrentCard.GetComponent<UICharacterIconScript>(); 
+            BattleSquareClass bsc = BattleGroundManager.Instance.PBG.GetFreePos();
+            UIC.isAlreadyUsed = true;
+            PlayerChar Pchar = GameManagerScript.Instance.CreatePlayerChar(UIC.PCType, false, bsc.Pos);
+            if (UIC.CurrentPlayer == null)
+            {
+                UIC.CurrentPlayer = Pchar;
+            }
+            UIC.CurrentPlayer.IsTouchingMe = true;
+            if (GameManagerScript.Instance.CurrentGameState == GameState.Intro)
+            {
+                GameManagerScript.Instance.Invoke("StartMatch", GameManagerScript.Instance.StartingTime);
+            }
+
+        }
+    }
+
+}
+
+
+
+public enum SwitchInputType
+{
+    R,
+    L,
+    Left,
+    Right,
+    A
 }
