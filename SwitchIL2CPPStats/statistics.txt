@@ -42,52 +42,52 @@
 
 ----- il2cpp Statistics -----
 General:
-	Conversion Time: 36.317 s
+	Conversion Time: 34.076 s
 	Files Written: 216
-	String Literals: 7506
+	String Literals: 7507
 Methods:
-	Total Methods: 56240
-	Non-Generic Methods: 38189
+	Total Methods: 56248
+	Non-Generic Methods: 38197
 	Generic Type Methods: 15370
 	Generic Methods: 2681
 	Shared Methods: 18007
 	Methods with Tail Calls : 0
 Metadata:
-	Total: 6,259.72 kb
-	String Literals: 58.64 kb
+	Total: 6,261.06 kb
+	String Literals: 58.65 kb
 	String Literal Data: 213.84 kb
-	Metadata Strings: 862.66 kb
+	Metadata Strings: 862.83 kb
 	Events: 4.13 kb
-	Properties: 178.75 kb
-	Methods: 1,324.72 kb
-	Parameter Default Values: 4.34 kb
-	Field Default Values: 104.66 kb
-	Field and Parameter Default Values Data: 199.20 kb
-	Field Marshaled Sizes: 25.62 kb
+	Properties: 178.79 kb
+	Methods: 1,324.97 kb
+	Parameter Default Values: 4.31 kb
+	Field Default Values: 104.74 kb
+	Field and Parameter Default Values Data: 199.23 kb
+	Field Marshaled Sizes: 25.63 kb
 	Parameters: 516.20 kb
-	Fields: 315.20 kb
+	Fields: 315.43 kb
 	Generic Parameters: 13.95 kb
 	Generic Parameter Constraints: 0.92 kb
 	Generic Containers: 11.97 kb
 	Nested Types: 6.91 kb
-	Interfaces: 10.11 kb
-	VTables: 236.90 kb
-	Interface Offsets: 50.20 kb
-	Type Definitions: 492.25 kb
+	Interfaces: 10.12 kb
+	VTables: 236.94 kb
+	Interface Offsets: 50.22 kb
+	Type Definitions: 492.34 kb
 	Images: 1.45 kb
 	Assemblies: 2.46 kb
-	Metadata Usage Lists: 441.88 kb
-	Metadata Usage Pairs: 1,010.72 kb
+	Metadata Usage Lists: 441.95 kb
+	Metadata Usage Pairs: 1,010.91 kb
 	Field Refs: 1.88 kb
 	Referenced Assemblies: 0.72 kb
-	Attribute Types Ranges: 101.32 kb
-	Attribute Types: 51.31 kb
+	Attribute Types Ranges: 101.40 kb
+	Attribute Types: 51.34 kb
 	Unresolved Virtual Call Parameter Types: 8.33 kb
 	Unresolved Virtual Call Parameter Ranges: 5.50 kb
 	Windows Runtime type names: 0.00 kb
 	Exported Types: 3.01 kb
 Codegen:
-	NullChecks : 116229
+	NullChecks : 116264
 Hashing:
 	String Literal Hash Collisions : 0
 	Type Hash Collisions : 0
@@ -110,57 +110,57 @@ Compilation:
 
 
 ----Assembly Conversion Times----
-	Convert Assembly-CSharp (1170.01220703125ms)
-	Convert Mono.Security (187.560699462891ms)
-	Convert mscorlib (4030.30053710938ms)
-	Convert Rewired_Core (4807.63134765625ms)
-	Convert Rewired_NintendoSwitch (138.527297973633ms)
-	Convert System (1144.13598632813ms)
-	Convert System.Configuration (15.639500617981ms)
-	Convert System.Core (34.853401184082ms)
-	Convert System.Xml (2276.80029296875ms)
-	Convert Unity.TextMeshPro (1286.59741210938ms)
-	Convert UnityEngine (9.67990016937256ms)
-	Convert UnityEngine.AIModule (9.12320041656494ms)
-	Convert UnityEngine.AnimationModule (65.1744995117188ms)
-	Convert UnityEngine.AssetBundleModule (10.4343004226685ms)
-	Convert UnityEngine.AudioModule (28.3915996551514ms)
-	Convert UnityEngine.CoreModule (382.527679443359ms)
-	Convert UnityEngine.DirectorModule (8.32590007781982ms)
-	Convert UnityEngine.GridModule (3.21379995346069ms)
-	Convert UnityEngine.IMGUIModule (135.028900146484ms)
-	Convert UnityEngine.InputModule (17.6700992584229ms)
-	Convert UnityEngine.ParticleSystemModule (15.4074001312256ms)
-	Convert UnityEngine.Physics2DModule (25.5340995788574ms)
-	Convert UnityEngine.PhysicsModule (25.9867000579834ms)
-	Convert UnityEngine.SharedInternalsModule (22.4125995635986ms)
-	Convert UnityEngine.SwitchModule (22.7087993621826ms)
-	Convert UnityEngine.TerrainModule (55.9652976989746ms)
-	Convert UnityEngine.TextCoreModule (80.1107025146484ms)
-	Convert UnityEngine.TextRenderingModule (31.7838020324707ms)
-	Convert UnityEngine.TilemapModule (25.6466007232666ms)
-	Convert UnityEngine.UI (1080.88903808594ms)
-	Convert UnityEngine.UIElementsModule (14.2044992446899ms)
-	Convert UnityEngine.UIModule (34.4127006530762ms)
-	Convert UnityEngine.UnityWebRequestModule (9.09700012207031ms)
-	Convert UnityEngine.VFXModule (10.7068004608154ms)
-	Convert UnityEngine.VideoModule (13.4756002426147ms)
-	Convert UnityEngine.VRModule (8.6988000869751ms)
-	Convert UnityEngine.XRModule (45.3913993835449ms)
+	Convert Assembly-CSharp (1098.52209472656ms)
+	Convert Mono.Security (151.032287597656ms)
+	Convert mscorlib (3656.13305664063ms)
+	Convert Rewired_Core (4446.0703125ms)
+	Convert Rewired_NintendoSwitch (129.25749206543ms)
+	Convert System (1098.93542480469ms)
+	Convert System.Configuration (15.1083011627197ms)
+	Convert System.Core (31.3687000274658ms)
+	Convert System.Xml (2286.63110351563ms)
+	Convert Unity.TextMeshPro (1220.02917480469ms)
+	Convert UnityEngine (3.00130009651184ms)
+	Convert UnityEngine.AIModule (9.45660018920898ms)
+	Convert UnityEngine.AnimationModule (40.9846000671387ms)
+	Convert UnityEngine.AssetBundleModule (10.3050003051758ms)
+	Convert UnityEngine.AudioModule (15.676700592041ms)
+	Convert UnityEngine.CoreModule (366.922393798828ms)
+	Convert UnityEngine.DirectorModule (7.74910020828247ms)
+	Convert UnityEngine.GridModule (6.08260011672974ms)
+	Convert UnityEngine.IMGUIModule (131.283599853516ms)
+	Convert UnityEngine.InputModule (13.7161998748779ms)
+	Convert UnityEngine.ParticleSystemModule (15.2584991455078ms)
+	Convert UnityEngine.Physics2DModule (31.4920997619629ms)
+	Convert UnityEngine.PhysicsModule (24.1072998046875ms)
+	Convert UnityEngine.SharedInternalsModule (20.4163017272949ms)
+	Convert UnityEngine.SwitchModule (22.9955997467041ms)
+	Convert UnityEngine.TerrainModule (52.2758026123047ms)
+	Convert UnityEngine.TextCoreModule (74.5120010375977ms)
+	Convert UnityEngine.TextRenderingModule (31.1547012329102ms)
+	Convert UnityEngine.TilemapModule (29.3638019561768ms)
+	Convert UnityEngine.UI (986.206298828125ms)
+	Convert UnityEngine.UIElementsModule (20.5904006958008ms)
+	Convert UnityEngine.UIModule (31.5097980499268ms)
+	Convert UnityEngine.UnityWebRequestModule (8.90390014648438ms)
+	Convert UnityEngine.VFXModule (10.4328002929688ms)
+	Convert UnityEngine.VideoModule (12.2002000808716ms)
+	Convert UnityEngine.VRModule (8.44120025634766ms)
+	Convert UnityEngine.XRModule (40.63330078125ms)
 
 ----Misc Timing----
-	PreProcessStage: 744.313171386719
+	PreProcessStage: 707.344299316406
 	GenericsCollector.Collect: None
-	WriteGenerics: 7397.392578125
-	AllAssemblyConversion: 17753.751953125
+	WriteGenerics: 6918.17333984375
+	AllAssemblyConversion: 16566.01171875
 
 ----Generated Files----
-Assembly-CSharp.cpp	2247786
-Assembly-CSharp1.cpp	2156167
+Assembly-CSharp.cpp	2286687
+Assembly-CSharp1.cpp	2157555
 Assembly-CSharp2.cpp	2117963
 Assembly-CSharp3.cpp	3556226
 Assembly-CSharp4.cpp	2374794
-Assembly-CSharp5.cpp	1573791
+Assembly-CSharp5.cpp	1576410
 GenericMethods.cpp	2235511
 GenericMethods1.cpp	3073400
 GenericMethods2.cpp	1880930
@@ -201,13 +201,13 @@ Generics6.cpp	1944113
 Generics7.cpp	2130296
 Generics8.cpp	2269084
 Generics9.cpp	1305677
-Il2CppAttributes.cpp	7402727
+Il2CppAttributes.cpp	7408265
 Il2CppCodeRegistration.cpp	6182
 Il2CppCompilerCalculateTypeValues.cpp	4937844
 Il2CppCompilerCalculateTypeValues1.cpp	5058441
 Il2CppCompilerCalculateTypeValues2.cpp	6172678
-Il2CppCompilerCalculateTypeValues3.cpp	1566640
-Il2CppCompilerCalculateTypeValuesTable.cpp	838771
+Il2CppCompilerCalculateTypeValues3.cpp	1577677
+Il2CppCompilerCalculateTypeValuesTable.cpp	838948
 Il2CppGenericComDefinitions.cpp	214
 Il2CppGenericMethodPointerTable.cpp	4462906
 Il2CppInteropDataTable.cpp	250648

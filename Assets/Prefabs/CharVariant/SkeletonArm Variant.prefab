@@ -147,10 +147,12 @@ MonoBehaviour:
   ControllerT: 0
   EIC:
     EType: 0
-    EPType: 0
     MinPartsToStartNewAttack: 2
+    StartingPos: {x: 0, y: 0}
     MinTimer: 0
     MaxTimer: 0
+    MinMovementTimer: 0
+    MaxMovementTimer: 0
     Hp: 0
     PercOfCounterAtt: 50
     Attacks: []
@@ -158,11 +160,19 @@ MonoBehaviour:
   BSCs: []
   EnemyTargetAttack: {fileID: 0}
   Anim: {fileID: 242448220452418524}
+  BSC:
+    T: {fileID: 0}
+    IsEmpty: 0
+    Pos: {x: 0, y: 0}
+    Owner: {fileID: 0}
+    BFQS: {fileID: 0}
   isAlive: 1
   MinTime: 0
   MaxTime: 0
   AttackParticlesPosition: {fileID: 0}
   BaseHp: 0
+  isMoving: 0
+  BodyBase: {fileID: 3041419282619193759}
 --- !u!54 &155234593746643581
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -274,6 +284,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Parent: {fileID: 0}
   ParentE: {fileID: 68708703866962680}
+--- !u!114 &5940930611523708784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512273400691944700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3f8b2d1f052e410ab964cd1e74c54e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Anim: {fileID: 242448220452418524}
+  Parent: {fileID: 0}
 --- !u!1001 &2969019834284174246
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -291,6 +315,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3056055805320435834, guid: 69e0c24c6ea00d34e814b8c8bbac2737,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: bf7108e3c91d2614faefa5454e27268a, type: 2}
     - target: {fileID: 216552621372256825, guid: 69e0c24c6ea00d34e814b8c8bbac2737,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -346,13 +375,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3056055805320435834, guid: 69e0c24c6ea00d34e814b8c8bbac2737,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: bf7108e3c91d2614faefa5454e27268a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69e0c24c6ea00d34e814b8c8bbac2737, type: 3}
+--- !u!1 &512273400691944700 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3328131806121101146, guid: 69e0c24c6ea00d34e814b8c8bbac2737,
+    type: 3}
+  m_PrefabInstance: {fileID: 2969019834284174246}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3041419282619193759 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 216552621372256825, guid: 69e0c24c6ea00d34e814b8c8bbac2737,

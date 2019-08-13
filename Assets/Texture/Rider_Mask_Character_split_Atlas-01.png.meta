@@ -1,0 +1,808 @@
+fileFormatVersion: 2
+guid: 86d4cb19d72187a4e88f401f07f6ce35
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6886434939275393531
+    second: Rider_Back_ArmUp
+  - first:
+      213: -9003641440975505959
+    second: Rider_Front_ArmUp
+  - first:
+      213: -3648276234699954120
+    second: Rider_Back_Cannon1
+  - first:
+      213: 4344361235592928982
+    second: Rider_Back_Wheel
+  - first:
+      213: 8100132994541500891
+    second: Rider_Front_Cannon1
+  - first:
+      213: 9163447316943791940
+    second: Rider_Front_Wheel
+  - first:
+      213: 6104023373096815641
+    second: Rider_Back_Arm
+  - first:
+      213: 8491134684492823316
+    second: Rider_Front_Arm
+  - first:
+      213: -6581560688833020116
+    second: Rider_Back_Cannon2
+  - first:
+      213: -3131829243745456918
+    second: Rider_Front_Cannon2
+  - first:
+      213: -7835011968390252389
+    second: Rider_Torso
+  - first:
+      213: 1216540504017132454
+    second: Rider_Right_Leg
+  - first:
+      213: -2946252226852059500
+    second: Rider_Left_Leg
+  - first:
+      213: -370771821901205020
+    second: Rider_Left_ear
+  - first:
+      213: 76864860092084388
+    second: Rider_Mask
+  - first:
+      213: -1962926095415410601
+    second: Rider_Back_WheelCover
+  - first:
+      213: -4922992148545457564
+    second: Rider_Front_WheelCover
+  - first:
+      213: -6114120705427093048
+    second: Rider_Right_ear
+  - first:
+      213: -7867421419794515982
+    second: Rider_Bike
+  - first:
+      213: 658925765026084007
+    second: Rider_Back_Hair
+  - first:
+      213: -4154407027355568747
+    second: Rider_Front_Hair
+  - first:
+      213: 9701218931415251
+    second: Rider_Light
+  - first:
+      213: -772571851834915586
+    second: Rider_Main_Hair3
+  - first:
+      213: 2428272836263280536
+    second: Rider_Main_Hair1
+  - first:
+      213: 3240836350574424508
+    second: Rider_Main_Hair
+  - first:
+      213: -6653675608019781694
+    second: Rider_Main_Hair4
+  - first:
+      213: 5827065682733612464
+    second: Rider_Main_Hair2
+  - first:
+      213: -181697672392891575
+    second: Rider_Shadow
+  - first:
+      213: -3136506148562629661
+    second: Rider_Seat
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Rider_Back_ArmUp
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 1790
+        width: 80
+        height: 221
+      alignment: 9
+      pivot: {x: 0.8583981, y: 0.9540018}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5b25e5fb9c77ca42855080a4592baf1
+      internalID: 6886434939275393531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rider_Front_ArmUp
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 1817
+        width: 71
+        height: 207
+      alignment: 9
+      pivot: {x: 0.38007107, y: 0.9300472}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34823359e108d4a4fac3dfb8cd1c9789
+      internalID: -9003641440975505959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rider_Back_Cannon1
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 1823
+        width: 231
+        height: 114
+      alignment: 9
+      pivot: {x: 0.97299945, y: 0.543033}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e4654478e9766a4383c052eb090a886
+      internalID: -3648276234699954120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rider_Back_Wheel
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 1538
+        width: 459
+        height: 465
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd7c4cfbc8e4153478babd6a35e55efa
+      internalID: 4344361235592928982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rider_Front_Cannon1
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 1814
+        width: 232
+        height: 114
+      alignment: 9
+      pivot: {x: 0.9789785, y: 0.5744372}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8ac724725722674b9a6784d2f97bf74
+      internalID: 8100132994541500891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rider_Front_Wheel
+      rect:
+        serializedVersion: 2
+        x: 1541
+        y: 1531
+        width: 459
+        height: 465
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3882b5a2ae7a1046b03e36353a6e67f
+      internalID: 9163447316943791940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rider_Back_Arm
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 1569
+        width: 50
+        height: 207
+      alignment: 9
+      pivot: {x: 0.5000006, y: 0.97280484}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86c0a9b31f7dcbf4a866346d1ac6c2b8
+      internalID: 6104023373096815641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rider_Front_Arm
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 1565
+        width: 138
+        height: 220
+      alignment: 9
+      pivot: {x: 0.842168, y: 0.92926526}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff72c5883eb525a4fa435a63f35260ec
+      internalID: 8491134684492823316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rider_Back_Cannon2
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 1607
+        width: 231
+        height: 114
+      alignment: 9
+      pivot: {x: 0.955624, y: 0.55476886}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05f30bed17174cb40aa7262c631c1f85
+      internalID: -6581560688833020116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rider_Front_Cannon2
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 1600
+        width: 231
+        height: 114
+      alignment: 9
+      pivot: {x: 0.9803916, y: 0.54008085}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f61a5c0cb93f3d447962a04a520cdad3
+      internalID: -3131829243745456918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rider_Torso
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 1292
+        width: 197
+        height: 226
+      alignment: 9
+      pivot: {x: 0.8209709, y: 0.19690104}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dd3ddd6b757eac41a2c8a27ca60e9a6
+      internalID: -7835011968390252389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rider_Right_Leg
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 1324
+        width: 146
+        height: 199
+      alignment: 9
+      pivot: {x: 0.67369854, y: 0.74294263}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbf1f789a0033c34a8fee6765c723b11
+      internalID: 1216540504017132454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rider_Left_Leg
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 1309
+        width: 155
+        height: 248
+      alignment: 9
+      pivot: {x: 0.47593048, y: 0.8003161}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4218a91cb9c92884fa39fb00b4971812
+      internalID: -2946252226852059500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rider_Left_ear
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 1415
+        width: 109
+        height: 64
+      alignment: 9
+      pivot: {x: 0.099379234, y: 0.22894478}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6116af3b8412e0428d8b487a097c695
+      internalID: -370771821901205020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rider_Mask
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 1040
+        width: 161
+        height: 455
+      alignment: 9
+      pivot: {x: 0.8169393, y: 0.24633226}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bb9386c25f231f479f5deb935346d98
+      internalID: 76864860092084388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rider_Back_WheelCover
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 1018
+        width: 404
+        height: 465
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c27c9d97daf1e3d44994b7dc3da66802
+      internalID: -1962926095415410601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rider_Front_WheelCover
+      rect:
+        serializedVersion: 2
+        x: 1597
+        y: 1011
+        width: 403
+        height: 465
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d5f93bdd8327d043b19254962bdaaaf
+      internalID: -4922992148545457564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rider_Right_ear
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 1344
+        width: 72
+        height: 45
+      alignment: 9
+      pivot: {x: 0.8821742, y: 0.32718912}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a88f476c9a4af2468da5d8f17fadf3e
+      internalID: -6114120705427093048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rider_Bike
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 623
+        width: 565
+        height: 640
+      alignment: 9
+      pivot: {x: 0.468233, y: 0.042877197}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07d3e29fbca092742aa4989e9e4bd5ff
+      internalID: -7867421419794515982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rider_Back_Hair
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 1083
+        width: 43
+        height: 208
+      alignment: 9
+      pivot: {x: 0.31364405, y: 0.94304365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8171f58821b6605489a91951a4f5e387
+      internalID: 658925765026084007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rider_Front_Hair
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1091
+        width: 32
+        height: 198
+      alignment: 9
+      pivot: {x: 0.3747921, y: 0.935066}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa23afb647a56e24bb95bb44f24514b6
+      internalID: -4154407027355568747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rider_Light
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 805
+        width: 179
+        height: 207
+      alignment: 9
+      pivot: {x: 0.9111079, y: 0.4306346}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dddaec69405b1a4295f5caf3120e5d3
+      internalID: 9701218931415251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rider_Main_Hair3
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 929
+        width: 55
+        height: 28
+      alignment: 9
+      pivot: {x: 0.22618519, y: 0.14977156}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93dc612cd40e62f47a1e2b98c4e63358
+      internalID: -772571851834915586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rider_Main_Hair1
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 804
+        width: 233
+        height: 164
+      alignment: 9
+      pivot: {x: 0.19359723, y: 0.5570906}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb34b704d06c6a84c9ebd37915b3d23f
+      internalID: 2428272836263280536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rider_Main_Hair
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 452
+        width: 456
+        height: 505
+      alignment: 9
+      pivot: {x: 0.053415667, y: 0.7688347}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d04e58ed862b1f4da5c40bddf4a9aaa
+      internalID: 3240836350574424508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rider_Main_Hair4
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 823
+        width: 105
+        height: 53
+      alignment: 9
+      pivot: {x: 0.03636765, y: 0.7378874}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 396c63879a6e7044488b39e6906f585d
+      internalID: -6653675608019781694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rider_Main_Hair2
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 662
+        width: 200
+        height: 84
+      alignment: 9
+      pivot: {x: 0.09037414, y: 0.38853672}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93a0626e56bd8214d8d2275b5fc316e3
+      internalID: 5827065682733612464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rider_Shadow
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 411
+        width: 544
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ab63212fe026164ab741d39201c250a
+      internalID: -181697672392891575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rider_Seat
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 13
+        width: 569
+        height: 373
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: debabd9fdff04f549b6f8624c86788ad
+      internalID: -3136506148562629661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 864b7a8c918f6d54998cf5995d49c875
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

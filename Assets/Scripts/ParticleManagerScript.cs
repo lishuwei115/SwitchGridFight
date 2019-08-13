@@ -25,6 +25,10 @@ public class ParticleManagerScript : MonoBehaviour
     public GameObject ArmAParticles;
     public GameObject BabyParticles;
     public GameObject BabyAParticles;
+    public GameObject BlindParticles;
+    public GameObject BlindAParticles;
+    public GameObject RiderParticles;
+    public GameObject RiderAParticles;
 
     public List<ParticlesClass> ParticlesFired = new List<ParticlesClass>();
 
@@ -66,6 +70,12 @@ public class ParticleManagerScript : MonoBehaviour
                 case ParticleTypes.BabyA:
                     ps = BabyAParticles;
                     break;
+                case ParticleTypes.BlindA:
+                    ps = BlindAParticles;
+                    break;
+                case ParticleTypes.RiderA:
+                    ps = RiderAParticles;
+                    break;
             }
             GameObject go;
 			go = Instantiate(ps, pos, Quaternion.identity);
@@ -101,11 +111,6 @@ public class ParticleManagerScript : MonoBehaviour
         {
 			psC.PS.transform.rotation = Quaternion.Euler(board.eulerAngles);
 			psC.PS.transform.position = board.position;
-           /* BulletScript bullet;
-            bullet = psC.PS.GetComponent<BulletScript>();
-			bullet.AType =  AttackType.Static;
-            bullet.Damage = attackClass.AttackPower;
-            bullet.ControllerT = controllerType;*/
             psC.PS.SetActive(true);
 			StartCoroutine(StopBoardAttackParticles(psC));
         }
@@ -129,14 +134,18 @@ public class ParticleManagerScript : MonoBehaviour
 				case ParticleTypes.SkeletonWhole:
                     ps = WholeParticles;
                     break;
+                case ParticleTypes.Baby:
+                    ps = BabyParticles;
+                    break;
+                case ParticleTypes.Blind:
+                    ps = BlindParticles;
+                    break;
+                case ParticleTypes.Rider:
+                    ps = RiderParticles;
+                    break;
             }
             GameObject go;
-           // BulletScript bullet;
 			go = Instantiate(ps, board.position, Quaternion.Euler(board.eulerAngles));
-          /*  bullet = go.GetComponent<BulletScript>();
-			bullet.AType =  AttackType.Static;
-            bullet.Damage = attackClass.AttackPower;
-            bullet.ControllerT = controllerType;*/
             go.SetActive(true);
 			ParticlesClass psc = new ParticlesClass(go, pType);
             ParticlesFired.Add(psc);
@@ -334,5 +343,9 @@ public enum ParticleTypes
     SkeletonAGuns,
     SkeletonAArm,
     Baby,
-    BabyA
+    BabyA,
+    Blind,
+    BlindA,
+    Rider,
+    RiderA
 }

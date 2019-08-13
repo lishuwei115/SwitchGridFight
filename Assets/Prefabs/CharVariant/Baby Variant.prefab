@@ -965,6 +965,7 @@ MonoBehaviour:
   AttackParticlesPosition: {fileID: 0}
   BaseHp: 0
   isMoving: 0
+  BodyBase: {fileID: 6331531996701349995}
 --- !u!54 &6128701968059297678
 Rigidbody:
   m_ObjectHideFlags: 0

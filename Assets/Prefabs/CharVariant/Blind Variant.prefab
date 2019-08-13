@@ -81,8 +81,8 @@ MonoBehaviour:
   ControllerT: 0
   EIC:
     EType: 0
-    EPType: 0
     MinPartsToStartNewAttack: 2
+    StartingPos: {x: 0, y: 0}
     MinTimer: 0
     MaxTimer: 0
     MinMovementTimer: 0
@@ -106,6 +106,7 @@ MonoBehaviour:
   AttackParticlesPosition: {fileID: 0}
   BaseHp: 0
   isMoving: 0
+  BodyBase: {fileID: 829349324239389833}
 --- !u!54 &5319100913536737617
 Rigidbody:
   m_ObjectHideFlags: 0

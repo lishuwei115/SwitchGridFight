@@ -159,20 +159,24 @@ public class UIManager : MonoBehaviour {
 
     private void MoveUI(int nextV)
     {
-        CurrentCard.SetBool("State", false);
-        List<Animator> res = UICardsAnim.Where(r => r.gameObject.GetComponent<UICharacterIconScript>().CurrentPlayer == null || r.gameObject.GetComponent<UICharacterIconScript>().CurrentPlayer.Hp > 0).ToList();
-            
-        int next = res.IndexOf(CurrentCard) + nextV;
-        if (next < 0)
+        if(GameManagerScript.Instance.CurrentGameState != GameState.Pause)
         {
-            next = res.Count - 1;
+            CurrentCard.SetBool("State", false);
+            List<Animator> res = UICardsAnim.Where(r => r.gameObject.GetComponent<UICharacterIconScript>().CurrentPlayer == null || r.gameObject.GetComponent<UICharacterIconScript>().CurrentPlayer.Hp > 0).ToList();
+
+            int next = res.IndexOf(CurrentCard) + nextV;
+            if (next < 0)
+            {
+                next = res.Count - 1;
+            }
+            else if (next == res.Count)
+            {
+                next = 0;
+            }
+            CurrentCard = res[next];
+            CurrentCard.SetBool("State", true);
         }
-        else if (next == res.Count)
-        {
-            next = 0;
-        }
-        CurrentCard = res[next];
-        CurrentCard.SetBool("State", true);
+        
     }
 
     public void UICardSelection()

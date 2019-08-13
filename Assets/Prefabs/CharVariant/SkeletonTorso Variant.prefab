@@ -162,10 +162,12 @@ MonoBehaviour:
   ControllerT: 0
   EIC:
     EType: 0
-    EPType: 0
     MinPartsToStartNewAttack: 2
+    StartingPos: {x: 0, y: 0}
     MinTimer: 0
     MaxTimer: 0
+    MinMovementTimer: 0
+    MaxMovementTimer: 0
     Hp: 0
     PercOfCounterAtt: 50
     Attacks: []
@@ -173,11 +175,19 @@ MonoBehaviour:
   BSCs: []
   EnemyTargetAttack: {fileID: 0}
   Anim: {fileID: 7526475998766448620}
+  BSC:
+    T: {fileID: 0}
+    IsEmpty: 0
+    Pos: {x: 0, y: 0}
+    Owner: {fileID: 0}
+    BFQS: {fileID: 0}
   isAlive: 1
   MinTime: 0
   MaxTime: 0
   AttackParticlesPosition: {fileID: 0}
   BaseHp: 0
+  isMoving: 0
+  BodyBase: {fileID: 2198379455997657528}
 --- !u!54 &829273840342929895
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -274,6 +284,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
+--- !u!114 &5264141058270597115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4551872756400687833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3f8b2d1f052e410ab964cd1e74c54e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Anim: {fileID: 7526475998766448620}
+  Parent: {fileID: 0}
 --- !u!1001 &634607442325901468
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -353,6 +377,12 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 42e79660cc458d947862e94dfca42730, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c41d4328666170443aec6608aef9d449, type: 3}
+--- !u!1 &4551872756400687833 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4027647693838686789, guid: c41d4328666170443aec6608aef9d449,
+    type: 3}
+  m_PrefabInstance: {fileID: 634607442325901468}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2198379455997657528 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1606837756097876260, guid: c41d4328666170443aec6608aef9d449,

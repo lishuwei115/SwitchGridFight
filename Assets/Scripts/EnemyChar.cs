@@ -21,7 +21,7 @@ public class EnemyChar : CharacterBase
     public float BaseHp;
     public bool isMoving = false;
     private float HitTime = -10;
-
+    public Transform BodyBase;
     AttackClass CurrentAttack;
 
     // Start is called before the first frame update
@@ -30,21 +30,23 @@ public class EnemyChar : CharacterBase
         CurrentAttack = EIC.Attacks[0];
         BaseHp = EIC.Hp;
         StartCoroutine(SingleEnemyAttackAction(true));
-        StartCoroutine(MoveCo());
+        if (!EIC.EType.ToString().Contains("Skeleton"))
+        {
+            StartCoroutine(MoveCo());
+        }
     }
 
     private void Update()
 	{
-		if(EIC.Hp > 0 && !StartNewAttack)
-		{
-		}
-
-
         if (GameManagerScript.Instance.CurrentGameState == GameState.StartMatch)
         {
             if (Time.time - HitTime > 0.3f)
             {
-                //item.color = Color.white;
+
+                foreach (var item in BodyBase.GetComponentsInChildren<SpriteRenderer>())
+                {
+                    item.color = Color.white;
+                }
             }
 
         }
@@ -252,14 +254,11 @@ public class EnemyChar : CharacterBase
             {
                 GetDamage(bullet.Damage);
             }
-
-            
-
-                //item.color = Color.red;
-
-
+            foreach (var item in BodyBase.GetComponentsInChildren<SpriteRenderer>())
+            {
+                item.color = Color.red;
+            }
             HitTime = Time.time;
-            //Debug.Log(name);
             StartCoroutine(bullet.SelfDeactivate(3));
         }
     }
@@ -276,8 +275,8 @@ public class EnemyChar : CharacterBase
 		EIC.Hp -= damage;
 		if(EIC.Hp <= 0)
 		{
-			
-		}
+            Anim.SetInteger("State", 5);
+        }
 		else
 		{
 			float perc = Random.Range(0, 100);
@@ -324,7 +323,9 @@ public enum EnemyType
     SkeletonMonsterTorso,
     SkeletonMonsterGuns,
     SkeletonMonsterArm,
-    Baby
+    Baby,
+    Blind,
+    Rider
 }
 
 public enum EnemyPosType
