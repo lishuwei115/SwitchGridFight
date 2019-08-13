@@ -20,6 +20,7 @@ public class UICharacterIconScript : MonoBehaviour , IBeginDragHandler, IDragHan
 	public bool isAlreadyUsed = false;
 	private float CurrentSize;
 	public RectTransform HpBar;
+    public Canvas CanvasComponent;
 
     public void OnBeginDrag(PointerEventData eventData)
     {
@@ -83,6 +84,12 @@ public class UICharacterIconScript : MonoBehaviour , IBeginDragHandler, IDragHan
 			Icon.color = color;
 		}
 	}
+
+    public void SetCanvasLayer(int v)
+    {
+        CanvasComponent.sortingOrder = v;
+    }
+
 
 	/*private void MoveCharOnBoard(Vector3 pointer)
     {

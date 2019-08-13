@@ -37,7 +37,9 @@ public class UIManager : MonoBehaviour {
 	void Start () {
         InputManager_Riki.Instance.ButtonLeftPressedEvent += Instance_ButtonLeftPressedEvent;
         InputManager_Riki.Instance.ButtonRightPressedEvent += Instance_ButtonRightPressedEvent;
-        InputManager_Riki.Instance.ButtonAPressedEvent += Instance_ButtonAPressedEvent; 
+        InputManager_Riki.Instance.ButtonDownPressedEvent += Instance_ButtonDownPressedEvent;
+        InputManager_Riki.Instance.ButtonAPressedEvent += Instance_ButtonAPressedEvent;
+        InputManager_Riki.Instance.ButtonXPressedEvent += Instance_ButtonXPressedEvent;
         InputManager_Riki.Instance.ButtonLPressedEvent += Instance_ButtonLPressedEvent; 
         InputManager_Riki.Instance.ButtonRPressedEvent += Instance_ButtonRPressedEvent;
         InputManager_Riki.Instance.ButtonPlusPressedEvent += Instance_ButtonPlusPressedEvent;
@@ -62,12 +64,32 @@ public class UIManager : MonoBehaviour {
 
         InputManager_Riki.Instance.ButtonLeftPressedEvent -= Instance_ButtonLeftPressedEvent;
         InputManager_Riki.Instance.ButtonRightPressedEvent -= Instance_ButtonRightPressedEvent;
+        InputManager_Riki.Instance.ButtonDownPressedEvent -= Instance_ButtonDownPressedEvent;
         InputManager_Riki.Instance.ButtonAPressedEvent -= Instance_ButtonAPressedEvent;
+        InputManager_Riki.Instance.ButtonXPressedEvent -= Instance_ButtonXPressedEvent;
         InputManager_Riki.Instance.ButtonLPressedEvent -= Instance_ButtonLPressedEvent;
         InputManager_Riki.Instance.ButtonRPressedEvent -= Instance_ButtonRPressedEvent;
         InputManager_Riki.Instance.ButtonPlusPressedEvent -= Instance_ButtonPlusPressedEvent;
         InputManager_Riki.Instance.RightJoystickUsedEvent -= Instance_RightJoystickUsedEvent; 
         InputManager_Riki.Instance.LeftJoystickUsedEvent -= Instance_LeftJoystickUsedEvent; 
+    }
+
+
+    private void Instance_ButtonXPressedEvent()
+    {
+        if (GameManagerScript.Instance.CurrentGameState == GameState.Pause)
+        {
+            GameManagerScript.Instance.RestartScene();
+        }
+    }
+
+    private void Instance_ButtonDownPressedEvent()
+    {
+        if (GameManagerScript.Instance.CurrentGameState == GameState.Pause)
+        {
+            CloseTutorial();
+            return;
+        }
     }
 
     private void Instance_ButtonRPressedEvent()
@@ -181,11 +203,7 @@ public class UIManager : MonoBehaviour {
 
     public void UICardSelection()
     {
-        if(GameManagerScript.Instance.CurrentGameState == GameState.Pause)
-        {
-            CloseTutorial();
-            return;
-        }
+        
 
         if (GameManagerScript.Instance.CurrentGameState == GameState.End)
         {
