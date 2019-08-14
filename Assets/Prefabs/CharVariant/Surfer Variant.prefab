@@ -159,7 +159,7 @@ MonoBehaviour:
     Actions: []
   BSCs: []
   EnemyTargetAttack: {fileID: 0}
-  Anim: {fileID: 0}
+  Anim: {fileID: 7527855314318145739}
   BSC:
     T: {fileID: 0}
     IsEmpty: 0
@@ -364,6 +364,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2745425290202765384, guid: 6f21739d56c840342b15e299678c412a,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f21739d56c840342b15e299678c412a, type: 3}

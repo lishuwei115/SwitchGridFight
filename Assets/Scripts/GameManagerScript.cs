@@ -21,6 +21,7 @@ public class GameManagerScript : MonoBehaviour
     public GameObject Baby;
     public GameObject Blind;
     public GameObject Rider;
+    public GameObject Surfer;
     public GameObject Skeleton_Arm;
     public GameObject Skeleton_Guns;
     public GameObject Skeleton_Torso;
@@ -243,6 +244,9 @@ public class GameManagerScript : MonoBehaviour
                 break;
             case EnemyType.Rider:
                 c = Instantiate(Rider, EnemiesContainer);
+                break;
+            case EnemyType.Surfer:
+                c = Instantiate(Surfer, EnemiesContainer);
                 break;
         }
         EnemyChar cb = c.GetComponent<EnemyChar>();

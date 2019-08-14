@@ -329,7 +329,8 @@ public enum EnemyType
     SkeletonMonsterArm,
     Baby,
     Blind,
-    Rider
+    Rider,
+    Surfer
 }
 
 public enum EnemyPosType

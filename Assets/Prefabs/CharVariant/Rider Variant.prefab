@@ -254,7 +254,7 @@ MonoBehaviour:
     Actions: []
   BSCs: []
   EnemyTargetAttack: {fileID: 0}
-  Anim: {fileID: 0}
+  Anim: {fileID: 1045060418541920617}
   BSC:
     T: {fileID: 0}
     IsEmpty: 0
