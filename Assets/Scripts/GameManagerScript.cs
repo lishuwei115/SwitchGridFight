@@ -57,18 +57,13 @@ public class GameManagerScript : MonoBehaviour
 
     public void StartMatch()
 	{
+        Debug.Log("Enter");
 		CurrentGameState = GameState.StartMatch;
 		StartCoroutine(SpawnPowerUps());
 	}
 
 	private void Update()
 	{
-
-		if(Input.GetKeyUp(KeyCode.G))
-		{
-			CurrentGameState = CurrentGameState == GameState.StartMatch ? GameState.Pause : GameState.StartMatch;
-		}
-
 
 		if(CurrentGameState == GameState.StartMatch && Characters.Where(r=> r.gameObject.activeInHierarchy).ToList().Count == 0 && Characters.Count == 4)// && ManaPool < 400
 		{

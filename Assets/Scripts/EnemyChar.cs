@@ -193,18 +193,22 @@ public class EnemyChar : CharacterBase
             yield return new WaitForSecondsRealtime(CurrentAttack.YellowTargetTimer + CurrentAttack.RedTargetTimer + Delay);
             complete = true;
         }
+
+        StartCoroutine(SingleEnemyAttackAction(true));
     }
 
 
     public IEnumerator MoveToStartingPos(Vector3 startingPos)
     {
+        Debug.Log(startingPos);
         Anim.SetInteger("State", 0);
         float timer = 0;
         Vector3 offset = transform.position;
         while (timer < 1)
         {
             yield return new WaitForFixedUpdate();
-            while (GameManagerScript.Instance.CurrentGameState != GameState.Intro)
+            
+            while (GameManagerScript.Instance.CurrentGameState != GameState.Intro && GameManagerScript.Instance.CurrentGameState != GameState.EndIntro)
             {
                 yield return new WaitForEndOfFrame();
             }

@@ -224,11 +224,11 @@ public class PlayerChar : CharacterBase
     {
         if(Time.time - MovingOffset > MovingCoolDown)
         {
-            Debug.Log(Time.time + "  " + MovingOffset + "  " + MovingCoolDown);
+            //Debug.Log(Time.time + "  " + MovingOffset + "  " + MovingCoolDown);
             MovingOffset = Time.time;
             BattleSquareClass prevBSC = BSC;
             int AnimState = 0;
-            Debug.Log(nextDir);
+            //Debug.Log(nextDir);
             switch (nextDir)
             {
                 case InputDirection.Up:
@@ -400,7 +400,7 @@ public class PlayerChar : CharacterBase
 		while (timer < 1)
 		{
 			yield return new WaitForFixedUpdate();
-			while (GameManagerScript.Instance.CurrentGameState != GameState.StartMatch)
+			while (GameManagerScript.Instance.CurrentGameState == GameState.Pause)
             {
                 yield return new WaitForEndOfFrame();
             }
