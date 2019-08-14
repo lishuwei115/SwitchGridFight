@@ -144,7 +144,6 @@ public class EnemyChar : CharacterBase
         switch (EIC.EType)
         {
             case EnemyType.SkeletonMonsterArm:
-                
                 ParticleManagerScript.Instance.EnemyPartAttackParticles(ParticleTypes.SkeletonAArm, BSC.T.position);
                 break;
             case EnemyType.SkeletonMonsterHead:
@@ -174,7 +173,7 @@ public class EnemyChar : CharacterBase
                 {
                     yield return new WaitForEndOfFrame();
                 }
-                bsc = BattleGroundManager.Instance.PBG.GetBattleGroundPosition(aa.Pos);
+                bsc = BattleGroundManager.Instance.PBG.GetBattleGroundPosition(new Vector2Int(Pos.x, aa.Pos.y));
                 listOfbsc.Add(bsc);
                 if (EIC.Hp <= 0)
                 {
