@@ -132,6 +132,51 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 101
       objectReference: {fileID: 0}
+    - target: {fileID: 4444310434184169435, guid: cd0382036319f894696fd83cbe673519,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 101
+      objectReference: {fileID: 0}
+    - target: {fileID: 4444310434184218641, guid: cd0382036319f894696fd83cbe673519,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 101
+      objectReference: {fileID: 0}
+    - target: {fileID: 4444310434184249543, guid: cd0382036319f894696fd83cbe673519,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4444310434182493381, guid: cd0382036319f894696fd83cbe673519,
+        type: 3}
+      propertyPath: InitialModule.startRotationX.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4444310434182493381, guid: cd0382036319f894696fd83cbe673519,
+        type: 3}
+      propertyPath: InitialModule.startRotationY.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4444310434182476051, guid: cd0382036319f894696fd83cbe673519,
+        type: 3}
+      propertyPath: InitialModule.startRotationX.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4444310434182476051, guid: cd0382036319f894696fd83cbe673519,
+        type: 3}
+      propertyPath: InitialModule.startRotationY.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4444310434182511003, guid: cd0382036319f894696fd83cbe673519,
+        type: 3}
+      propertyPath: InitialModule.startRotationX.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4444310434182511003, guid: cd0382036319f894696fd83cbe673519,
+        type: 3}
+      propertyPath: InitialModule.startRotationY.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4444310434182540733, guid: cd0382036319f894696fd83cbe673519,
         type: 3}
       propertyPath: InitialModule.startSizeY.minMaxState
@@ -152,55 +197,10 @@ PrefabInstance:
       propertyPath: InitialModule.startRotationY.minMaxState
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 4444310434184218641, guid: cd0382036319f894696fd83cbe673519,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 101
-      objectReference: {fileID: 0}
-    - target: {fileID: 4444310434182511003, guid: cd0382036319f894696fd83cbe673519,
-        type: 3}
-      propertyPath: InitialModule.startRotationX.minMaxState
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4444310434182511003, guid: cd0382036319f894696fd83cbe673519,
-        type: 3}
-      propertyPath: InitialModule.startRotationY.minMaxState
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 4444310434182563383, guid: cd0382036319f894696fd83cbe673519,
         type: 3}
       propertyPath: m_SortingOrder
       value: 101
-      objectReference: {fileID: 0}
-    - target: {fileID: 4444310434182493381, guid: cd0382036319f894696fd83cbe673519,
-        type: 3}
-      propertyPath: InitialModule.startRotationX.minMaxState
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4444310434182493381, guid: cd0382036319f894696fd83cbe673519,
-        type: 3}
-      propertyPath: InitialModule.startRotationY.minMaxState
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4444310434184169435, guid: cd0382036319f894696fd83cbe673519,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 101
-      objectReference: {fileID: 0}
-    - target: {fileID: 4444310434182476051, guid: cd0382036319f894696fd83cbe673519,
-        type: 3}
-      propertyPath: InitialModule.startRotationX.minMaxState
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4444310434182476051, guid: cd0382036319f894696fd83cbe673519,
-        type: 3}
-      propertyPath: InitialModule.startRotationY.minMaxState
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4444310434184249543, guid: cd0382036319f894696fd83cbe673519,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd0382036319f894696fd83cbe673519, type: 3}
@@ -222,41 +222,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medieval Variant
       objectReference: {fileID: 0}
-    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
-        type: 3}
-      propertyPath: PowerUpParticles.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
-        type: 3}
-      propertyPath: Anim
-      value: 
-      objectReference: {fileID: 3668145058748414089}
-    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
-        type: 3}
-      propertyPath: ShootingPoint
-      value: 
-      objectReference: {fileID: 1407009146616523750}
-    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
-        type: 3}
-      propertyPath: PowerUpParticles.Array.data[0]
-      value: 
-      objectReference: {fileID: 3347905930587333361}
-    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
-        type: 3}
-      propertyPath: PowerUpParticles.Array.data[1]
-      value: 
-      objectReference: {fileID: 3134931941477307917}
-    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
-        type: 3}
-      propertyPath: PowerUpParticles.Array.data[2]
-      value: 
-      objectReference: {fileID: 4014186939913151305}
-    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
-        type: 3}
-      propertyPath: AttackAudio
-      value: 
-      objectReference: {fileID: 8300000, guid: 61306ebe4cf5a46c698605ab93e74feb, type: 3}
     - target: {fileID: 1019995682220121483, guid: 3b8956433113349bfae025a9b9ed1ba9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -314,8 +279,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 991271293, guid: 3b8956433113349bfae025a9b9ed1ba9, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
+        type: 3}
+      propertyPath: Anim
+      value: 
+      objectReference: {fileID: 3668145058748414089}
+    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
+        type: 3}
+      propertyPath: ShootingPoint
+      value: 
+      objectReference: {fileID: 1407009146616523750}
+    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
+        type: 3}
+      propertyPath: PowerUpParticles.Array.data[0]
+      value: 
+      objectReference: {fileID: 3347905930587333361}
+    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
+        type: 3}
+      propertyPath: PowerUpParticles.Array.data[1]
+      value: 
+      objectReference: {fileID: 3134931941477307917}
+    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
+        type: 3}
+      propertyPath: PowerUpParticles.Array.data[2]
+      value: 
+      objectReference: {fileID: 4014186939913151305}
+    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
+        type: 3}
+      propertyPath: AttackAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 61306ebe4cf5a46c698605ab93e74feb, type: 3}
     - target: {fileID: 7273492431863506251, guid: 3b8956433113349bfae025a9b9ed1ba9,
         type: 3}
       propertyPath: m_LocalPosition.x

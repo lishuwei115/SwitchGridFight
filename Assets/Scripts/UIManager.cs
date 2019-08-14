@@ -92,12 +92,12 @@ public class UIManager : MonoBehaviour {
 
     private void Instance_ButtonRPressedEvent()
     {
-        MoveUI(1);
+        //MoveUI(1);
     }
 
     private void Instance_ButtonLPressedEvent()
     {
-        MoveUI(-1);
+        //MoveUI(-1);
     }
 
     private void Instance_ButtonAPressedEvent()

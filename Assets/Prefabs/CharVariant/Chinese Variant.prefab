@@ -452,7 +452,7 @@ PrefabInstance:
     - target: {fileID: 5264551883929521129, guid: 3b8956433113349bfae025a9b9ed1ba9,
         type: 3}
       propertyPath: m_Name
-      value: Chinese Variant (1)
+      value: Chinese Variant
       objectReference: {fileID: 0}
     - target: {fileID: 1019995682220121483, guid: 3b8956433113349bfae025a9b9ed1ba9,
         type: 3}

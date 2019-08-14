@@ -417,7 +417,7 @@ PrefabInstance:
     - target: {fileID: 5264551883929521129, guid: 3b8956433113349bfae025a9b9ed1ba9,
         type: 3}
       propertyPath: m_Name
-      value: Afro Variant (1)
+      value: Afro Variant
       objectReference: {fileID: 0}
     - target: {fileID: 1019995682220121483, guid: 3b8956433113349bfae025a9b9ed1ba9,
         type: 3}
@@ -488,6 +488,10 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 991271293, guid: 3b8956433113349bfae025a9b9ed1ba9, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 991271293, guid: 3b8956433113349bfae025a9b9ed1ba9, type: 3}
       propertyPath: m_Size.x
