@@ -85,11 +85,6 @@ public class UIManager : MonoBehaviour {
         InputManager_Riki.Instance.LeftJoystickUsedEvent -= Instance_LeftJoystickUsedEvent; 
     }
 
-
-   
-
-    
-
     private void Instance_ButtonRPressedEvent()
     {
         //MoveUI(1);

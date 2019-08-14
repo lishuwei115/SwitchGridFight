@@ -55,11 +55,17 @@ public class BulletScript : MonoBehaviour
 				yield return new WaitForFixedUpdate();
             }
         }
-		StopAllCoroutines();
+        foreach (ParticleSystem item in GetComponentsInChildren<ParticleSystem>())
+        {
+            item.time = 0;
+        }
 		gameObject.SetActive(false);
-	}
 
-	private IEnumerator MoveLinear(Vector3 dest)
+        StopAllCoroutines();
+
+    }
+
+    private IEnumerator MoveLinear(Vector3 dest)
 	{
 		Vector3 offset = transform.position;
         float timer = 0;

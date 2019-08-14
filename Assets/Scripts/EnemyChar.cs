@@ -49,6 +49,8 @@ public class EnemyChar : CharacterBase
                 }
             }
 
+            
+
         }
     }
 
@@ -111,6 +113,7 @@ public class EnemyChar : CharacterBase
             isMoving = true;
             Anim.SetInteger("State", AnimMoveState);
             BattleGroundManager.Instance.EBG.p[Pos.x].PBG[Pos.y].IsEmpty = true;
+            BattleGroundManager.Instance.EBG.p[BSC.Pos.x].PBG[BSC.Pos.y].IsEmpty = false;
             Pos = BSC.Pos;
             float timer = 0;
             Vector3 offset = transform.position;
@@ -244,7 +247,7 @@ public class EnemyChar : CharacterBase
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Bullet")
+        if (other.tag == "Bullet" && EIC.Hp > 0)
         {
             BulletScript bullet = other.GetComponent<BulletScript>();
             bullet.Hit = true;
@@ -279,6 +282,7 @@ public class EnemyChar : CharacterBase
 		if(EIC.Hp <= 0)
 		{
             Anim.SetInteger("State", 5);
+            GetComponent<BoxCollider>().isTrigger = true;
         }
 		else
 		{
