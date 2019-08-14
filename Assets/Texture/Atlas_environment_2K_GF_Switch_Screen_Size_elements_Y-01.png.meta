@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 76a2604959f79dd47bff1f72e9b1eb99
+guid: c0e30fe5e0c66d94c896233833229683
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -17,6 +17,27 @@ TextureImporter:
   - first:
       213: 5002763960994141109
     second: Atlas_environment_2K_GF_Switch_Screen_Size_elements_Y-01_4
+  - first:
+      213: 489984738531653743
+    second: Atlas_environment_2K_GF_Switch_Screen_Size_elements_Y-01_5
+  - first:
+      213: 6684437896266770928
+    second: Atlas_environment_2K_GF_Switch_Screen_Size_elements_Y-01_6
+  - first:
+      213: 29844160156438401
+    second: Atlas_environment_2K_GF_Switch_Screen_Size_elements_Y-01_7
+  - first:
+      213: -1187010609954340399
+    second: Atlas_environment_2K_GF_Switch_Screen_Size_elements_Y-01_8
+  - first:
+      213: 856883213280132976
+    second: Atlas_environment_2K_GF_Switch_Screen_Size_elements_Y-01_9
+  - first:
+      213: 2502080853611171325
+    second: Atlas_environment_2K_GF_Switch_Screen_Size_elements_Y-01_10
+  - first:
+      213: -6505850815160636034
+    second: Atlas_environment_2K_GF_Switch_Screen_Size_elements_Y-01_11
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -124,7 +145,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8399baa905da7b41ba3a602673d260c
+      spriteID: 80c71103562464b458ed6ccca291299d
       internalID: 4167156078395059869
       vertices: []
       indices: 
@@ -145,7 +166,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bbcb85cdeab5d5a4e815cb6b202bdc49
+      spriteID: 2157c2b0ed12b1347a5fd6a51d0d3eef
       internalID: 4075174834392480747
       vertices: []
       indices: 
@@ -166,7 +187,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08e2db4484de36f48a115073016b07b0
+      spriteID: 6dfd510b85f1d88499991d8513c514be
       internalID: 1542785795115642914
       vertices: []
       indices: 
@@ -174,6 +195,48 @@ TextureImporter:
       weights: []
     - serializedVersion: 2
       name: Atlas_environment_2K_GF_Switch_Screen_Size_elements_Y-01_3
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 1828
+        width: 102
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fc38a358ee31df41a7bdf6bdd3fd3e6
+      internalID: -7567698675936765992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_environment_2K_GF_Switch_Screen_Size_elements_Y-01_4
+      rect:
+        serializedVersion: 2
+        x: 1724
+        y: 1419
+        width: 228
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 176eb2e2db1a1cd4e84e8605b30bd469
+      internalID: 5002763960994141109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_environment_2K_GF_Switch_Screen_Size_elements_Y-01_5
       rect:
         serializedVersion: 2
         x: 27
@@ -187,18 +250,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd29306a964c696439cf994830be41c0
-      internalID: -7567698675936765992
+      spriteID: 48ba23995147efd4db14a27c91280f93
+      internalID: 489984738531653743
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Atlas_environment_2K_GF_Switch_Screen_Size_elements_Y-01_4
+      name: Atlas_environment_2K_GF_Switch_Screen_Size_elements_Y-01_6
       rect:
         serializedVersion: 2
-        x: 34
-        y: 144
+        x: 11
+        y: 84
         width: 848
         height: 201
       alignment: 0
@@ -208,8 +271,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8bfb5c7dbe3958149b246873041fd03a
-      internalID: 5002763960994141109
+      spriteID: 431d732ac92808e43b703968efff5ca7
+      internalID: 6684437896266770928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_environment_2K_GF_Switch_Screen_Size_elements_Y-01_7
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 261
+        width: 105
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1557ecce044252341a0c570fa5b8b56d
+      internalID: 29844160156438401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_environment_2K_GF_Switch_Screen_Size_elements_Y-01_8
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 166
+        width: 138
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7be6e54191b79ac419c4e61ff93a6f95
+      internalID: -1187010609954340399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_environment_2K_GF_Switch_Screen_Size_elements_Y-01_9
+      rect:
+        serializedVersion: 2
+        x: 1233
+        y: 196
+        width: 129
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d46923a9674c3744b8ff7e70bcf7801
+      internalID: 856883213280132976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_environment_2K_GF_Switch_Screen_Size_elements_Y-01_10
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 45
+        width: 101
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e040a300a9b8ff48b5ee65b21bb2068
+      internalID: 2502080853611171325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_environment_2K_GF_Switch_Screen_Size_elements_Y-01_11
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 22
+        width: 121
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49f3b1faa702932419af576fc7d34c1e
+      internalID: -6505850815160636034
       vertices: []
       indices: 
       edges: []
@@ -217,7 +385,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 231cd2384411e574b8a85cdfe92d1203
+    spriteID: 8830cb14686473a49aa1ac5ffb6a2bd8
     internalID: 0
     vertices: []
     indices: 
