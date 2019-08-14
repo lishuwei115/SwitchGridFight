@@ -48,13 +48,17 @@ public class UIManager : MonoBehaviour {
         InputManager_Riki.Instance.ButtonRPressedEvent += Instance_ButtonRPressedEvent;
         InputManager_Riki.Instance.ButtonPlusPressedEvent += Instance_ButtonPlusPressedEvent;
         InputManager_Riki.Instance.RightJoystickUsedEvent += Instance_RightJoystickUsedEvent; 
-        InputManager_Riki.Instance.LeftJoystickUsedEvent += Instance_LeftJoystickUsedEvent; 
+        InputManager_Riki.Instance.LeftJoystickUsedEvent += Instance_LeftJoystickUsedEvent;
 
 
-       // if (PlayerPrefs.GetInt("TutorialCompleted") != 1)
-	//	{
-			StartTutorial();
-		//}
+        if (PlayerPrefs.GetInt("TutorialCompleted") != 1)
+        {
+            StartTutorial();
+        }
+        else
+        {
+            GameManagerScript.Instance.SetUpMatch();
+        }
         CurrentCard = UICardsAnim[0];
         CurrentCard.SetBool("State", true);
        
@@ -88,17 +92,16 @@ public class UIManager : MonoBehaviour {
 
     private void Instance_ButtonRPressedEvent()
     {
-        //MoveUI(1);
+        MoveUI(1);
     }
 
     private void Instance_ButtonLPressedEvent()
     {
-        //MoveUI(-1);
+        MoveUI(-1);
     }
 
     private void Instance_ButtonAPressedEvent()
     {
-        Debug.Log("A");
         if (GameManagerScript.Instance.CurrentGameState == GameState.Pause)
         {
             NextTutorial();
@@ -116,15 +119,16 @@ public class UIManager : MonoBehaviour {
 
     private void Instance_ButtonBPressedEvent()
     {
-        Debug.Log("B");
         if (GameManagerScript.Instance.CurrentGameState == GameState.Pause)
         {
-            Debug.Log("B   Close");
+            if(PrevState == GameState.Intro)
+            {
+                GameManagerScript.Instance.SetUpMatch();
+            }
             CloseTutorial();
         }
         else
         {
-            Debug.Log("B   Selection");
             SelectChar(UICardsAnim[2]);
         }
     }
@@ -136,7 +140,10 @@ public class UIManager : MonoBehaviour {
 
     public void SelectChar(Animator anim)
     {
-
+        foreach (Animator item in UICardsAnim)
+        {
+            item.SetBool("State", false);
+        }
         CurrentCard = anim;
         if (CurrentCard.GetComponent<UICharacterIconScript>().isAlreadyUsed)
         {

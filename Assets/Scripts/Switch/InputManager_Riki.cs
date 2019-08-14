@@ -154,7 +154,7 @@ public class InputManager_Riki : MonoBehaviour
         if (player.GetButtonDown("Plus"))
         {
             //Debug.Log(player.GetButtonDown("Plus"));
-            if (ButtonRightPressedEvent != null)
+            if (ButtonPlusPressedEvent != null)
             {
                 ButtonPlusPressedEvent();
             }

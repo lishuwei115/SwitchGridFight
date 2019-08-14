@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class GameManagerScript : MonoBehaviour
@@ -53,7 +52,7 @@ public class GameManagerScript : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
     {
-		SetUpMatch();
+		
     }
 
     public void StartMatch()
@@ -84,7 +83,6 @@ public class GameManagerScript : MonoBehaviour
             CurrentGameState = GameState.End;
             StartCoroutine(EndMatch());
         }
-
 
         if (CurrentGameState == GameState.Pause && !isGamePaused)
 		{
@@ -219,7 +217,7 @@ public class GameManagerScript : MonoBehaviour
 
 
 
-	private void SetUpMatch()
+	public void SetUpMatch()
 	{
         SetUpWave();
 	}
