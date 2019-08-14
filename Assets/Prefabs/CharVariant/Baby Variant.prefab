@@ -833,8 +833,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6331531996701349989}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.03, z: 0}
-  m_LocalScale: {x: 0.13, y: 0.13, z: 0.13}
+  m_LocalPosition: {x: -0.33, y: 1.7, z: 0}
+  m_LocalScale: {x: 0.28, y: 0.28, z: 0.28}
   m_Children:
   - {fileID: 6331531997577143031}
   m_Father: {fileID: 6331531996837201678}
@@ -901,7 +901,7 @@ Transform:
   m_GameObject: {fileID: 6331531996837201674}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.58, y: 7.4, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.33, y: 0.33, z: 0.33}
   m_Children:
   - {fileID: 6331531996417428176}
   - {fileID: 6331531998123499555}
@@ -920,8 +920,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3, y: 3, z: 10}
-  m_Center: {x: 0, y: 1.5, z: 0}
+  m_Size: {x: 1.66, y: 2.99, z: 12.02}
+  m_Center: {x: 0.52, y: 1.77, z: 0}
 --- !u!114 &6331531996837201675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2132,7 +2132,7 @@ SpriteRenderer:
   m_SortingOrder: 5
   m_Sprite: {fileID: -4727089609190529051, guid: 4e5a13f77ba3b4c63b4163920e594258,
     type: 3}
-  m_Color: {r: 0.06674972, g: 0.9433962, b: 0.2490447, a: 1}
+  m_Color: {r: 0.94509804, g: 0.16805324, b: 0.06666666, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
