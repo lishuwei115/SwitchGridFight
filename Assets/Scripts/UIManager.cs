@@ -93,6 +93,11 @@ public class UIManager : MonoBehaviour {
         {
             NextTutorial();
         }
+
+        if (GameManagerScript.Instance.CurrentGameState == GameState.WinLose)
+        {
+            GameManagerScript.Instance.RestartScene();
+        }
     }
 
     private void Instance_ButtonAUpEvent()
@@ -143,6 +148,11 @@ public class UIManager : MonoBehaviour {
             }
             CloseTutorial();
         }
+
+        if (GameManagerScript.Instance.CurrentGameState == GameState.WinLose)
+        {
+            GameManagerScript.Instance.RestartScene();
+        }
     }
 
     private void Instance_ButtonBPressedEvent()
@@ -183,6 +193,10 @@ public class UIManager : MonoBehaviour {
 
     private void Instance_ButtonXDownEvent()
     {
+        if (GameManagerScript.Instance.CurrentGameState == GameState.WinLose)
+        {
+            GameManagerScript.Instance.RestartScene();
+        }
     }
     #endregion
 
@@ -209,6 +223,10 @@ public class UIManager : MonoBehaviour {
 
     private void Instance_ButtonYDownEvent()
     {
+        if (GameManagerScript.Instance.CurrentGameState == GameState.WinLose)
+        {
+            GameManagerScript.Instance.RestartScene();
+        }
     }
     #endregion
 

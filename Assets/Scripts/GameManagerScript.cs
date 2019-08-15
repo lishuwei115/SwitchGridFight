@@ -68,7 +68,7 @@ public class GameManagerScript : MonoBehaviour
 
 		if(CurrentGameState == GameState.StartMatch && Characters.Where(r=> r.gameObject.activeInHierarchy).ToList().Count == 0 && Characters.Count == 4)// && ManaPool < 400
 		{
-			CurrentGameState = GameState.End;
+			CurrentGameState = GameState.WinLose;
 			UIManager.Instance.LosePanel.SetActive(true);
 			//Invoke("GameComplete", 3);
 		}
@@ -134,6 +134,7 @@ public class GameManagerScript : MonoBehaviour
         else
         {
             UIManager.Instance.WinPanel.SetActive(true);
+            CurrentGameState = GameState.WinLose;
         }
 
        
@@ -252,14 +253,12 @@ public class GameManagerScript : MonoBehaviour
         EnemyChar cb = c.GetComponent<EnemyChar>();
         cb.EIC = enemy;
        // Debug.Log(enemy.StartingPos);
-        cb.BSCs.Add(BattleGroundManager.Instance.EBG.GetBattleGroundPositionIfFree(enemy.StartingPos));
-        cb.Pos = cb.BSCs.Last().Pos;
-        BattleSquareClass bsc = BattleGroundManager.Instance.EBG.GetBattleGroundPosition(cb.BSCs.Last().Pos);
+        cb.Pos = enemy.StartingPos;
+        BattleSquareClass bsc = BattleGroundManager.Instance.EBG.GetBattleGroundPosition(cb.Pos);
         Vector3 BasePos = bsc.T.position + new Vector3(10,0,0);
         cb.transform.position = BasePos;
         cb.BSC = bsc;
         Enemies.Add(cb);
-        cb.SetSkin();
         StartCoroutine(cb.MoveToStartingPos(bsc.T.position));
     }
 
@@ -354,7 +353,8 @@ public enum GameState
     StartMatch,
     Pause,
     Menu,
-    End
+    End,
+    WinLose
 }
 
 

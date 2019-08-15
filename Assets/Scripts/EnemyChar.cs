@@ -6,7 +6,6 @@ using UnityEngine;
 public class EnemyChar : CharacterBase
 {
 	public EnemyInfoClass EIC;
-	public List<BattleSquareClass> BSCs = new List<BattleSquareClass>();
 	public Dictionary<EnemyPosType, float> Parts = new Dictionary<EnemyPosType, float>();
 	public GameObject EnemyTargetAttack;
 	public Animator Anim;
@@ -108,7 +107,7 @@ public class EnemyChar : CharacterBase
             NextPosV2.x < 0 ? 3 :
             NextPosV2.y > 0 ? 3 :
             2;
-        if(Pos != BSC.Pos)
+        if(Pos != BSC.Pos && BSC.T != null)
         {
             isMoving = true;
             Anim.SetInteger("State", AnimMoveState);
@@ -290,15 +289,11 @@ public class EnemyChar : CharacterBase
     }
 
 
-    public void SetSkin()
-    {
-		GameManagerScript.Instance.EnemiesBSCs.AddRange(BSCs);
-    }
-
 	public void GetDamage(float damage)
 	{
 		GameManagerScript.Instance.ManaPool += damage;
 		EIC.Hp -= damage;
+        EIC.Hp = 0;
 		if(EIC.Hp <= 0)
 		{
             Anim.SetInteger("State", 5);
