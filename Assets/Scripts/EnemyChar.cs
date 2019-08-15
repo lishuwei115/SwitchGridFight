@@ -161,6 +161,15 @@ public class EnemyChar : CharacterBase
             case EnemyType.Baby:
                 ParticleManagerScript.Instance.EnemyPartAttackParticles(ParticleTypes.BabyA, BSC.T.position);
                 break;
+            case EnemyType.Blind:
+                ParticleManagerScript.Instance.EnemyPartAttackParticles(ParticleTypes.BlindA, BSC.T.position);
+                break;
+            case EnemyType.Rider:
+                ParticleManagerScript.Instance.EnemyPartAttackParticles(ParticleTypes.RiderA, BSC.T.position);
+                break;
+            case EnemyType.Surfer:
+                ParticleManagerScript.Instance.EnemyPartAttackParticles(ParticleTypes.SurferA, BSC.T.position);
+                break;
         }
         Anim.SetInteger("State", 1);
         while (!complete)
