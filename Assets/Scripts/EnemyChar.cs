@@ -219,10 +219,11 @@ public class EnemyChar : CharacterBase
         {
             yield return new WaitForFixedUpdate();
             
-            while (GameManagerScript.Instance.CurrentGameState != GameState.Intro && GameManagerScript.Instance.CurrentGameState != GameState.EndIntro)
+            while (GameManagerScript.Instance.CurrentGameState != GameState.Intro && GameManagerScript.Instance.CurrentGameState != GameState.EndIntro && GameManagerScript.Instance.CurrentGameState != GameState.StartMatch)
             {
                 yield return new WaitForEndOfFrame();
             }
+
             timer += Time.fixedDeltaTime /2;
             transform.position = Vector3.Lerp(offset, startingPos, timer);
         }

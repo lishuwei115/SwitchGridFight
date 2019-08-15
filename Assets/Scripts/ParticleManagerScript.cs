@@ -79,7 +79,7 @@ public class ParticleManagerScript : MonoBehaviour
                     ps = RiderAParticles;
                     break;
                 case ParticleTypes.SurferA:
-                    ps = RiderAParticles;
+                    ps = SurferAParticles;
                     break;
             }
             GameObject go;
@@ -149,7 +149,7 @@ public class ParticleManagerScript : MonoBehaviour
                     ps = RiderParticles;
                     break;
                 case ParticleTypes.Surfer:
-                    ps = RiderParticles;
+                    ps = SurferParticles;
                     break;
             }
             GameObject go;
