@@ -70,10 +70,9 @@ public class UIManager : MonoBehaviour {
         InputManager_Riki.Instance.ButtonDownPressedEvent += Instance_ButtonDownPressedEvent;
         InputManager_Riki.Instance.ButtonLPressedEvent += Instance_ButtonLPressedEvent; 
         InputManager_Riki.Instance.ButtonRPressedEvent += Instance_ButtonRPressedEvent;
-        InputManager_Riki.Instance.ButtonPlusPressedEvent += Instance_ButtonPlusPressedEvent;
+        InputManager_Riki.Instance.ButtonPlusDownEvent += Instance_ButtonPlusDownEvent;
         InputManager_Riki.Instance.RightJoystickUsedEvent += Instance_RightJoystickUsedEvent; 
         InputManager_Riki.Instance.LeftJoystickUsedEvent += Instance_LeftJoystickUsedEvent;
-
 
         if (PlayerPrefs.GetInt("TutorialCompleted") != 1)
         {
@@ -83,6 +82,7 @@ public class UIManager : MonoBehaviour {
         {
             GameManagerScript.Instance.SetUpMatch();
         }
+
     }
 
 
@@ -135,7 +135,7 @@ public class UIManager : MonoBehaviour {
     {
         if (GameManagerScript.Instance.CurrentGameState == GameState.Pause)
         {
-            if (PrevState == GameState.Intro)
+            if (PrevState == GameState.Intro && GameManagerScript.Instance.Enemies.Where(r=> r.gameObject.activeInHierarchy).ToList().Count == 0)
             {
                 GameManagerScript.Instance.SetUpMatch();
             }
@@ -242,10 +242,12 @@ public class UIManager : MonoBehaviour {
         InputManager_Riki.Instance.ButtonDownPressedEvent -= Instance_ButtonDownPressedEvent;
         InputManager_Riki.Instance.ButtonLPressedEvent -= Instance_ButtonLPressedEvent;
         InputManager_Riki.Instance.ButtonRPressedEvent -= Instance_ButtonRPressedEvent;
-        InputManager_Riki.Instance.ButtonPlusPressedEvent -= Instance_ButtonPlusPressedEvent;
+        InputManager_Riki.Instance.ButtonPlusDownEvent -= Instance_ButtonPlusDownEvent;
         InputManager_Riki.Instance.RightJoystickUsedEvent -= Instance_RightJoystickUsedEvent;
         InputManager_Riki.Instance.LeftJoystickUsedEvent -= Instance_LeftJoystickUsedEvent;
     }
+
+   
 
     private void Instance_ButtonRPressedEvent()
     {
@@ -340,12 +342,11 @@ public class UIManager : MonoBehaviour {
         }
     }
 
-    private void Instance_ButtonPlusPressedEvent()
+    private void Instance_ButtonPlusDownEvent()
     {
         StartTutorial();
-
     }
-   
+
 
     private void Instance_LeftJoystickUsedEvent(InputDirection dir)
     {
@@ -379,6 +380,7 @@ public class UIManager : MonoBehaviour {
 		TutorialParent.blocksRaycasts = true;
 		Tutorial1.SetActive(true);
 		PrevState = GameManagerScript.Instance.CurrentGameState;
+        Debug.Log("  ....  " + PrevState);
 		GameManagerScript.Instance.CurrentGameState = GameState.Pause;
 	}
 
@@ -397,6 +399,7 @@ public class UIManager : MonoBehaviour {
 		TutorialParent.alpha = 0;
 		TutorialParent.interactable = false;
 		TutorialParent.blocksRaycasts = false;
+        Debug.Log(PrevState);
 		GameManagerScript.Instance.CurrentGameState = PrevState;
 		PlayerPrefs.SetInt("TutorialCompleted", 1);
     }

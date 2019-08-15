@@ -578,7 +578,7 @@ MonoBehaviour:
   - StartingEnemies:
     - EType: 0
       MinPartsToStartNewAttack: 0
-      StartingPos: {x: 3, y: 2}
+      StartingPos: {x: 0, y: 2}
       MinTimer: 5
       MaxTimer: 8
       MinMovementTimer: 5
@@ -616,7 +616,7 @@ MonoBehaviour:
         Pos: {x: 2, y: 1}
     - EType: 1
       MinPartsToStartNewAttack: 0
-      StartingPos: {x: 2, y: 1}
+      StartingPos: {x: 1, y: 2}
       MinTimer: 5
       MaxTimer: 8
       MinMovementTimer: 5
@@ -654,7 +654,7 @@ MonoBehaviour:
         Pos: {x: 2, y: 1}
     - EType: 2
       MinPartsToStartNewAttack: 0
-      StartingPos: {x: 0, y: 1}
+      StartingPos: {x: 2, y: 2}
       MinTimer: 5
       MaxTimer: 8
       MinMovementTimer: 5
@@ -692,7 +692,7 @@ MonoBehaviour:
         Pos: {x: 2, y: 1}
     - EType: 3
       MinPartsToStartNewAttack: 0
-      StartingPos: {x: 1, y: 3}
+      StartingPos: {x: 3, y: 2}
       MinTimer: 5
       MaxTimer: 8
       MinMovementTimer: 5
