@@ -220,7 +220,7 @@ public class EnemyChar : CharacterBase
 
     public IEnumerator MoveToStartingPos(Vector3 startingPos)
     {
-        Debug.Log(startingPos);
+        //Debug.Log(startingPos);
         Anim.SetInteger("State", 0);
         float timer = 0;
         Vector3 offset = transform.position;
