@@ -47,8 +47,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3, y: 3, z: 10}
-  m_Center: {x: 0, y: 1.5, z: 0}
+  m_Size: {x: 2.2, y: 2.2, z: 2}
+  m_Center: {x: 0, y: 1.1, z: 0}
 --- !u!114 &3217682798527438708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -284,6 +284,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Parent: {fileID: 0}
   ParentE: {fileID: 3217682798527438708}
+--- !u!114 &928423895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3447328849363780870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3f8b2d1f052e410ab964cd1e74c54e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Anim: {fileID: 7924888191945120569}
+  Parent: {fileID: 0}
 --- !u!114 &8732709955867202986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -323,12 +337,12 @@ PrefabInstance:
     - target: {fileID: 2385112117935878624, guid: a9da51772fbdf0840b85aa9bda66ed70,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.5545835
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2385112117935878624, guid: a9da51772fbdf0840b85aa9bda66ed70,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.22151709
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 2385112117935878624, guid: a9da51772fbdf0840b85aa9bda66ed70,
         type: 3}
@@ -373,6 +387,16 @@ PrefabInstance:
     - target: {fileID: 2385112117935878624, guid: a9da51772fbdf0840b85aa9bda66ed70,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3665065828487431049, guid: a9da51772fbdf0840b85aa9bda66ed70,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2656837346338336563, guid: a9da51772fbdf0840b85aa9bda66ed70,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

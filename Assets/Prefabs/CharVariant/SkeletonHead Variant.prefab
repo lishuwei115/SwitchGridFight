@@ -14,6 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Anim: {fileID: 1820608443005888832}
   Parent: {fileID: 0}
+--- !u!114 &2080044893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924681991644674065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3f8b2d1f052e410ab964cd1e74c54e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Anim: {fileID: 1820608443005888832}
+  Parent: {fileID: 0}
 --- !u!1 &8896381136007532349
 GameObject:
   m_ObjectHideFlags: 0
@@ -141,8 +155,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3, y: 3, z: 10}
-  m_Center: {x: 0, y: 1.5, z: 0}
+  m_Size: {x: 2.2, y: 2.2, z: 2}
+  m_Center: {x: 0, y: 1.1, z: 0}
 --- !u!114 &8896381136705176293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -328,7 +342,7 @@ PrefabInstance:
     - target: {fileID: 3798282286710233804, guid: f37e9f2a43b7ad043a4fa2e06e711b68,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -2.2
       objectReference: {fileID: 0}
     - target: {fileID: 3798282286710233804, guid: f37e9f2a43b7ad043a4fa2e06e711b68,
         type: 3}
