@@ -7,6 +7,60 @@ using Rewired.Platforms.Switch;
 #endif
 public class InputManager_Riki : MonoBehaviour
 {
+    public delegate void ButtonADown();
+    public event ButtonADown ButtonADownEvent;
+    public delegate void ButtonBDown();
+    public event ButtonBDown ButtonBDownEvent;
+    public delegate void ButtonXDown();
+    public event ButtonXDown ButtonXDownEvent;
+    public delegate void ButtonYDown();
+    public event ButtonYDown ButtonYDownEvent;
+    public delegate void ButtonUpDown();
+    public event ButtonUpDown ButtonUpDownEvent;
+    public delegate void ButtonDownDown();
+    public event ButtonDownDown ButtonDownDownEvent;
+    public delegate void ButtonLeftDown();
+    public event ButtonLeftDown ButtonLeftDownEvent;
+    public delegate void ButtonRightDown();
+    public event ButtonRightDown ButtonRightDownEvent;
+    public delegate void ButtonRDown();
+    public event ButtonRDown ButtonRDownEvent;
+    public delegate void ButtonZRDown();
+    public event ButtonZRDown ButtonZRDownEvent;
+    public delegate void ButtonLDown();
+    public event ButtonLDown ButtonLDownEvent;
+    public delegate void ButtonZLDown();
+    public event ButtonZLDown ButtonZLDownEvent;
+    public delegate void ButtonPlusDown();
+    public event ButtonPlusDown ButtonPlusDownEvent;
+
+    public delegate void ButtonAUp();
+    public event ButtonAUp ButtonAUpEvent;
+    public delegate void ButtonBUp();
+    public event ButtonBUp ButtonBUpEvent;
+    public delegate void ButtonXUp();
+    public event ButtonXUp ButtonXUpEvent;
+    public delegate void ButtonYUp();
+    public event ButtonYUp ButtonYUpEvent;
+    public delegate void ButtonUpUp();
+    public event ButtonUpUp ButtonUpUpEvent;
+    public delegate void ButtonDownUp();
+    public event ButtonDownUp ButtonDownUpEvent;
+    public delegate void ButtonLeftUp();
+    public event ButtonLeftUp ButtonLeftUpEvent;
+    public delegate void ButtonRightUp();
+    public event ButtonRightUp ButtonRightUpEvent;
+    public delegate void ButtonRUp();
+    public event ButtonRUp ButtonRUpEvent;
+    public delegate void ButtonZRUp();
+    public event ButtonZRUp ButtonZRUpEvent;
+    public delegate void ButtonLUp();
+    public event ButtonLUp ButtonLUpEvent;
+    public delegate void ButtonZLUp();
+    public event ButtonZLUp ButtonZLUpEvent;
+    public delegate void ButtonPlusUp();
+    public event ButtonPlusUp ButtonPlusUpEvent;
+
     public delegate void ButtonAPressed();
     public event ButtonAPressed ButtonAPressedEvent;
     public delegate void ButtonBPressed();
@@ -33,6 +87,12 @@ public class InputManager_Riki : MonoBehaviour
     public event ButtonZLPressed ButtonZLPressedEvent;
     public delegate void ButtonPlusPressed();
     public event ButtonPlusPressed ButtonPlusPressedEvent;
+
+
+
+
+
+
     public delegate void LeftJoystickUsed(InputDirection dir);
     public event LeftJoystickUsed LeftJoystickUsedEvent;
     public delegate void RightJoystickUsed(InputDirection dir);
@@ -55,23 +115,131 @@ public class InputManager_Riki : MonoBehaviour
     private void Update()
     {
 #if UNITY_SWITCH
-        if(player.GetButtonDown("A"))
+
+        if (player.GetButtonDown("A"))
         {
-            //Debug.Log(player.GetButtonDown("A"));
-            if(ButtonAPressedEvent != null)
+           // Debug.Log("Down A");
+            if (ButtonADownEvent != null)
             {
-                ButtonAPressedEvent();
+                ButtonADownEvent();
             }
         }
         if (player.GetButtonDown("B"))
         {
-           //Debug.Log(player.GetButtonDown("B"));
+            //Debug.Log(player.GetButtonDown("B"));
+            if (ButtonBDownEvent != null)
+            {
+                ButtonBDownEvent();
+            }
+        }
+        if (player.GetButtonDown("X"))
+        {
+            //Debug.Log(player.GetButtonDown("X"));
+            if (ButtonXDownEvent != null)
+            {
+                ButtonXDownEvent();
+            }
+        }
+        if (player.GetButtonDown("Y"))
+        {
+            //Debug.Log(player.GetButtonDown("Y"));
+            if (ButtonYDownEvent != null)
+            {
+                ButtonYDownEvent();
+            }
+        }
+        if (player.GetButtonDown("R"))
+        {
+            //Debug.Log(player.GetButtonDown("R"));
+            if (ButtonRDownEvent != null)
+            {
+                ButtonRDownEvent();
+            }
+        }
+        if (player.GetButtonDown("ZR"))
+        {
+            //Debug.Log(player.GetButtonDown("ZR"));
+            if (ButtonZRDownEvent != null)
+            {
+                ButtonZRDownEvent();
+            }
+        }
+        if (player.GetButtonDown("L"))
+        {
+            //Debug.Log(player.GetButtonDown("L"));
+            if (ButtonLDownEvent != null)
+            {
+                ButtonLDownEvent();
+            }
+        }
+        if (player.GetButtonDown("ZL"))
+        {
+            //Debug.Log(player.GetButtonDown("ZL"));
+            if (ButtonZLDownEvent != null)
+            {
+                ButtonZLDownEvent();
+            }
+        }
+        if (player.GetButtonDown("Right"))
+        {
+            //Debug.Log(player.GetButtonDown("Right"));
+            if (ButtonRightDownEvent != null)
+            {
+                ButtonRightDownEvent();
+            }
+        }
+        if (player.GetButtonDown("Up"))
+        {
+            //Debug.Log(player.GetButtonDown("Up"));
+            if (ButtonUpDownEvent != null)
+            {
+                ButtonUpDownEvent();
+            }
+        }
+        if (player.GetButtonDown("Left"))
+        {
+            //Debug.Log(player.GetButtonDown("Left"));
+            if (ButtonLeftDownEvent != null)
+            {
+                ButtonLeftDownEvent();
+            }
+        }
+        if (player.GetButtonDown("Down"))
+        {
+            //Debug.Log(player.GetButtonDown("Down"));
+            if (ButtonDownDownEvent != null)
+            {
+                ButtonDownDownEvent();
+            }
+        }
+        if (player.GetButtonDown("Plus"))
+        {
+            //Debug.Log(player.GetButtonDown("Plus"));
+            if (ButtonPlusDownEvent != null)
+            {
+                ButtonPlusDownEvent();
+            }
+        }
+
+
+
+        if (player.GetButton("A"))
+        {
+           // Debug.Log("A");
+            if (ButtonAPressedEvent != null)
+            {
+                ButtonAPressedEvent();
+            }
+        }
+        if (player.GetButton("B"))
+        {
+            //Debug.Log(player.GetButtonDown("B"));
             if (ButtonBPressedEvent != null)
             {
                 ButtonBPressedEvent();
             }
         }
-        if (player.GetButtonDown("X"))
+        if (player.GetButton("X"))
         {
             //Debug.Log(player.GetButtonDown("X"));
             if (ButtonXPressedEvent != null)
@@ -79,7 +247,7 @@ public class InputManager_Riki : MonoBehaviour
                 ButtonXPressedEvent();
             }
         }
-        if (player.GetButtonDown("Y"))
+        if (player.GetButton("Y"))
         {
             //Debug.Log(player.GetButtonDown("Y"));
             if (ButtonYPressedEvent != null)
@@ -87,7 +255,7 @@ public class InputManager_Riki : MonoBehaviour
                 ButtonYPressedEvent();
             }
         }
-        if (player.GetButtonDown("R"))
+        if (player.GetButton("R"))
         {
             //Debug.Log(player.GetButtonDown("R"));
             if (ButtonRPressedEvent != null)
@@ -95,7 +263,7 @@ public class InputManager_Riki : MonoBehaviour
                 ButtonRPressedEvent();
             }
         }
-        if (player.GetButtonDown("ZR"))
+        if (player.GetButton("ZR"))
         {
             //Debug.Log(player.GetButtonDown("ZR"));
             if (ButtonZRPressedEvent != null)
@@ -103,7 +271,7 @@ public class InputManager_Riki : MonoBehaviour
                 ButtonZRPressedEvent();
             }
         }
-        if (player.GetButtonDown("L"))
+        if (player.GetButton("L"))
         {
             //Debug.Log(player.GetButtonDown("L"));
             if (ButtonLPressedEvent != null)
@@ -111,7 +279,7 @@ public class InputManager_Riki : MonoBehaviour
                 ButtonLPressedEvent();
             }
         }
-        if (player.GetButtonDown("ZL"))
+        if (player.GetButton("ZL"))
         {
             //Debug.Log(player.GetButtonDown("ZL"));
             if (ButtonZLPressedEvent != null)
@@ -119,7 +287,7 @@ public class InputManager_Riki : MonoBehaviour
                 ButtonZLPressedEvent();
             }
         }
-        if (player.GetButtonDown("Right"))
+        if (player.GetButton("Right"))
         {
             //Debug.Log(player.GetButtonDown("Right"));
             if (ButtonRightPressedEvent != null)
@@ -127,7 +295,7 @@ public class InputManager_Riki : MonoBehaviour
                 ButtonRightPressedEvent();
             }
         }
-        if (player.GetButtonDown("Up"))
+        if (player.GetButton("Up"))
         {
             //Debug.Log(player.GetButtonDown("Up"));
             if (ButtonUpPressedEvent != null)
@@ -135,7 +303,7 @@ public class InputManager_Riki : MonoBehaviour
                 ButtonUpPressedEvent();
             }
         }
-        if (player.GetButtonDown("Left"))
+        if (player.GetButton("Left"))
         {
             //Debug.Log(player.GetButtonDown("Left"));
             if (ButtonLeftPressedEvent != null)
@@ -143,7 +311,7 @@ public class InputManager_Riki : MonoBehaviour
                 ButtonLeftPressedEvent();
             }
         }
-        if (player.GetButtonDown("Down"))
+        if (player.GetButton("Down"))
         {
             //Debug.Log(player.GetButtonDown("Down"));
             if (ButtonDownPressedEvent != null)
@@ -151,12 +319,121 @@ public class InputManager_Riki : MonoBehaviour
                 ButtonDownPressedEvent();
             }
         }
-        if (player.GetButtonDown("Plus"))
+        if (player.GetButton("Plus"))
         {
             //Debug.Log(player.GetButtonDown("Plus"));
             if (ButtonPlusPressedEvent != null)
             {
                 ButtonPlusPressedEvent();
+            }
+        }
+
+
+
+
+
+        if (player.GetButtonUp("A"))
+        {
+           // Debug.Log("Up A");
+            if (ButtonAUpEvent != null)
+            {
+                ButtonAUpEvent();
+            }
+        }
+        if (player.GetButtonUp("B"))
+        {
+           //Debug.Log(player.GetButtonDown("B"));
+            if (ButtonBUpEvent != null)
+            {
+                ButtonBUpEvent();
+            }
+        }
+        if (player.GetButtonUp("X"))
+        {
+            //Debug.Log(player.GetButtonDown("X"));
+            if (ButtonXUpEvent != null)
+            {
+                ButtonXUpEvent();
+            }
+        }
+        if (player.GetButtonUp("Y"))
+        {
+            //Debug.Log(player.GetButtonDown("Y"));
+            if (ButtonYUpEvent != null)
+            {
+                ButtonYUpEvent();
+            }
+        }
+        if (player.GetButtonUp("R"))
+        {
+            //Debug.Log(player.GetButtonDown("R"));
+            if (ButtonRUpEvent != null)
+            {
+                ButtonRUpEvent();
+            }
+        }
+        if (player.GetButtonUp("ZR"))
+        {
+            //Debug.Log(player.GetButtonDown("ZR"));
+            if (ButtonZRUpEvent != null)
+            {
+                ButtonZRUpEvent();
+            }
+        }
+        if (player.GetButtonUp("L"))
+        {
+            //Debug.Log(player.GetButtonDown("L"));
+            if (ButtonLUpEvent != null)
+            {
+                ButtonLUpEvent();
+            }
+        }
+        if (player.GetButtonUp("ZL"))
+        {
+            //Debug.Log(player.GetButtonDown("ZL"));
+            if (ButtonZLUpEvent != null)
+            {
+                ButtonZLUpEvent();
+            }
+        }
+        if (player.GetButtonUp("Right"))
+        {
+            //Debug.Log(player.GetButtonDown("Right"));
+            if (ButtonRightUpEvent != null)
+            {
+                ButtonRightUpEvent();
+            }
+        }
+        if (player.GetButtonUp("Up"))
+        {
+            //Debug.Log(player.GetButtonDown("Up"));
+            if (ButtonUpUpEvent != null)
+            {
+                ButtonUpUpEvent();
+            }
+        }
+        if (player.GetButtonUp("Left"))
+        {
+            //Debug.Log(player.GetButtonDown("Left"));
+            if (ButtonLeftUpEvent != null)
+            {
+                ButtonLeftUpEvent();
+            }
+        }
+        if (player.GetButtonUp("Down"))
+        {
+            //Debug.Log(player.GetButtonDown("Down"));
+            if (ButtonDownUpEvent != null)
+            {
+                ButtonDownUpEvent();
+            }
+        }
+        if (player.GetButtonUp("Plus"))
+        {
+            //Debug.Log(player.GetButtonDown("Plus"));
+            if (ButtonPlusUpEvent != null)
+            {
+                ButtonPlusUpEvent();
             }
         }
 

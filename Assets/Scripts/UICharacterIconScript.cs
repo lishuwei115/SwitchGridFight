@@ -87,7 +87,7 @@ public class UICharacterIconScript : MonoBehaviour , IBeginDragHandler, IDragHan
 
     public void SetCanvasLayer(int v)
     {
-        CanvasComponent.sortingOrder = v;
+        //CanvasComponent.sortingOrder = v;
     }
 
 
@@ -156,6 +156,24 @@ public class UICharacterIconScript : MonoBehaviour , IBeginDragHandler, IDragHan
             }
 		}
     }
+
+
+    public void SetCharOnBoardOnRandomPos()
+    {
+        BattleSquareClass bsc = BattleGroundManager.Instance.PBG.GetFreePos();
+        isAlreadyUsed = true;
+        PlayerChar Pchar = GameManagerScript.Instance.CreatePlayerChar(PCType, false, bsc.Pos);
+        if (CurrentPlayer == null)
+        {
+            CurrentPlayer = Pchar;
+        }
+        CurrentPlayer.IsTouchingMe = true;
+        if (GameManagerScript.Instance.CurrentGameState == GameState.EndIntro)
+        {
+            GameManagerScript.Instance.Invoke("StartMatch", GameManagerScript.Instance.StartingTime);
+        }
+    }
+
 }
 
 

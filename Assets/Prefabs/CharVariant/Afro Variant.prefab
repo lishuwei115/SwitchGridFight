@@ -487,6 +487,12 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 607825459012154356}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &6753849145527038626 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6184867304445919574, guid: 7b56880d82b422f4aa138a12818d67ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 607825459012154356}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1172269442731692379
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -620,6 +626,11 @@ PrefabInstance:
       propertyPath: AttackAudio
       value: 
       objectReference: {fileID: 8300000, guid: a69fb251becf046c0bae943010827f36, type: 3}
+    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
+        type: 3}
+      propertyPath: BodyBase
+      value: 
+      objectReference: {fileID: 6753849145527038626}
     - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
         type: 3}
       propertyPath: ButtonIcon

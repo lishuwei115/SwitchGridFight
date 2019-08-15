@@ -25,8 +25,9 @@ public class UIManager : MonoBehaviour {
     bool SecondTutorial = false;
     public List<Animator> UICardsAnim = new List<Animator>();
     private Animator CurrentCard;
+    private UICharacterIconScript UIC;
 
-	private GameState PrevState;
+    private GameState PrevState;
 
 
     void Awake()
@@ -36,14 +37,37 @@ public class UIManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
+
+        //A
+        InputManager_Riki.Instance.ButtonAPressedEvent += Instance_ButtonAPressedEvent;
+        InputManager_Riki.Instance.ButtonAUpEvent += Instance_ButtonAUpEvent;
+        InputManager_Riki.Instance.ButtonADownEvent += Instance_ButtonADownEvent;
+
+
+        //B
+        InputManager_Riki.Instance.ButtonBPressedEvent += Instance_ButtonBPressedEvent;
+        InputManager_Riki.Instance.ButtonBDownEvent += Instance_ButtonBDownEvent;
+        InputManager_Riki.Instance.ButtonBUpEvent += Instance_ButtonBUpEvent;
+
+
+        //X
+        InputManager_Riki.Instance.ButtonXPressedEvent += Instance_ButtonXPressedEvent;
+        InputManager_Riki.Instance.ButtonXDownEvent += Instance_ButtonXDownEvent;
+        InputManager_Riki.Instance.ButtonXUpEvent += Instance_ButtonXUpEvent;
+
+
+        //Y
+        InputManager_Riki.Instance.ButtonYPressedEvent += Instance_ButtonYPressedEvent;
+        InputManager_Riki.Instance.ButtonYDownEvent += Instance_ButtonYDownEvent;
+        InputManager_Riki.Instance.ButtonYUpEvent += Instance_ButtonYUpEvent;
+
+
+
         InputManager_Riki.Instance.ButtonLeftPressedEvent += Instance_ButtonLeftPressedEvent;
         InputManager_Riki.Instance.ButtonUpPressedEvent += Instance_ButtonUpPressedEvent;
         InputManager_Riki.Instance.ButtonRightPressedEvent += Instance_ButtonRightPressedEvent;
         InputManager_Riki.Instance.ButtonDownPressedEvent += Instance_ButtonDownPressedEvent;
-        InputManager_Riki.Instance.ButtonBPressedEvent += Instance_ButtonBPressedEvent;
-        InputManager_Riki.Instance.ButtonAPressedEvent += Instance_ButtonAPressedEvent;
-        InputManager_Riki.Instance.ButtonXPressedEvent += Instance_ButtonXPressedEvent;
-        InputManager_Riki.Instance.ButtonYPressedEvent += Instance_ButtonYPressedEvent;
         InputManager_Riki.Instance.ButtonLPressedEvent += Instance_ButtonLPressedEvent; 
         InputManager_Riki.Instance.ButtonRPressedEvent += Instance_ButtonRPressedEvent;
         InputManager_Riki.Instance.ButtonPlusPressedEvent += Instance_ButtonPlusPressedEvent;
@@ -59,30 +83,168 @@ public class UIManager : MonoBehaviour {
         {
             GameManagerScript.Instance.SetUpMatch();
         }
-        CurrentCard = UICardsAnim[0];
-        CurrentCard.SetBool("State", true);
-       
-
     }
 
-   
+
+    #region A
+    private void Instance_ButtonADownEvent()
+    {
+        if (GameManagerScript.Instance.CurrentGameState == GameState.Pause)
+        {
+            NextTutorial();
+        }
+    }
+
+    private void Instance_ButtonAUpEvent()
+    {
+        if (GameManagerScript.Instance.CurrentGameState == GameState.StartMatch)
+        {
+            if (CurrentCard != null)
+            {
+                CurrentCard.SetBool("Loading", false);
+            }
+        }
+    }
+
+    private void Instance_ButtonAPressedEvent()
+    {
+        if (GameManagerScript.Instance.CurrentGameState == GameState.Pause)
+        {
+        }
+        else if(GameManagerScript.Instance.CurrentGameState == GameState.EndIntro || GameManagerScript.Instance.CurrentGameState == GameState.StartMatch)
+        {
+            SelectChar(UICardsAnim[0]);
+        }
+    }
+    #endregion
+
+
+    #region B
+    private void Instance_ButtonBUpEvent()
+    {
+        if (GameManagerScript.Instance.CurrentGameState == GameState.StartMatch)
+        {
+            if (CurrentCard != null)
+            {
+                CurrentCard.SetBool("Loading", false);
+            }
+        }
+    }
+
+    private void Instance_ButtonBDownEvent()
+    {
+        if (GameManagerScript.Instance.CurrentGameState == GameState.Pause)
+        {
+            if (PrevState == GameState.Intro)
+            {
+                GameManagerScript.Instance.SetUpMatch();
+            }
+            CloseTutorial();
+        }
+    }
+
+    private void Instance_ButtonBPressedEvent()
+    {
+        if (GameManagerScript.Instance.CurrentGameState == GameState.Pause)
+        {
+         
+        }
+        else if (GameManagerScript.Instance.CurrentGameState == GameState.EndIntro || GameManagerScript.Instance.CurrentGameState == GameState.StartMatch)
+        {
+            SelectChar(UICardsAnim[2]);
+        }
+    }
+    #endregion
+
+    #region X
+    private void Instance_ButtonXUpEvent()
+    {
+        if (GameManagerScript.Instance.CurrentGameState == GameState.StartMatch)
+        {
+            if (CurrentCard != null)
+            {
+                CurrentCard.SetBool("Loading", false);
+            }
+        }
+    }
+
+    private void Instance_ButtonXPressedEvent()
+    {
+        if (GameManagerScript.Instance.CurrentGameState == GameState.EndIntro || GameManagerScript.Instance.CurrentGameState == GameState.StartMatch)
+        {
+            SelectChar(UICardsAnim[1]);
+        }
+            
+    }
+
+    private void Instance_ButtonXDownEvent()
+    {
+    }
+    #endregion
+
+    #region Y
+    private void Instance_ButtonYUpEvent()
+    {
+        if (GameManagerScript.Instance.CurrentGameState == GameState.StartMatch)
+        {
+            if (CurrentCard != null)
+            {
+                CurrentCard.SetBool("Loading", false);
+            }
+        }
+    }
+    private void Instance_ButtonYPressedEvent()
+    {
+        if (GameManagerScript.Instance.CurrentGameState == GameState.EndIntro || GameManagerScript.Instance.CurrentGameState == GameState.StartMatch)
+        {
+            SelectChar(UICardsAnim[3]);
+        }
+            
+    }
+
+    private void Instance_ButtonYDownEvent()
+    {
+    }
+    #endregion
+
 
     public void DetachEvent()
     {
+
+        //A
+        InputManager_Riki.Instance.ButtonAPressedEvent -= Instance_ButtonAPressedEvent;
+        InputManager_Riki.Instance.ButtonAUpEvent -= Instance_ButtonAUpEvent;
+        InputManager_Riki.Instance.ButtonADownEvent -= Instance_ButtonADownEvent;
+
+
+        //B
+        InputManager_Riki.Instance.ButtonBPressedEvent -= Instance_ButtonBPressedEvent;
+        InputManager_Riki.Instance.ButtonBDownEvent -= Instance_ButtonBDownEvent;
+        InputManager_Riki.Instance.ButtonBUpEvent -= Instance_ButtonBUpEvent;
+
+
+        //X
+        InputManager_Riki.Instance.ButtonXPressedEvent -= Instance_ButtonXPressedEvent;
+        InputManager_Riki.Instance.ButtonXDownEvent -= Instance_ButtonXDownEvent;
+        InputManager_Riki.Instance.ButtonXUpEvent -= Instance_ButtonXUpEvent;
+
+
+        //Y
+        InputManager_Riki.Instance.ButtonYPressedEvent -= Instance_ButtonYPressedEvent;
+        InputManager_Riki.Instance.ButtonYDownEvent -= Instance_ButtonYDownEvent;
+        InputManager_Riki.Instance.ButtonYUpEvent -= Instance_ButtonYUpEvent;
+
+
 
         InputManager_Riki.Instance.ButtonLeftPressedEvent -= Instance_ButtonLeftPressedEvent;
         InputManager_Riki.Instance.ButtonUpPressedEvent -= Instance_ButtonUpPressedEvent;
         InputManager_Riki.Instance.ButtonRightPressedEvent -= Instance_ButtonRightPressedEvent;
         InputManager_Riki.Instance.ButtonDownPressedEvent -= Instance_ButtonDownPressedEvent;
-        InputManager_Riki.Instance.ButtonAPressedEvent -= Instance_ButtonAPressedEvent;
-        InputManager_Riki.Instance.ButtonBPressedEvent -= Instance_ButtonBPressedEvent;
-        InputManager_Riki.Instance.ButtonXPressedEvent -= Instance_ButtonXPressedEvent;
-        InputManager_Riki.Instance.ButtonYPressedEvent -= Instance_ButtonYPressedEvent;
         InputManager_Riki.Instance.ButtonLPressedEvent -= Instance_ButtonLPressedEvent;
         InputManager_Riki.Instance.ButtonRPressedEvent -= Instance_ButtonRPressedEvent;
         InputManager_Riki.Instance.ButtonPlusPressedEvent -= Instance_ButtonPlusPressedEvent;
-        InputManager_Riki.Instance.RightJoystickUsedEvent -= Instance_RightJoystickUsedEvent; 
-        InputManager_Riki.Instance.LeftJoystickUsedEvent -= Instance_LeftJoystickUsedEvent; 
+        InputManager_Riki.Instance.RightJoystickUsedEvent -= Instance_RightJoystickUsedEvent;
+        InputManager_Riki.Instance.LeftJoystickUsedEvent -= Instance_LeftJoystickUsedEvent;
     }
 
     private void Instance_ButtonRPressedEvent()
@@ -95,80 +257,37 @@ public class UIManager : MonoBehaviour {
         //MoveUI(-1);
     }
 
-    private void Instance_ButtonAPressedEvent()
-    {
-        if (GameManagerScript.Instance.CurrentGameState == GameState.Pause)
-        {
-            NextTutorial();
-        }
-        else
-        {
-            SelectChar(UICardsAnim[0]);
-        }
-    }
-
-    private void Instance_ButtonYPressedEvent()
-    {
-        SelectChar(UICardsAnim[3]);
-    }
-
-    private void Instance_ButtonBPressedEvent()
-    {
-        if (GameManagerScript.Instance.CurrentGameState == GameState.Pause)
-        {
-            if(PrevState == GameState.Intro)
-            {
-                GameManagerScript.Instance.SetUpMatch();
-            }
-            CloseTutorial();
-        }
-        else
-        {
-            SelectChar(UICardsAnim[2]);
-        }
-    }
-
-    private void Instance_ButtonXPressedEvent()
-    {
-        SelectChar(UICardsAnim[1]);
-    }
-
     public void SelectChar(Animator anim)
     {
-        foreach (Animator item in UICardsAnim)
+        CurrentCard = anim;
+        UIC = CurrentCard.GetComponent<UICharacterIconScript>();
+        foreach (Animator item in UICardsAnim.Where(r => r != anim).ToList())
         {
             item.SetBool("State", false);
-        }
-        CurrentCard = anim;
-        if (CurrentCard.GetComponent<UICharacterIconScript>().isAlreadyUsed)
-        {
-            UICharacterIconScript UIC = CurrentCard.GetComponent<UICharacterIconScript>();
-            UIC.CurrentPlayer.IsTouchingMe = true;
-        }
-        else
-        {
-            UICharacterIconScript UIC = CurrentCard.GetComponent<UICharacterIconScript>();
-            BattleSquareClass bsc = BattleGroundManager.Instance.PBG.GetFreePos();
-            UIC.isAlreadyUsed = true;
-            PlayerChar Pchar = GameManagerScript.Instance.CreatePlayerChar(UIC.PCType, false, bsc.Pos);
-            if (UIC.CurrentPlayer == null)
+            item.SetBool("Loading", false);
+            if (item.GetComponent<UICharacterIconScript>().CurrentPlayer != null)
             {
-                UIC.CurrentPlayer = Pchar;
-            }
-            UIC.CurrentPlayer.IsTouchingMe = true;
-            if (GameManagerScript.Instance.CurrentGameState == GameState.EndIntro)
-            {
-                GameManagerScript.Instance.Invoke("StartMatch", GameManagerScript.Instance.StartingTime);
+                item.GetComponent<UICharacterIconScript>().CurrentPlayer.ButtonIcon.color = Color.white;
             }
 
         }
+        if (UIC.isAlreadyUsed)
+        {
+            anim.SetBool("State", true);
+            UIC.CurrentPlayer.IsTouchingMe = true;
+            UIC.CurrentPlayer.ButtonIcon.color = Color.green;
+        }
+        else
+        {
+            CurrentCard.SetBool("Loading", true);
+        }
+       
     }
 
     private void Instance_ButtonRightPressedEvent()
     {
         if (CurrentCard != null)
         {
-            UICharacterIconScript UIC = CurrentCard.GetComponent<UICharacterIconScript>();
             if (UIC.isAlreadyUsed && UIC.CurrentPlayer.IsTouchingMe)
             {
                 if (UIC.CurrentPlayer.Hp > 0)
@@ -183,7 +302,6 @@ public class UIManager : MonoBehaviour {
     {
         if (CurrentCard != null)
         {
-            UICharacterIconScript UIC = CurrentCard.GetComponent<UICharacterIconScript>();
             if (UIC.isAlreadyUsed && UIC.CurrentPlayer.IsTouchingMe)
             {
                 if (UIC.CurrentPlayer.Hp > 0)
@@ -198,7 +316,6 @@ public class UIManager : MonoBehaviour {
     {
         if (CurrentCard != null)
         {
-            UICharacterIconScript UIC = CurrentCard.GetComponent<UICharacterIconScript>();
             if (UIC.isAlreadyUsed && UIC.CurrentPlayer.IsTouchingMe)
             {
                 if (UIC.CurrentPlayer.Hp > 0)
@@ -209,16 +326,10 @@ public class UIManager : MonoBehaviour {
         }
     }
 
-    private void Instance_ButtonPlusPressedEvent()
-    {
-        StartTutorial();
-
-    }
     private void Instance_ButtonDownPressedEvent()
     {
         if (CurrentCard != null)
         {
-            UICharacterIconScript UIC = CurrentCard.GetComponent<UICharacterIconScript>();
             if (UIC.isAlreadyUsed && UIC.CurrentPlayer.IsTouchingMe)
             {
                 if (UIC.CurrentPlayer.Hp > 0)
@@ -229,11 +340,17 @@ public class UIManager : MonoBehaviour {
         }
     }
 
+    private void Instance_ButtonPlusPressedEvent()
+    {
+        StartTutorial();
+
+    }
+   
+
     private void Instance_LeftJoystickUsedEvent(InputDirection dir)
     {
         if (CurrentCard != null)
         {
-            UICharacterIconScript UIC = CurrentCard.GetComponent<UICharacterIconScript>();
             if (UIC.isAlreadyUsed && UIC.CurrentPlayer.IsTouchingMe)
             {
                 if(UIC.CurrentPlayer.Hp >0)

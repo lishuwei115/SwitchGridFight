@@ -67,7 +67,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 1000
   m_Sprite: {fileID: -4727089609190529051, guid: 4e5a13f77ba3b4c63b4163920e594258,
     type: 3}
   m_Color: {r: 0.0542008, g: 0.05660379, b: 0.054704998, a: 0.5372549}
@@ -164,6 +164,13 @@ MonoBehaviour:
   CurrentAttack:
     AttackPower: 0
     AttackT: 0
+    Height:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    ParticleType: 0
     AttackSpeed: 0
     AttackAngle: 0
     NumberOfBullets: 0
@@ -188,7 +195,17 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  BodyParts: []
+  HitTime: -10
+  MovingCoolDown: 0.2
+  Height:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   AttackAudio: {fileID: 8300000, guid: bbaae0001c7874b1bb759ed616c9e3d0, type: 3}
+  ButtonIcon: {fileID: 0}
 --- !u!54 &7763697259650301747
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -273,7 +290,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 1001
   m_Sprite: {fileID: -4727089609190529051, guid: 4e5a13f77ba3b4c63b4163920e594258,
     type: 3}
   m_Color: {r: 0.06674972, g: 0.9433962, b: 0.2490447, a: 1}
@@ -299,3 +316,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Parent: {fileID: 1819227842021321382}
+  ParentE: {fileID: 0}

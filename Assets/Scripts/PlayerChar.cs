@@ -34,11 +34,14 @@ public class PlayerChar : CharacterBase
     public AnimationCurve Height;
     [Header("Audio")]
 	public AudioClip AttackAudio;
+    public Transform BodyBase;
+
+    public SpriteRenderer ButtonIcon;
 
 	// Start is called before the first frame update
 	void Start()
     {
-		BodyParts.AddRange(GetComponentsInChildren<SpriteRenderer>());
+		BodyParts.AddRange(BodyBase.GetComponentsInChildren<SpriteRenderer>());
 		CurrentAttack = Attacks[0];
 		StartCoroutine(AttackAction());
 		BaseHp = Hp;

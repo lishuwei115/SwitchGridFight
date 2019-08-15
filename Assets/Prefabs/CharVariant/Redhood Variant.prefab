@@ -291,6 +291,12 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 2078324982590381991}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &3124224130784806649 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4002794913522473310, guid: 0c32d3307d0680141b081a39b81b2f01,
+    type: 3}
+  m_PrefabInstance: {fileID: 2078324982590381991}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3529645659076244745
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -579,6 +585,11 @@ PrefabInstance:
       propertyPath: MovingCoolDown
       value: 0.4
       objectReference: {fileID: 0}
+    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
+        type: 3}
+      propertyPath: BodyBase
+      value: 
+      objectReference: {fileID: 3124224130784806649}
     - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
         type: 3}
       propertyPath: ButtonIcon

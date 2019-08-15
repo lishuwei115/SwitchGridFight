@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &8602080940471692204
+--- !u!114 &2080044893
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Anim: {fileID: 1820608443005888832}
   Parent: {fileID: 0}
---- !u!114 &2080044893
+--- !u!114 &8602080940471692204
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

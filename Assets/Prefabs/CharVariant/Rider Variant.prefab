@@ -310,6 +310,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rider_Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 3468442103242878505, guid: 28b5a01646879ae4a99db4f5fa068ad1,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: b7638fc2c16c769409da8bd511aceef0, type: 2}
     - target: {fileID: 7615660924447401390, guid: 28b5a01646879ae4a99db4f5fa068ad1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -380,11 +385,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.28
       objectReference: {fileID: 0}
-    - target: {fileID: 3468442103242878505, guid: 28b5a01646879ae4a99db4f5fa068ad1,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: b7638fc2c16c769409da8bd511aceef0, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28b5a01646879ae4a99db4f5fa068ad1, type: 3}
 --- !u!1 &6564554465818875025 stripped
