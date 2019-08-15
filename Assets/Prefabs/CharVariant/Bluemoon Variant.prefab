@@ -560,6 +560,11 @@ PrefabInstance:
       propertyPath: MovingCoolDown
       value: 0.4
       objectReference: {fileID: 0}
+    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
+        type: 3}
+      propertyPath: ButtonIcon
+      value: 
+      objectReference: {fileID: 8426700361193499108}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b8956433113349bfae025a9b9ed1ba9, type: 3}
 --- !u!1 &1673524520184095062 stripped

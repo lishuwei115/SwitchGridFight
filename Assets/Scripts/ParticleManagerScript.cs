@@ -29,6 +29,8 @@ public class ParticleManagerScript : MonoBehaviour
     public GameObject BlindAParticles;
     public GameObject RiderParticles;
     public GameObject RiderAParticles;
+    public GameObject SurferParticles;
+    public GameObject SurferAParticles;
 
     public List<ParticlesClass> ParticlesFired = new List<ParticlesClass>();
 
@@ -74,6 +76,9 @@ public class ParticleManagerScript : MonoBehaviour
                     ps = BlindAParticles;
                     break;
                 case ParticleTypes.RiderA:
+                    ps = RiderAParticles;
+                    break;
+                case ParticleTypes.SurferA:
                     ps = RiderAParticles;
                     break;
             }
@@ -141,6 +146,9 @@ public class ParticleManagerScript : MonoBehaviour
                     ps = BlindParticles;
                     break;
                 case ParticleTypes.Rider:
+                    ps = RiderParticles;
+                    break;
+                case ParticleTypes.Surfer:
                     ps = RiderParticles;
                     break;
             }
@@ -349,5 +357,7 @@ public enum ParticleTypes
     Blind,
     BlindA,
     Rider,
-    RiderA
+    RiderA,
+    Surfer,
+    SurferA
 }

@@ -620,6 +620,11 @@ PrefabInstance:
       propertyPath: AttackAudio
       value: 
       objectReference: {fileID: 8300000, guid: a69fb251becf046c0bae943010827f36, type: 3}
+    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
+        type: 3}
+      propertyPath: ButtonIcon
+      value: 
+      objectReference: {fileID: 4091842170002759680}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b8956433113349bfae025a9b9ed1ba9, type: 3}
 --- !u!1 &6434463899540183730 stripped
