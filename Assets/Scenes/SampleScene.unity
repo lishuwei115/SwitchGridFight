@@ -234,13 +234,13 @@ MonoBehaviour:
           inWeight: 0.33333334
           outWeight: 0.30765405
         - serializedVersion: 3
-          time: 0.9916687
-          value: 0.002357483
-          inSlope: -2.049046
-          outSlope: -2.049046
-          tangentMode: 34
+          time: 0.9996242
+          value: -0.10028865
+          inSlope: -2.5655496
+          outSlope: -2.5655496
+          tangentMode: 0
           weightedMode: 0
-          inWeight: 0.33333334
+          inWeight: 0.16082834
           outWeight: 0
         m_PreInfinity: 2
         m_PostInfinity: 2
@@ -479,7 +479,7 @@ MonoBehaviour:
           m_PreInfinity: 2
           m_PostInfinity: 2
           m_RotationOrder: 4
-        ParticleType: 17
+        ParticleType: 21
         AttackSpeed: 0
         AttackAngle: 0
         NumberOfBullets: 0
@@ -1392,9 +1392,13 @@ MonoBehaviour:
     type: 3}
   BlindAParticles: {fileID: 4009159383344256036, guid: 9af0d51b5455964439d2636e1178a669,
     type: 3}
-  RiderParticles: {fileID: 5629082328389113819, guid: 74e54c5f2946bfb4abebb292b914ea9a,
+  RiderParticles: {fileID: 8936449309619358991, guid: c4dfddea396d28948bc32256d36e9251,
     type: 3}
-  RiderAParticles: {fileID: 5629082328389113819, guid: 74e54c5f2946bfb4abebb292b914ea9a,
+  RiderAParticles: {fileID: 7432586218464928867, guid: 684b0a49d33082e418dd1a265b12be4f,
+    type: 3}
+  SurferParticles: {fileID: 1707774338151580194, guid: fc047496709cedf4abfea3fefb614934,
+    type: 3}
+  SurferAParticles: {fileID: 899869898933945338, guid: e8fc3503fdc57114ea3c5c8433fc3576,
     type: 3}
 --- !u!4 &762998587
 Transform:
@@ -1908,6 +1912,26 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 13312795}
+    - target: {fileID: 1686943308913061458, guid: 77017f7ba5b52442fbd7609b7e441191,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -422.69998
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686943307737743331, guid: 77017f7ba5b52442fbd7609b7e441191,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -317
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686943309093678114, guid: 77017f7ba5b52442fbd7609b7e441191,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -211.19998
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686943307914960079, guid: 77017f7ba5b52442fbd7609b7e441191,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -106
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77017f7ba5b52442fbd7609b7e441191, type: 3}
 --- !u!1 &928423893 stripped
