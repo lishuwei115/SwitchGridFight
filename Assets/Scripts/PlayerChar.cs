@@ -31,7 +31,8 @@ public class PlayerChar : CharacterBase
 	public float HitTime = -10;
     public float MovingCoolDown = 0.2f;
     private float MovingOffset = 0;
-	[Header("Audio")]
+    public AnimationCurve Height;
+    [Header("Audio")]
 	public AudioClip AttackAudio;
 
 	// Start is called before the first frame update
@@ -442,6 +443,7 @@ public class AttackClass
 	
 	public int AttackPower;
 	public AttackType AttackT;
+    public AnimationCurve Height;
     public ParticleTypes ParticleType;
     public float AttackSpeed;
 	public int AttackAngle;

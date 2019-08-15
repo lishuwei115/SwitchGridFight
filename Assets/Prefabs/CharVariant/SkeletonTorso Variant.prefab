@@ -142,8 +142,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3, y: 3, z: 10}
-  m_Center: {x: 0, y: 1.5, z: 0}
+  m_Size: {x: 2.2, y: 2.2, z: 2}
+  m_Center: {x: 0, y: 1.1, z: 0}
 --- !u!114 &671519115390957922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -284,6 +284,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
+--- !u!114 &2120942104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4551872756400687833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3f8b2d1f052e410ab964cd1e74c54e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Anim: {fileID: 7526475998766448620}
+  Parent: {fileID: 0}
 --- !u!114 &5264141058270597115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -318,12 +332,12 @@ PrefabInstance:
     - target: {fileID: 1606837756097876260, guid: c41d4328666170443aec6608aef9d449,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.5545835
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 1606837756097876260, guid: c41d4328666170443aec6608aef9d449,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.22151709
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 1606837756097876260, guid: c41d4328666170443aec6608aef9d449,
         type: 3}

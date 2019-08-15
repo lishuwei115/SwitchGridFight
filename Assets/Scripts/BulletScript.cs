@@ -9,9 +9,9 @@ public class BulletScript : MonoBehaviour
 	public AttackType AType;
 	public ControllerType ControllerT;
 	public float Minx, Maxx, Miny, Maxy;
-
+    public AnimationCurve Height;
 	public bool Hit = false;
-    
+    public bool Dead = false;
 	//public ParticleSystem PS;
 
 
@@ -19,6 +19,7 @@ public class BulletScript : MonoBehaviour
 	private void OnEnable()
 	{
 		Hit = false;
+        Dead = false;
 		if (AType == AttackType.Static)
 		{
 			StartCoroutine(SelfDeactivate(3));
@@ -26,7 +27,10 @@ public class BulletScript : MonoBehaviour
 		else if (AType == AttackType.PowerAct)
 		{
 			StartCoroutine(SelfDeactivate(7));
-			StartCoroutine(MoveParabola((ControllerT == ControllerType.Player ? Random.Range(Minx, Maxx) : -Random.Range(Minx, Maxx)),Random.Range(Miny,Maxy), 3.14f));
+            float x = (ControllerT == ControllerType.Player ? Random.Range(Minx, Maxx) : -Random.Range(Minx, Maxx));
+            float y = (float)Random.Range(Miny, Maxy);
+
+            StartCoroutine(MoveParabola(x,y, 3.14f));
 		}
 		else
 		{
@@ -46,7 +50,7 @@ public class BulletScript : MonoBehaviour
     public IEnumerator SelfDeactivate(float delay)
 	{
 		float timer = 0;
-		while (timer < delay)
+		while (timer < delay && !Dead)
         {
 			timer += Time.fixedDeltaTime;
 			yield return new WaitForFixedUpdate();
@@ -59,10 +63,10 @@ public class BulletScript : MonoBehaviour
         {
             item.time = 0;
         }
-		gameObject.SetActive(false);
-
+		
+        Dead = true;
         StopAllCoroutines();
-
+        gameObject.SetActive(false);
     }
 
     private IEnumerator MoveLinear(Vector3 dest)
@@ -70,7 +74,7 @@ public class BulletScript : MonoBehaviour
 		Vector3 offset = transform.position;
         float timer = 0;
 
-        while (true)
+        while (!Dead)
         {
             yield return new WaitForFixedUpdate();
 			while (GameManagerScript.Instance.CurrentGameState != GameState.StartMatch)
@@ -102,14 +106,17 @@ public class BulletScript : MonoBehaviour
                 yield return new WaitForEndOfFrame();
             }
 
-		/*	if (Hit)
-            {
-                break;
-            }*/
+            /*	if (Hit)
+                {
+                    break;
+                }*/
 
-			Vector3 res = new Vector3(Mathf.Lerp(0, x, timer) + offset.x,
-			                          (Mathf.Sin(pp) * y) + offset.y,
-			                          offset.z);
+            Vector3 res = new Vector3(Mathf.Lerp(0, x, timer) + offset.x,
+                                          (((float)(Height.Evaluate(timer)) * y)) + offset.y,
+                                          offset.z);
+
+            
+
 			timer += Time.fixedDeltaTime / time;
 			//Debug.Log(timer);
 			pp += Time.fixedDeltaTime;// * (time / 3.14f);

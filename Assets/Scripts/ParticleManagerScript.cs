@@ -177,6 +177,7 @@ public class ParticleManagerScript : MonoBehaviour
 			psC.PS.transform.position = parent.position;
 			BulletScript bullet;
 			bullet = psC.PS.GetComponent<BulletScript>();
+            bullet.Height = attackClass.Height; 
             bullet.AType = attackClass.AttackT;
             bullet.Damage = attackClass.AttackPower;
             bullet.Speed = attackClass.BulletSpeed;
@@ -213,6 +214,7 @@ public class ParticleManagerScript : MonoBehaviour
             Vector3 pos = parent.position;
 			go = Instantiate(ps, pos, Quaternion.Euler(parent.eulerAngles));
             bullet = go.GetComponent<BulletScript>();
+            bullet.Height = attackClass.Height;
             bullet.AType = attackClass.AttackT;
             bullet.Damage = attackClass.AttackPower;
             bullet.Speed = attackClass.BulletSpeed;
