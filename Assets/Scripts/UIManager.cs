@@ -97,7 +97,7 @@ public class UIManager : MonoBehaviour {
 
     private void Instance_ButtonAUpEvent()
     {
-        if (GameManagerScript.Instance.CurrentGameState == GameState.StartMatch)
+        if (GameManagerScript.Instance.CurrentGameState == GameState.StartMatch || GameManagerScript.Instance.CurrentGameState == GameState.EndIntro)
         {
             if (CurrentCard != null)
             {
@@ -122,7 +122,7 @@ public class UIManager : MonoBehaviour {
     #region B
     private void Instance_ButtonBUpEvent()
     {
-        if (GameManagerScript.Instance.CurrentGameState == GameState.StartMatch)
+        if (GameManagerScript.Instance.CurrentGameState == GameState.StartMatch || GameManagerScript.Instance.CurrentGameState == GameState.EndIntro)
         {
             if (CurrentCard != null)
             {
@@ -159,7 +159,7 @@ public class UIManager : MonoBehaviour {
     #region X
     private void Instance_ButtonXUpEvent()
     {
-        if (GameManagerScript.Instance.CurrentGameState == GameState.StartMatch)
+        if (GameManagerScript.Instance.CurrentGameState == GameState.StartMatch || GameManagerScript.Instance.CurrentGameState == GameState.EndIntro)
         {
             if (CurrentCard != null)
             {
@@ -185,7 +185,7 @@ public class UIManager : MonoBehaviour {
     #region Y
     private void Instance_ButtonYUpEvent()
     {
-        if (GameManagerScript.Instance.CurrentGameState == GameState.StartMatch)
+        if (GameManagerScript.Instance.CurrentGameState == GameState.StartMatch || GameManagerScript.Instance.CurrentGameState == GameState.EndIntro)
         {
             if (CurrentCard != null)
             {

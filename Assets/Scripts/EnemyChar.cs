@@ -136,7 +136,7 @@ public class EnemyChar : CharacterBase
 
     public IEnumerator SingleEnemyAttackAction(bool attackafter)
     {
-        while (GameManagerScript.Instance.CurrentGameState != GameState.StartMatch || isStopped)
+        while (GameManagerScript.Instance.CurrentGameState != GameState.StartMatch || isStopped || EIC.Hp <= 0)
         {
             yield return new WaitForEndOfFrame();
         }
@@ -187,19 +187,29 @@ public class EnemyChar : CharacterBase
                 }
                 bsc = BattleGroundManager.Instance.PBG.GetBattleGroundPosition(new Vector2Int(Pos.x, aa.Pos.y));
                 listOfbsc.Add(bsc);
-                if (EIC.Hp <= 0)
-                {
-                    foreach (BattleSquareClass item in listOfbsc)
-                    {
-                        item.BFQS.CancelInvoke();
-                        item.BFQS.AllOff();
-                    }
-                    break;
-                }
                 StartCoroutine(AttackToChar(bsc, CurrentAttack.YellowTargetTimer));
                 bsc.BFQS.YellowOn(CurrentAttack);
                 StartCoroutine(bsc.BFQS.TargetsOn(CurrentAttack.YellowTargetTimer, CurrentAttack.RedTargetTimer));
-                yield return new WaitForSecondsRealtime(aa.NextActionTimer);
+                float timer = 0;
+                while (timer < 1)
+                {
+                    yield return new WaitForFixedUpdate();
+                    while (GameManagerScript.Instance.CurrentGameState != GameState.StartMatch || isStopped)
+                    {
+                        yield return new WaitForEndOfFrame();
+                    }
+                    timer += Time.fixedDeltaTime / aa.NextActionTimer;
+
+                    if (EIC.Hp <= 0)
+                    {
+                        foreach (BattleSquareClass item in listOfbsc)
+                        {
+                            item.BFQS.CancelInvoke();
+                            item.BFQS.AllOff();
+                        }
+                        break;
+                    }
+                }
             }
             yield return new WaitForSecondsRealtime(CurrentAttack.YellowTargetTimer + CurrentAttack.RedTargetTimer + Delay);
             complete = true;
