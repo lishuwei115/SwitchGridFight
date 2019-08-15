@@ -1309,6 +1309,7 @@ GameObject:
   - component: {fileID: 1686943307532354844}
   - component: {fileID: 1686943307532354845}
   - component: {fileID: 1686943307532354846}
+  - component: {fileID: 5742940099413205834}
   m_Layer: 5
   m_Name: Win
   m_TagString: Untagged
@@ -1373,6 +1374,27 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!223 &5742940099413205834
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686943307532354847}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 1
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 5
+  m_TargetDisplay: 0
 --- !u!1 &1686943307562003201
 GameObject:
   m_ObjectHideFlags: 0
@@ -2054,7 +2076,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -311.1, y: -272}
+  m_AnchoredPosition: {x: -317, y: -272}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1686943307737743330
@@ -2077,8 +2099,7 @@ MonoBehaviour:
   PCType: 1
   isAlreadyUsed: 0
   HpBar: {fileID: 1686943307966600397}
-  CanvasComponent: {fileID: 2308204969617703479, guid: 77017f7ba5b52442fbd7609b7e441191,
-    type: 3}
+  CanvasComponent: {fileID: 0}
 --- !u!95 &918182134
 Animator:
   serializedVersion: 3
@@ -3485,7 +3506,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -100.1, y: -274}
+  m_AnchoredPosition: {x: -106, y: -274}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1686943307914960078
@@ -3508,8 +3529,7 @@ MonoBehaviour:
   PCType: 3
   isAlreadyUsed: 0
   HpBar: {fileID: 1686943308843021745}
-  CanvasComponent: {fileID: 1192338244915935757, guid: 77017f7ba5b52442fbd7609b7e441191,
-    type: 3}
+  CanvasComponent: {fileID: 0}
 --- !u!95 &918182132
 Animator:
   serializedVersion: 3
@@ -4007,6 +4027,7 @@ GameObject:
   - component: {fileID: 1686943308006189903}
   - component: {fileID: 1686943308006189888}
   - component: {fileID: 1686943308006189889}
+  - component: {fileID: 8316681165507698687}
   m_Layer: 5
   m_Name: Lose
   m_TagString: Untagged
@@ -4071,6 +4092,27 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!223 &8316681165507698687
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686943308006189890}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 1
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 5
+  m_TargetDisplay: 0
 --- !u!1 &1686943308021931221
 GameObject:
   m_ObjectHideFlags: 0
@@ -7753,7 +7795,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -416.8, y: -272}
+  m_AnchoredPosition: {x: -422.69998, y: -272}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1686943308913061457
@@ -7776,8 +7818,7 @@ MonoBehaviour:
   PCType: 0
   isAlreadyUsed: 0
   HpBar: {fileID: 1686943307270471881}
-  CanvasComponent: {fileID: 2033143589962562710, guid: 77017f7ba5b52442fbd7609b7e441191,
-    type: 3}
+  CanvasComponent: {fileID: 0}
 --- !u!95 &918182135
 Animator:
   serializedVersion: 3
@@ -8617,7 +8658,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -205.3, y: -273}
+  m_AnchoredPosition: {x: -211.19998, y: -273}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1686943309093678113
@@ -8640,8 +8681,7 @@ MonoBehaviour:
   PCType: 4
   isAlreadyUsed: 0
   HpBar: {fileID: 1686943308623331957}
-  CanvasComponent: {fileID: 7467595470530337517, guid: 77017f7ba5b52442fbd7609b7e441191,
-    type: 3}
+  CanvasComponent: {fileID: 0}
 --- !u!95 &918182133
 Animator:
   serializedVersion: 3

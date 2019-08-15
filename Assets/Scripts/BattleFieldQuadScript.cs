@@ -10,13 +10,13 @@ public class BattleFieldQuadScript : MonoBehaviour
 	public Vector2Int Pos;
 	public Transform Container;
 
-	public void YellowOn(AttackClass attackClass)
+	public void YellowOn(AttackClass attackClass, EnemyChar ec)
     {
         SetTargetsOnOff(true, false);
-		StartCoroutine(YellowTargetResizing(attackClass));
+		StartCoroutine(YellowTargetResizing(attackClass, ec));
     }
 
-	public IEnumerator YellowTargetResizing(AttackClass attackClass)
+	public IEnumerator YellowTargetResizing(AttackClass attackClass, EnemyChar ec)
 	{
 		float timer = 0;
 		while (timer < 1)
@@ -36,15 +36,17 @@ public class BattleFieldQuadScript : MonoBehaviour
 			//Debug.Log(timer + "     " + YellowTarget.transform.localScale);
 		}
 		YellowTarget.transform.localScale = Vector3.one;
-        ParticleManagerScript.Instance.FireParticlesInBoardPos(attackClass.ParticleType, attackClass, Pos, ControllerType.Enemy);
+        if(ec.EIC.Hp > 0)
+        {
+            ParticleManagerScript.Instance.FireParticlesInBoardPos(attackClass.ParticleType, attackClass, Pos, ControllerType.Enemy);
+        }
     }
 
-	public IEnumerator TargetsOn(float delayY, float delayR)
+	public IEnumerator TargetsOn(EnemyChar ec, float delayY, float delayR)
     {
-
+        bool isLive = true;
 		float timer = 0;
-
-		while (timer < delayY)
+		while (timer < delayY && isLive)
 		{
 			timer += Time.fixedDeltaTime;
 			yield return new WaitForFixedUpdate();
@@ -52,11 +54,16 @@ public class BattleFieldQuadScript : MonoBehaviour
             {
 				yield return new WaitForFixedUpdate();
             }
+
+            if(ec.EIC.Hp <= 0)
+            {
+                isLive = false;
+            }
 		}
         SetTargetsOnOff(false, true);
 		timer = 0;
 
-		while (timer < delayR)
+		while (timer < delayR && isLive)
         {
 			timer += Time.fixedTime;
 			yield return new WaitForFixedUpdate();

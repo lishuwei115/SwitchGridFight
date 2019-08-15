@@ -187,8 +187,8 @@ public class EnemyChar : CharacterBase
                 bsc = BattleGroundManager.Instance.PBG.GetBattleGroundPosition(new Vector2Int(Pos.x, aa.Pos.y));
                 listOfbsc.Add(bsc);
                 StartCoroutine(AttackToChar(bsc, CurrentAttack.YellowTargetTimer));
-                bsc.BFQS.YellowOn(CurrentAttack);
-                StartCoroutine(bsc.BFQS.TargetsOn(CurrentAttack.YellowTargetTimer, CurrentAttack.RedTargetTimer));
+                bsc.BFQS.YellowOn(CurrentAttack, this);
+                StartCoroutine(bsc.BFQS.TargetsOn(this, CurrentAttack.YellowTargetTimer, CurrentAttack.RedTargetTimer));
                 float timer = 0;
                 while (timer < 1)
                 {
@@ -293,7 +293,7 @@ public class EnemyChar : CharacterBase
 	{
 		GameManagerScript.Instance.ManaPool += damage;
 		EIC.Hp -= damage;
-        EIC.Hp = 0;
+        //EIC.Hp = 0;
 		if(EIC.Hp <= 0)
 		{
             Anim.SetInteger("State", 5);

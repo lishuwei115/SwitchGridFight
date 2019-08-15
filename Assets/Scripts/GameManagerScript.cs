@@ -58,7 +58,6 @@ public class GameManagerScript : MonoBehaviour
 
     public void StartMatch()
 	{
-        Debug.Log("Enter");
 		CurrentGameState = GameState.StartMatch;
 		StartCoroutine(SpawnPowerUps());
 	}
