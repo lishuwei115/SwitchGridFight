@@ -251,6 +251,7 @@ public class GameManagerScript : MonoBehaviour
         }
         EnemyChar cb = c.GetComponent<EnemyChar>();
         cb.EIC = enemy;
+       // Debug.Log(enemy.StartingPos);
         cb.BSCs.Add(BattleGroundManager.Instance.EBG.GetBattleGroundPositionIfFree(enemy.StartingPos));
         cb.Pos = cb.BSCs.Last().Pos;
         BattleSquareClass bsc = BattleGroundManager.Instance.EBG.GetBattleGroundPosition(cb.BSCs.Last().Pos);

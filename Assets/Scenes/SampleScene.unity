@@ -501,7 +501,7 @@ MonoBehaviour:
         Pos: {x: 2, y: 2}
     - EType: 4
       MinPartsToStartNewAttack: 0
-      StartingPos: {x: 2, y: 4}
+      StartingPos: {x: 2, y: 3}
       MinTimer: 2
       MaxTimer: 2
       MinMovementTimer: 5
