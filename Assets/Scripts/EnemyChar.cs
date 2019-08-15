@@ -293,7 +293,7 @@ public class EnemyChar : CharacterBase
 	{
 		GameManagerScript.Instance.ManaPool += damage;
 		EIC.Hp -= damage;
-        //EIC.Hp = 0;
+        EIC.Hp = 0;
 		if(EIC.Hp <= 0)
 		{
             Anim.SetInteger("State", 5);
