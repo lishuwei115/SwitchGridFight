@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1948232220246475981
 Transform:
   m_ObjectHideFlags: 0
@@ -52,15 +52,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1948232220246475981}
     m_Modifications:
+    - target: {fileID: 8292178387782256527, guid: deca1c8ba009c344a95728e564ba3963,
+        type: 3}
+      propertyPath: m_Name
+      value: ASSET-FireDeath
+      objectReference: {fileID: 0}
     - target: {fileID: 8292178387781915249, guid: deca1c8ba009c344a95728e564ba3963,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.36
+      value: -1.007
       objectReference: {fileID: 0}
     - target: {fileID: 8292178387781915249, guid: deca1c8ba009c344a95728e564ba3963,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.54
+      value: 0.313
       objectReference: {fileID: 0}
     - target: {fileID: 8292178387781915249, guid: deca1c8ba009c344a95728e564ba3963,
         type: 3}
@@ -106,11 +111,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8292178387782256527, guid: deca1c8ba009c344a95728e564ba3963,
-        type: 3}
-      propertyPath: m_Name
-      value: ASSET-FireDeath
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: deca1c8ba009c344a95728e564ba3963, type: 3}

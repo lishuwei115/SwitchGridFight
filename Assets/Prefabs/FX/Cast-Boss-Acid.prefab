@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6506284445245933250
 Transform:
   m_ObjectHideFlags: 0
@@ -54,15 +54,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6506284445245933250}
     m_Modifications:
+    - target: {fileID: 502013835654359750, guid: 608069385ad21f8418b830fa010097ff,
+        type: 3}
+      propertyPath: m_Name
+      value: ASSET-SpikyCastGreen (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 502013835654627482, guid: 608069385ad21f8418b830fa010097ff,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.27
+      value: -0.915
       objectReference: {fileID: 0}
     - target: {fileID: 502013835654627482, guid: 608069385ad21f8418b830fa010097ff,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.84
+      value: 0.508
       objectReference: {fileID: 0}
     - target: {fileID: 502013835654627482, guid: 608069385ad21f8418b830fa010097ff,
         type: 3}
@@ -109,11 +114,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 502013835654359750, guid: 608069385ad21f8418b830fa010097ff,
-        type: 3}
-      propertyPath: m_Name
-      value: ASSET-SpikyCastGreen (1)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 608069385ad21f8418b830fa010097ff, type: 3}
 --- !u!4 &248969033524303931 stripped
@@ -129,15 +129,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6506284445245933250}
     m_Modifications:
+    - target: {fileID: 502013835654359750, guid: 608069385ad21f8418b830fa010097ff,
+        type: 3}
+      propertyPath: m_Name
+      value: ASSET-SpikyCastGreen
+      objectReference: {fileID: 0}
     - target: {fileID: 502013835654627482, guid: 608069385ad21f8418b830fa010097ff,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.84
+      value: -1.407
       objectReference: {fileID: 0}
     - target: {fileID: 502013835654627482, guid: 608069385ad21f8418b830fa010097ff,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.35
+      value: 0.591
       objectReference: {fileID: 0}
     - target: {fileID: 502013835654627482, guid: 608069385ad21f8418b830fa010097ff,
         type: 3}
@@ -184,11 +189,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 502013835654359750, guid: 608069385ad21f8418b830fa010097ff,
-        type: 3}
-      propertyPath: m_Name
-      value: ASSET-SpikyCastGreen
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 608069385ad21f8418b830fa010097ff, type: 3}
 --- !u!4 &2162273069466910887 stripped
@@ -204,15 +204,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6506284445245933250}
     m_Modifications:
+    - target: {fileID: 502013835654359750, guid: 608069385ad21f8418b830fa010097ff,
+        type: 3}
+      propertyPath: m_Name
+      value: ASSET-SpikyCastGreen (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 502013835654627482, guid: 608069385ad21f8418b830fa010097ff,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.3
+      value: -0.986
       objectReference: {fileID: 0}
     - target: {fileID: 502013835654627482, guid: 608069385ad21f8418b830fa010097ff,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.78
+      value: 0.872
       objectReference: {fileID: 0}
     - target: {fileID: 502013835654627482, guid: 608069385ad21f8418b830fa010097ff,
         type: 3}
@@ -258,11 +263,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 502013835654359750, guid: 608069385ad21f8418b830fa010097ff,
-        type: 3}
-      propertyPath: m_Name
-      value: ASSET-SpikyCastGreen (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 608069385ad21f8418b830fa010097ff, type: 3}
