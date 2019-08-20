@@ -114,7 +114,6 @@ public class InputManager_Riki : MonoBehaviour
 
     private void Update()
     {
-#if UNITY_SWITCH
 
         if (player.GetButtonDown("A"))
         {
@@ -501,7 +500,6 @@ public class InputManager_Riki : MonoBehaviour
             }
         }
 
-#endif
 
     }
 

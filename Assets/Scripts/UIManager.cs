@@ -119,8 +119,8 @@ public class UIManager : MonoBehaviour {
         else if(GameManagerScript.Instance.CurrentGameState == GameState.EndIntro || GameManagerScript.Instance.CurrentGameState == GameState.StartMatch)
         {
 
-            //SelectChar(UICardsAnim[0]);
-            SelectChar(UICardsAnim[1]);
+            SelectChar(UICardsAnim[0]);
+            //SelectChar(UICardsAnim[1]);
         }
     }
     #endregion
@@ -163,8 +163,8 @@ public class UIManager : MonoBehaviour {
         }
         else if (GameManagerScript.Instance.CurrentGameState == GameState.EndIntro || GameManagerScript.Instance.CurrentGameState == GameState.StartMatch)
         {
-            //SelectChar(UICardsAnim[1]);
-            SelectChar(UICardsAnim[0]);
+            SelectChar(UICardsAnim[1]);
+            //SelectChar(UICardsAnim[0]);
         }
     }
     #endregion
@@ -185,8 +185,8 @@ public class UIManager : MonoBehaviour {
     {
         if (GameManagerScript.Instance.CurrentGameState == GameState.EndIntro || GameManagerScript.Instance.CurrentGameState == GameState.StartMatch)
         {
-            //SelectChar(UICardsAnim[2]);
-            SelectChar(UICardsAnim[3]);
+            SelectChar(UICardsAnim[2]);
+            //SelectChar(UICardsAnim[3]);
         }
             
     }
@@ -194,6 +194,10 @@ public class UIManager : MonoBehaviour {
     private void Instance_ButtonXDownEvent()
     {
         if (GameManagerScript.Instance.CurrentGameState == GameState.WinLose)
+        {
+            GameManagerScript.Instance.RestartScene();
+        }
+        if (GameManagerScript.Instance.CurrentGameState == GameState.Pause)
         {
             GameManagerScript.Instance.RestartScene();
         }
@@ -215,8 +219,8 @@ public class UIManager : MonoBehaviour {
     {
         if (GameManagerScript.Instance.CurrentGameState == GameState.EndIntro || GameManagerScript.Instance.CurrentGameState == GameState.StartMatch)
         {
-            //SelectChar(UICardsAnim[3]);
-            SelectChar(UICardsAnim[2]);
+            SelectChar(UICardsAnim[3]);
+            //SelectChar(UICardsAnim[2]);
         }
             
     }
