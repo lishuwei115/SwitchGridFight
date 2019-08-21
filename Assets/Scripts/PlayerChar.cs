@@ -243,8 +243,8 @@ public class PlayerChar : CharacterBase
 
     public void MoveChar(InputDirection nextDir)
     {
-        //if(Time.time - MovingOffset > MovingCoolDown)
-        //{
+        if(Hp > 0)
+        {
             //Debug.Log(Time.time + "  " + MovingOffset + "  " + MovingCoolDown);
             MovingOffset = Time.time;
             BattleSquareClass prevBSC = BSC;
@@ -289,7 +289,7 @@ public class PlayerChar : CharacterBase
                 GameManagerScript.Instance.CharsBSCs.Remove(prevBSC);
                 GameManagerScript.Instance.CharsBSCs.Add(BSC);
             }
-       // }
+        }
 
     }
 
@@ -438,7 +438,7 @@ public class PlayerChar : CharacterBase
             {
                 yield return new WaitForEndOfFrame();
             }
-			Debug.Log(inum);
+			//Debug.Log(inum);
 			timer += (Time.fixedDeltaTime + (Time.fixedDeltaTime * 0.333f)) * 2;
 			transform.position = Vector3.Lerp(offset, nextPos, timer);
 		}
