@@ -9,8 +9,6 @@ using TMPro;
 public class UICharacterIconScript : MonoBehaviour , IBeginDragHandler, IDragHandler, IEndDragHandler
 {
 
-	public PlayerChar CB;
-
 	public PlayerChar CurrentPlayer;
 
 	public Image Icon;
@@ -43,11 +41,8 @@ public class UICharacterIconScript : MonoBehaviour , IBeginDragHandler, IDragHan
     {
 		if (CardID != UICardID.none && !isAlreadyUsed)
 		{
-			if (CB.ManaCost <= GameManagerScript.Instance.ManaPool)
-			{
-				transform.position = eventData.position;
-				//MoveCharOnBoard(eventData.position);
-			}
+			transform.position = eventData.position;
+			//MoveCharOnBoard(eventData.position);
 		}
     }
 
@@ -55,11 +50,8 @@ public class UICharacterIconScript : MonoBehaviour , IBeginDragHandler, IDragHan
     {
 		if (CardID != UICardID.none)
 		{
-			if (CB.ManaCost <= GameManagerScript.Instance.ManaPool)
-			{
-				transform.position = OffSetPosition;
-				SetCharOnBoard(eventData.position);
-			}
+			transform.position = OffSetPosition;
+			SetCharOnBoard(eventData.position);
 		}
     }
 
@@ -89,13 +81,13 @@ public class UICharacterIconScript : MonoBehaviour , IBeginDragHandler, IDragHan
         }
 
 
-		if(Icon != null && CB != null && isAlreadyUsed)//CB.ManaCost > GameManagerScript.Instance.ManaPool
+		if(Icon != null && CurrentPlayer != null && isAlreadyUsed)//CB.ManaCost > GameManagerScript.Instance.ManaPool
 		{
 			Color color = Icon.color;
 			color.a = 0.6f;
 			Icon.color = color;
 		}
-		else if(Icon != null && CB != null && !isAlreadyUsed)//CB.ManaCost <= GameManagerScript.Instance.ManaPool
+		else if(Icon != null && CurrentPlayer != null && !isAlreadyUsed)//CB.ManaCost <= GameManagerScript.Instance.ManaPool
 		{
 			Color color = Icon.color;
             color.a = 1;
