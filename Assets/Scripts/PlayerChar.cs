@@ -45,6 +45,7 @@ public class PlayerChar : CharacterBase
 	// Start is called before the first frame update
 	void Start()
     {
+		ChangeButtonIcon(CharacterUIStateType.Selected);
 		BodyParts.AddRange(BodyBase.GetComponentsInChildren<SpriteRenderer>());
 		CurrentAttack = Attacks[0];
 		StartCoroutine(AttackAction());
@@ -82,6 +83,7 @@ public class PlayerChar : CharacterBase
 		{
 			isAlive = false;
 			Anim.SetInteger("State", 5);
+			ChangeButtonIcon(CharacterUIStateType.Dead);
 			StartCoroutine(SetCharDeath());
 		}
 
@@ -93,9 +95,6 @@ public class PlayerChar : CharacterBase
                 //item.color = Color.white;
             }
         }
-
-
-
     }
 
 
@@ -104,7 +103,6 @@ public class PlayerChar : CharacterBase
 		yield return new WaitForSecondsRealtime(0.2f);
 		foreach (SpriteRenderer item in BodyParts)
         {
-
 			item.color = Color.white;
         }
 	}
@@ -295,18 +293,11 @@ public class PlayerChar : CharacterBase
 
     }
 
-   /* public void OnMouseDown()
+    public void OnMouseDown()
     {
 		//Debug.Log("Down");
-        MouseIn = Input.mousePosition;
         IsTouchingMe = true;
-		foreach (SpriteRenderer item in BodyParts)
-        {
-
-            item.color = Color.red;
-        }
-
-    }*/
+    }
 
    /* private void OnMouseDrag()
     {
@@ -347,11 +338,11 @@ public class PlayerChar : CharacterBase
     }*/
 
 
-    public void OnMouseUp()
+    /*public void OnMouseUp()
     {
 		IsTouchingMe = false;
 		//Debug.Log("Up");
-		/*if (IsTouchingMe)
+		if (IsTouchingMe)
         {
 			//Debug.Log("moving");
 			BattleSquareClass prevBSC = BSC;
@@ -423,8 +414,8 @@ public class PlayerChar : CharacterBase
 				GameManagerScript.Instance.CharsBSCs.Remove(prevBSC);
 				GameManagerScript.Instance.CharsBSCs.Add(BSC);
 			}
-        }*/
-    }
+        }
+    }*/
 
 
 	private IEnumerator Move(Vector3 nextPos, int animState)
@@ -450,6 +441,12 @@ public class PlayerChar : CharacterBase
 		isMoving = false;
 		transform.position = nextPos;
 		MoveCo = null;
+	}
+
+
+	public void ChangeButtonIcon(CharacterUIStateType cuist)
+	{
+		ButtonIcon.color = CharactersUI.Where(r => r.CUIST == cuist).First().StateColor;
 	}
 }
 

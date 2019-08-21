@@ -590,6 +590,66 @@ PrefabInstance:
       propertyPath: ButtonIcon
       value: 
       objectReference: {fileID: 4113155605385036788}
+    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
+        type: 3}
+      propertyPath: CharactersUI.Array.data[0].StateColor.r
+      value: 0.9811321
+      objectReference: {fileID: 0}
+    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
+        type: 3}
+      propertyPath: CharactersUI.Array.data[0].StateColor.g
+      value: 0.96724814
+      objectReference: {fileID: 0}
+    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
+        type: 3}
+      propertyPath: CharactersUI.Array.data[0].StateColor.b
+      value: 0.96724814
+      objectReference: {fileID: 0}
+    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
+        type: 3}
+      propertyPath: CharactersUI.Array.data[1].StateColor.r
+      value: 0.08877714
+      objectReference: {fileID: 0}
+    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
+        type: 3}
+      propertyPath: CharactersUI.Array.data[1].StateColor.g
+      value: 0.8962264
+      objectReference: {fileID: 0}
+    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
+        type: 3}
+      propertyPath: CharactersUI.Array.data[1].StateColor.b
+      value: 0.20591888
+      objectReference: {fileID: 0}
+    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
+        type: 3}
+      propertyPath: CharactersUI.Array.data[1].CUIST
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
+        type: 3}
+      propertyPath: CharactersUI.Array.data[2].StateColor.r
+      value: 0.8867924
+      objectReference: {fileID: 0}
+    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
+        type: 3}
+      propertyPath: CharactersUI.Array.data[2].StateColor.g
+      value: 0.054378804
+      objectReference: {fileID: 0}
+    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
+        type: 3}
+      propertyPath: CharactersUI.Array.data[2].StateColor.b
+      value: 0.054378804
+      objectReference: {fileID: 0}
+    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
+        type: 3}
+      propertyPath: CharactersUI.Array.data[2].CUIST
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
+        type: 3}
+      propertyPath: CharactersUI.Array.data[3].CUIST
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1019995682220121483, guid: 3b8956433113349bfae025a9b9ed1ba9,
         type: 3}
       propertyPath: m_LocalPosition.x

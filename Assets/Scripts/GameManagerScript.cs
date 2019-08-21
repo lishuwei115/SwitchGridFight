@@ -197,6 +197,22 @@ public class GameManagerScript : MonoBehaviour
 		return cb;
 	}
 
+	public void SelectNewChar(PlayerChar newChar)
+	{
+		foreach (PlayerChar item in Characters)
+		{
+			if(item == newChar)
+			{
+				CurrentSelectedChar = newChar;
+				CurrentSelectedChar.ChangeButtonIcon(CharacterUIStateType.Selected);
+			}
+			else
+			{
+				item.ChangeButtonIcon(CharacterUIStateType.NotSelected);
+			}
+		}
+	}
+
 
 	private IEnumerator SpawnPowerUps()
 	{

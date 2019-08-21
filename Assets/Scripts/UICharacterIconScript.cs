@@ -26,7 +26,7 @@ public class UICharacterIconScript : MonoBehaviour , IBeginDragHandler, IDragHan
 	{
 		if(CurrentPlayer != null)
 		{
-			GameManagerScript.Instance.CurrentSelectedChar = CurrentPlayer;
+			GameManagerScript.Instance.SelectNewChar(CurrentPlayer);
 		}
 	}
 
@@ -148,7 +148,7 @@ public class UICharacterIconScript : MonoBehaviour , IBeginDragHandler, IDragHan
                     isAlreadyUsed = true;
 					CurrentPlayer = GameManagerScript.Instance.CreatePlayerChar(PCType, false, bsc.Pos);
 					GameManagerScript.Instance.ManaPool -= CurrentPlayer.ManaCost;
-					GameManagerScript.Instance.CurrentSelectedChar = CurrentPlayer;
+					GameManagerScript.Instance.SelectNewChar(CurrentPlayer);
                     
                     if (GameManagerScript.Instance.CurrentGameState == GameState.EndIntro)
                     {
