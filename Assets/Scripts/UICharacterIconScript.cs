@@ -39,7 +39,7 @@ public class UICharacterIconScript : MonoBehaviour , IBeginDragHandler, IDragHan
 
     public void OnDrag(PointerEventData eventData)
     {
-		if (CardID != UICardID.none && !isAlreadyUsed)
+		if (CardID != UICardID.none && !isAlreadyUsed && GameManagerScript.Instance.CurrentGameState != GameState.Intro)
 		{
 			transform.position = eventData.position;
 			//MoveCharOnBoard(eventData.position);
@@ -48,7 +48,7 @@ public class UICharacterIconScript : MonoBehaviour , IBeginDragHandler, IDragHan
 
     public void OnEndDrag(PointerEventData eventData)
     {
-		if (CardID != UICardID.none)
+		if (CardID != UICardID.none && GameManagerScript.Instance.CurrentGameState != GameState.Intro)
 		{
 			transform.position = OffSetPosition;
 			SetCharOnBoard(eventData.position);

@@ -85,7 +85,7 @@ public class InputManagerScript : MonoBehaviour
         {
             float X = Mathf.Abs(Input.mousePosition.x) - Mathf.Abs(MouseIn.x);
             float Y = Mathf.Abs(Input.mousePosition.y) - Mathf.Abs(MouseIn.y);
-            if ((Mathf.Abs(X) > 10 || Mathf.Abs(Y) > 10))
+            if ((Mathf.Abs(X) > 50 || Mathf.Abs(Y) > 50))
             {
 				isMoving = false;
                 if (Mathf.Abs(X) > Mathf.Abs(Y))
