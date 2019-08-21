@@ -270,13 +270,13 @@ MonoBehaviour:
   BodyBase: {fileID: 6390508820602336052}
   ButtonIcon: {fileID: 8665791128093644145}
   CharactersUI:
-  - StateColor: {r: 0.9811321, g: 0.96724814, b: 0.96724814, a: 0}
+  - StateColor: {r: 1, g: 1, b: 1, a: 1}
     CUIST: 0
-  - StateColor: {r: 0.08877714, g: 0.8962264, b: 0.20591888, a: 0}
+  - StateColor: {r: 0.08877714, g: 0.8962264, b: 0.20591888, a: 1}
     CUIST: 1
-  - StateColor: {r: 0.8867924, g: 0.054378804, b: 0.054378804, a: 0}
+  - StateColor: {r: 0.8867924, g: 0.054378804, b: 0.054378804, a: 1}
     CUIST: 2
-  - StateColor: {r: 0, g: 0, b: 0, a: 0}
+  - StateColor: {r: 0, g: 0, b: 0, a: 1}
     CUIST: 3
 --- !u!54 &1361370211012346953
 Rigidbody:

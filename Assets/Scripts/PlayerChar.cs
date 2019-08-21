@@ -92,7 +92,7 @@ public class PlayerChar : CharacterBase
         {
             foreach (SpriteRenderer item in BodyParts)
             {
-                //item.color = Color.white;
+                item.color = Color.white;
             }
         }
     }
