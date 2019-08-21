@@ -72,6 +72,7 @@ public class InputManagerScript : MonoBehaviour
                 if (item.rect.Contains(localMousePosition) && item.gameObject.activeInHierarchy)
                 {
 					isMoving = false;
+					break;
                 }
             }
 			if(isMoving)

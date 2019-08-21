@@ -199,7 +199,7 @@ public class GameManagerScript : MonoBehaviour
 
 	public void SelectNewChar(PlayerChar newChar)
 	{
-		foreach (PlayerChar item in Characters)
+		foreach (PlayerChar item in Characters.Where(r=> r.Hp > 0).ToList())
 		{
 			if(item == newChar)
 			{
