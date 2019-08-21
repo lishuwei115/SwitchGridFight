@@ -2674,6 +2674,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chinese Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 2661914283319356767, guid: 0b555a68abc7b49d6ba6e3f6929b9fb6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2661914283319356447, guid: 0b555a68abc7b49d6ba6e3f6929b9fb6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2816,6 +2821,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Redhood Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3983466153274542681, guid: 9865d946198984919a1da849d4590c43,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3983466153274542873, guid: 9865d946198984919a1da849d4590c43,
         type: 3}
@@ -3251,6 +3261,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bluemoon Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 4431596868745232236, guid: 4654613d0db814681a7c94c29252fd9b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4431596868745231916, guid: 4654613d0db814681a7c94c29252fd9b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3393,6 +3408,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Afro Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 4864271628413607750, guid: c4f03d97a09c045faa9cdf4e4124c0a8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4864271628413607430, guid: c4f03d97a09c045faa9cdf4e4124c0a8,
         type: 3}
