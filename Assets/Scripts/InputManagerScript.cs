@@ -61,7 +61,7 @@ public class InputManagerScript : MonoBehaviour
 
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
 		if (Input.GetMouseButtonDown(0) && GameManagerScript.Instance.CurrentSelectedChar != null)
         {
