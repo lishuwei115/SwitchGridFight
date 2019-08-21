@@ -93,11 +93,13 @@ public class UIManager : MonoBehaviour {
     public void StartTutorial()
 	{
         FirstTutorial = true;
+        SecondTutorial = false;
 		TutorialParent.alpha = 1;
 		TutorialParent.interactable = true;
 		TutorialParent.blocksRaycasts = true;
-		Tutorial1.SetActive(true);
-		PrevState = GameManagerScript.Instance.CurrentGameState;
+        Tutorial1.SetActive(FirstTutorial);
+        Tutorial2.SetActive(SecondTutorial);
+        PrevState = GameManagerScript.Instance.CurrentGameState;
         Debug.Log("  ....  " + PrevState);
 		GameManagerScript.Instance.CurrentGameState = GameState.Pause;
 	}
