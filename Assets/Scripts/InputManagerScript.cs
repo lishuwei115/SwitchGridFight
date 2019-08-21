@@ -11,9 +11,14 @@ public class InputManagerScript : MonoBehaviour
 	public List<RectTransform> PressableItems = new List<RectTransform>();
 	private Vector2 MouseIn;
 	private bool isMoving = true;
-     
-    // Start is called before the first frame update
-    void Start()
+
+
+	private void Awake()
+	{
+		Instance = this;
+	}
+	// Start is called before the first frame update
+	void Start()
     {
 		//A
         InputManager_Riki.Instance.ButtonAPressedEvent += Instance_ButtonAPressedEvent;
@@ -58,7 +63,7 @@ public class InputManagerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		if (Input.GetMouseButtonDown(0))
+		if (Input.GetMouseButtonDown(0) && GameManagerScript.Instance.CurrentSelectedChar != null)
         {
 			isMoving = true;
 			foreach (RectTransform item in PressableItems)
@@ -75,7 +80,7 @@ public class InputManagerScript : MonoBehaviour
 			}
         }
 
-		if (Input.GetMouseButton(0) && isMoving)
+		if (Input.GetMouseButton(0) && isMoving && GameManagerScript.Instance.CurrentSelectedChar != null)
         {
             float X = Mathf.Abs(Input.mousePosition.x) - Mathf.Abs(MouseIn.x);
             float Y = Mathf.Abs(Input.mousePosition.y) - Mathf.Abs(MouseIn.y);

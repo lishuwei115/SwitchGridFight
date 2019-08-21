@@ -38,15 +38,15 @@ public class UIManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-    if (PlayerPrefs.GetInt("TutorialCompleted") != 1)
-    {
-        StartTutorial();
-    }
-    else
-    {
-        GameManagerScript.Instance.SetUpMatch();
-    }
-	//StartTutorial();
+        /*if (PlayerPrefs.GetInt("TutorialCompleted") != 1)
+        {
+            StartTutorial();
+        }
+        else
+        {
+            GameManagerScript.Instance.SetUpMatch();
+        }*/
+	    StartTutorial();
     }
 
 
@@ -118,6 +118,10 @@ public class UIManager : MonoBehaviour {
 		TutorialParent.interactable = false;
 		TutorialParent.blocksRaycasts = false;
         Debug.Log(PrevState);
+		if(PrevState == GameState.Intro)
+		{
+			GameManagerScript.Instance.SetUpMatch();
+		}
 		GameManagerScript.Instance.CurrentGameState = PrevState;
 		PlayerPrefs.SetInt("TutorialCompleted", 1);
     }
