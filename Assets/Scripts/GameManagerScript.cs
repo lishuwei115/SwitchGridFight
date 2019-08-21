@@ -34,6 +34,7 @@ public class GameManagerScript : MonoBehaviour
 	public List<EnemyChar> Enemies = new List<EnemyChar>();
 	public GameState CurrentGameState;
 	public List<CharInfoClass> StartingChars = new List<CharInfoClass>();
+	public PlayerChar CurrentSelectedChar;
 
 
     public List<Wave> Waves = new List<Wave>();
@@ -141,7 +142,7 @@ public class GameManagerScript : MonoBehaviour
 
     public void RestartScene()
 	{
-        UIManager.Instance.DetachEvent();
+		InputManagerScript.Instance.DetachEvent();
         SceneManager.LoadScene(1);
 	}
 
@@ -278,7 +279,7 @@ public class GameManagerScript : MonoBehaviour
 
 	public void GameComplete()
 	{
-        UIManager.Instance.DetachEvent();
+		InputManagerScript.Instance.DetachEvent();
         SceneManager.LoadScene(0);
 	}
 

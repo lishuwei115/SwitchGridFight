@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Anim: {fileID: 5594555051302369804}
-  Parent: {fileID: 2839307558628222347}
+  Parent: {fileID: 4492355175376455279}
 --- !u!1 &2367908161682912304
 GameObject:
   m_ObjectHideFlags: 0
@@ -72,7 +72,7 @@ Transform:
   m_LocalPosition: {x: -1.17, y: 0.62, z: -10}
   m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_Children: []
-  m_Father: {fileID: 3494737855129457318}
+  m_Father: {fileID: 4492355175376456923}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3665583377408843485
@@ -129,7 +129,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 3494737855129457318}
+    m_TransformParent: {fileID: 4492355175376456923}
     m_Modifications:
     - target: {fileID: 1682492685817918843, guid: 0c32d3307d0680141b081a39b81b2f01,
         type: 3}
@@ -302,7 +302,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 3494737855129457318}
+    m_TransformParent: {fileID: 4492355175376456923}
     m_Modifications:
     - target: {fileID: 5033881169839287173, guid: 95de892354f6c814b87fd9489fc2f7a8,
         type: 3}
@@ -382,7 +382,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 3494737855129457318}
+    m_TransformParent: {fileID: 4492355175376456923}
     m_Modifications:
     - target: {fileID: 4444310434168573237, guid: cd0382036319f894696fd83cbe673519,
         type: 3}
@@ -469,6 +469,51 @@ PrefabInstance:
       propertyPath: m_Name
       value: Redhood Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
+        type: 3}
+      propertyPath: CharactersUI.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
+        type: 3}
+      propertyPath: Anim
+      value: 
+      objectReference: {fileID: 5594555051302369804}
+    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
+        type: 3}
+      propertyPath: ShootingPoint
+      value: 
+      objectReference: {fileID: 4434330104442871073}
+    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
+        type: 3}
+      propertyPath: PowerUpParticles.Array.data[0]
+      value: 
+      objectReference: {fileID: 8236004750695376957}
+    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
+        type: 3}
+      propertyPath: PowerUpParticles.Array.data[1]
+      value: 
+      objectReference: {fileID: 8439783387696159290}
+    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
+        type: 3}
+      propertyPath: PowerUpParticles.Array.data[2]
+      value: 
+      objectReference: {fileID: 320491065188648556}
+    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
+        type: 3}
+      propertyPath: MovingCoolDown
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
+        type: 3}
+      propertyPath: BodyBase
+      value: 
+      objectReference: {fileID: 3124224130784806649}
+    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
+        type: 3}
+      propertyPath: ButtonIcon
+      value: 
+      objectReference: {fileID: 3665583377408843485}
     - target: {fileID: 1019995682220121483, guid: 3b8956433113349bfae025a9b9ed1ba9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -553,57 +598,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 991271293, guid: 3b8956433113349bfae025a9b9ed1ba9, type: 3}
       propertyPath: m_Center.y
-      value: 1.3
+      value: 1.8
       objectReference: {fileID: 0}
-    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
-        type: 3}
-      propertyPath: Anim
-      value: 
-      objectReference: {fileID: 5594555051302369804}
-    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
-        type: 3}
-      propertyPath: ShootingPoint
-      value: 
-      objectReference: {fileID: 4434330104442871073}
-    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
-        type: 3}
-      propertyPath: PowerUpParticles.Array.data[0]
-      value: 
-      objectReference: {fileID: 8236004750695376957}
-    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
-        type: 3}
-      propertyPath: PowerUpParticles.Array.data[1]
-      value: 
-      objectReference: {fileID: 8439783387696159290}
-    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
-        type: 3}
-      propertyPath: PowerUpParticles.Array.data[2]
-      value: 
-      objectReference: {fileID: 320491065188648556}
-    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
-        type: 3}
-      propertyPath: MovingCoolDown
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
-        type: 3}
-      propertyPath: BodyBase
-      value: 
-      objectReference: {fileID: 3124224130784806649}
-    - target: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
-        type: 3}
-      propertyPath: ButtonIcon
-      value: 
-      objectReference: {fileID: 3665583377408843485}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b8956433113349bfae025a9b9ed1ba9, type: 3}
---- !u!4 &3494737855129457318 stripped
+--- !u!4 &4492355175376456923 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1019995682220121483, guid: 3b8956433113349bfae025a9b9ed1ba9,
     type: 3}
   m_PrefabInstance: {fileID: 4492355175376457517}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2839307558628222347 stripped
+--- !u!114 &4492355175376455279 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1819227842021321382, guid: 3b8956433113349bfae025a9b9ed1ba9,
     type: 3}
@@ -620,7 +625,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 3494737855129457318}
+    m_TransformParent: {fileID: 4492355175376456923}
     m_Modifications:
     - target: {fileID: 1803460606417495101, guid: 0a9beda3607c53c4c921f64dccd8d975,
         type: 3}

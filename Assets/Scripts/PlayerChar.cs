@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class PlayerChar : CharacterBase
 {
 	public bool IsTouchingMe = false;
-    private Vector2 MouseIn;
 	public BattleSquareClass BSC;
 	public PlayerCharType PTC;
 	public ParticleTypes ParticlesType;
@@ -24,7 +24,6 @@ public class PlayerChar : CharacterBase
 	public string CharName;
 	public float ManaCost;
 	public bool isMoving = false;
-	public bool isDragging = false;
 	public bool isAlive = true;
 	public List<ParticleSystem> PowerUpParticles = new List<ParticleSystem>();
 	public List<SpriteRenderer> BodyParts = new List<SpriteRenderer>();
@@ -35,8 +34,13 @@ public class PlayerChar : CharacterBase
     [Header("Audio")]
 	public AudioClip AttackAudio;
     public Transform BodyBase;
-
+	private IEnumerator MoveCo;
     public SpriteRenderer ButtonIcon;
+
+
+	public List<CharacterUIClass> CharactersUI = new List<CharacterUIClass>();
+
+	int inum = 0;
 
 	// Start is called before the first frame update
 	void Start()
@@ -72,7 +76,7 @@ public class PlayerChar : CharacterBase
 	}
 
 	// Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
 		if(Hp <= 0 && isAlive)
 		{
@@ -86,10 +90,25 @@ public class PlayerChar : CharacterBase
         {
             foreach (SpriteRenderer item in BodyParts)
             {
-                item.color = Color.white;
+                //item.color = Color.white;
             }
         }
+
+
+
     }
+
+
+	private IEnumerator ComeWhite()
+	{
+		yield return new WaitForSecondsRealtime(0.2f);
+		foreach (SpriteRenderer item in BodyParts)
+        {
+
+			item.color = Color.white;
+        }
+	}
+
 
 	private IEnumerator SetCharDeath()
 	{
@@ -226,8 +245,8 @@ public class PlayerChar : CharacterBase
 
     public void MoveChar(InputDirection nextDir)
     {
-        if(Time.time - MovingOffset > MovingCoolDown)
-        {
+        //if(Time.time - MovingOffset > MovingCoolDown)
+        //{
             //Debug.Log(Time.time + "  " + MovingOffset + "  " + MovingCoolDown);
             MovingOffset = Time.time;
             BattleSquareClass prevBSC = BSC;
@@ -258,7 +277,13 @@ public class PlayerChar : CharacterBase
                 isMoving = true;
                 BattleGroundManager.Instance.PBG.p[Pos.x].PBG[Pos.y].IsEmpty = true;
                 Pos = BSC.Pos;
-                StartCoroutine(Move(BSC.T.position, AnimState));
+
+		        if(MoveCo != null)
+                {
+                    StopCoroutine(MoveCo);
+                }
+		        MoveCo = Move(BSC.T.position, AnimState);
+		        StartCoroutine(MoveCo);
             }
 
             if (prevBSC != BSC)
@@ -266,30 +291,41 @@ public class PlayerChar : CharacterBase
                 GameManagerScript.Instance.CharsBSCs.Remove(prevBSC);
                 GameManagerScript.Instance.CharsBSCs.Add(BSC);
             }
-        }
+       // }
 
     }
 
-    public void OnMouseDown()
+   /* public void OnMouseDown()
     {
 		//Debug.Log("Down");
         MouseIn = Input.mousePosition;
         IsTouchingMe = true;
+		foreach (SpriteRenderer item in BodyParts)
+        {
 
-    }
+            item.color = Color.red;
+        }
 
-    private void OnMouseDrag()
+    }*/
+
+   /* private void OnMouseDrag()
     {
         float X = Mathf.Abs(Input.mousePosition.x) - Mathf.Abs(MouseIn.x);
         float Y = Mathf.Abs(Input.mousePosition.y) - Mathf.Abs(MouseIn.y);
-        if (IsTouchingMe && (Mathf.Abs(X) > 20 || Mathf.Abs(Y) > 20) && !isDragging)
+        if (IsTouchingMe && (Mathf.Abs(X) > 50 || Mathf.Abs(Y) > 50))
         {
-            isDragging = true;
+			foreach (SpriteRenderer item in BodyParts)
+            {
+
+				item.color = Color.yellow;
+            }
+			IsTouchingMe = false;
+
             if (Mathf.Abs(X) > Mathf.Abs(Y))
             {
                 if (Input.mousePosition.x > MouseIn.x)
                 {
-                    MoveChar(InputDirection.Right);
+					MoveChar(InputDirection.Right);
                 }
                 else
                 {
@@ -308,11 +344,12 @@ public class PlayerChar : CharacterBase
                 }
             }
         }
-    }
+    }*/
 
 
     public void OnMouseUp()
     {
+		IsTouchingMe = false;
 		//Debug.Log("Up");
 		/*if (IsTouchingMe)
         {
@@ -387,8 +424,6 @@ public class PlayerChar : CharacterBase
 				GameManagerScript.Instance.CharsBSCs.Add(BSC);
 			}
         }*/
-        IsTouchingMe = false;
-		isDragging = false;
     }
 
 
@@ -398,7 +433,7 @@ public class PlayerChar : CharacterBase
         Anim.SetInteger("State", 0);
         yield return new WaitForEndOfFrame();
         Anim.SetInteger("State", animState);
-
+		inum++;
         float timer = 0;
 		Vector3 offset = transform.position;
 		while (timer < 1)
@@ -408,11 +443,13 @@ public class PlayerChar : CharacterBase
             {
                 yield return new WaitForEndOfFrame();
             }
+			Debug.Log(inum);
 			timer += (Time.fixedDeltaTime + (Time.fixedDeltaTime * 0.333f)) * 2;
 			transform.position = Vector3.Lerp(offset, nextPos, timer);
 		}
 		isMoving = false;
 		transform.position = nextPos;
+		MoveCo = null;
 	}
 }
 
@@ -467,4 +504,21 @@ public enum InputDirection
     Right,
     Up,
     Down
+}
+
+
+public enum CharacterUIStateType
+{
+	Ready,
+    Selected,
+    NotSelected,
+    Dead
+}
+
+
+[System.Serializable]
+public class CharacterUIClass
+{
+	public Color StateColor;
+	public CharacterUIStateType CUIST;
 }

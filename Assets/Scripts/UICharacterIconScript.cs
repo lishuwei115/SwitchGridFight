@@ -22,7 +22,18 @@ public class UICharacterIconScript : MonoBehaviour , IBeginDragHandler, IDragHan
 	public RectTransform HpBar;
     public Canvas CanvasComponent;
 
-    public void OnBeginDrag(PointerEventData eventData)
+	public void MouseDown()
+	{
+		if(CurrentPlayer != null)
+		{
+			GameManagerScript.Instance.CurrentSelectedChar = CurrentPlayer;
+		}
+	}
+
+
+
+
+	public void OnBeginDrag(PointerEventData eventData)
     {
     }
 
@@ -137,6 +148,8 @@ public class UICharacterIconScript : MonoBehaviour , IBeginDragHandler, IDragHan
                     isAlreadyUsed = true;
 					CurrentPlayer = GameManagerScript.Instance.CreatePlayerChar(PCType, false, bsc.Pos);
 					GameManagerScript.Instance.ManaPool -= CurrentPlayer.ManaCost;
+					GameManagerScript.Instance.CurrentSelectedChar = CurrentPlayer;
+                    
                     if (GameManagerScript.Instance.CurrentGameState == GameState.EndIntro)
                     {
                         GameManagerScript.Instance.Invoke("StartMatch", GameManagerScript.Instance.StartingTime);
