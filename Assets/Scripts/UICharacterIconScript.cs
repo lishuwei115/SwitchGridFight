@@ -21,6 +21,8 @@ public class UICharacterIconScript : MonoBehaviour , IBeginDragHandler, IDragHan
 	private float CurrentSize;
 	public RectTransform HpBar;
     public Canvas CanvasComponent;
+	public Image CharacterUISelection;
+
 
 	public void MouseDown()
 	{
@@ -31,7 +33,7 @@ public class UICharacterIconScript : MonoBehaviour , IBeginDragHandler, IDragHan
 	}
 
 
-
+    
 
 	public void OnBeginDrag(PointerEventData eventData)
     {
@@ -70,6 +72,11 @@ public class UICharacterIconScript : MonoBehaviour , IBeginDragHandler, IDragHan
 
 		if (CurrentPlayer != null)
         {
+			if(CurrentPlayer.Card == null)
+			{
+				CurrentPlayer.Card = this;
+			}
+
 			if (CurrentPlayer.Hp > 0 && CurrentPlayer.BaseHp > 0)
             {
 				CurrentSize = ((CurrentPlayer.Hp * 100f) / CurrentPlayer.BaseHp) * (1f / 100f);
@@ -149,7 +156,7 @@ public class UICharacterIconScript : MonoBehaviour , IBeginDragHandler, IDragHan
 					CurrentPlayer = GameManagerScript.Instance.CreatePlayerChar(PCType, false, bsc.Pos);
 					GameManagerScript.Instance.ManaPool -= CurrentPlayer.ManaCost;
 					GameManagerScript.Instance.SelectNewChar(CurrentPlayer);
-                    
+					CharacterUISelection.color = CurrentPlayer.CharactersUI.Where(r => r.CUIST == CharacterUIStateType.Selected).First().StateColor;
                     if (GameManagerScript.Instance.CurrentGameState == GameState.EndIntro)
                     {
                         GameManagerScript.Instance.Invoke("StartMatch", GameManagerScript.Instance.StartingTime);

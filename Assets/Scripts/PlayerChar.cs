@@ -36,7 +36,7 @@ public class PlayerChar : CharacterBase
     public Transform BodyBase;
 	private IEnumerator MoveCo;
     public SpriteRenderer ButtonIcon;
-
+	public UICharacterIconScript Card;
 
 	public List<CharacterUIClass> CharactersUI = new List<CharacterUIClass>();
 
@@ -446,7 +446,12 @@ public class PlayerChar : CharacterBase
 
 	public void ChangeButtonIcon(CharacterUIStateType cuist)
 	{
-		ButtonIcon.color = CharactersUI.Where(r => r.CUIST == cuist).First().StateColor;
+		Color c = CharactersUI.Where(r => r.CUIST == cuist).First().StateColor;
+		ButtonIcon.color = c;
+		if(Card != null)
+		{
+			Card.CharacterUISelection.color = c;
+		}
 	}
 }
 
