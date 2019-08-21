@@ -38,15 +38,15 @@ public class UIManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-        /*if (PlayerPrefs.GetInt("TutorialCompleted") != 1)
+        if (PlayerPrefs.GetInt("TutorialCompleted") != 1)
         {
             StartTutorial();
         }
         else
         {
             GameManagerScript.Instance.SetUpMatch();
-        }*/
-	    StartTutorial();
+        }
+	    //StartTutorial();
     }
 
 

@@ -296,7 +296,11 @@ public class PlayerChar : CharacterBase
     public void OnMouseDown()
     {
 		//Debug.Log("Down");
-        IsTouchingMe = true;
+        if(Hp > 0)
+		{
+			IsTouchingMe = true;
+            GameManagerScript.Instance.SelectNewChar(this);
+		}
     }
 
    /* private void OnMouseDrag()

@@ -24,7 +24,7 @@ public class UICharacterIconScript : MonoBehaviour , IBeginDragHandler, IDragHan
 
 	public void MouseDown()
 	{
-		if(CurrentPlayer != null)
+		if(CurrentPlayer != null && CurrentPlayer.Hp > 0)
 		{
 			GameManagerScript.Instance.SelectNewChar(CurrentPlayer);
 		}
